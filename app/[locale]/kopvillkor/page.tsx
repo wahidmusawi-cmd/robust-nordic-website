@@ -29,7 +29,7 @@ export default async function KopvillkorPage({
       eyebrow={t("eyebrowTerms")}
       title={t("kopvillkorTitle")}
       intro={t("kopvillkorIntro")}
-      content={getPolicyContent("payment")}
+      content={getPolicyContent("payments", locale as "fi" | "sv" | "en")}
     />
   )
 }
