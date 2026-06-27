@@ -55,13 +55,13 @@ function ProseBlocks({ content }: { content: ContentBlock[] }) {
       return
     }
     flush(`l-${i}`)
-    if (block.t === "h2" || block.t === "h1") {
+    if (block.t === "h2") {
       elements.push(
         <h2 key={i} className="font-serif text-2xl sm:text-3xl text-foreground mt-10 mb-4 leading-snug text-balance">
           {block.c}
         </h2>,
       )
-    } else if (block.t === "h3" || block.t === "h4") {
+    } else if (block.t === "h3") {
       elements.push(
         <h3 key={i} className="font-sans font-semibold text-lg text-foreground mt-6 mb-2">
           {block.c}
