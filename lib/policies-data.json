@@ -1,0 +1,330 @@
+{
+  "shipping": {
+    "fi": [
+      {
+        "t": "h2",
+        "c": "Toimitusehdot"
+      },
+      {
+        "t": "p",
+        "c": "Toimitamme tilaukset Suomeen Postin ja Matkahuollon kautta. Toimitusmaksu on 4,90 € tai ilmainen yli 49 € tilauksille."
+      },
+      {
+        "t": "h3",
+        "c": "Toimitusajat"
+      },
+      {
+        "t": "p",
+        "c": "Arkipäivisin tehtyjen tilausten käsittelyaika on 1–2 arkipäivää. Toimitusaika on tyypillisesti 2–5 arkipäivää tilauksesta."
+      },
+      {
+        "t": "h3",
+        "c": "Toimitustavat"
+      },
+      {
+        "t": "li",
+        "c": "Posti kotiin: 2–3 arkipäivää, 6,90 €"
+      },
+      {
+        "t": "li",
+        "c": "Postin pakettiautomaatti: 2–3 arkipäivää, 4,90 €"
+      },
+      {
+        "t": "li",
+        "c": "Matkahuolto lähipaketti: 2–4 arkipäivää, 5,90 €"
+      },
+      {
+        "t": "h3",
+        "c": "Ilmainen toimitus"
+      },
+      {
+        "t": "p",
+        "c": "Kaikki yli 49 € tilaukset toimitetaan ilmaiseksi. Tarjous voimassa Suomessa."
+      }
+    ],
+    "sv": [
+      {
+        "t": "h2",
+        "c": "Leveransvillkor"
+      },
+      {
+        "t": "p",
+        "c": "Vi levererar beställningar till Finland via Post och Matkahuolto. Leveransavgiften är 4,90 € eller gratis för beställningar över 49 €."
+      },
+      {
+        "t": "h3",
+        "c": "Leveranstider"
+      },
+      {
+        "t": "p",
+        "c": "Handläggningstiden för beställningar som görs på vardagar är 1–2 vardagar. Leveranstiden är vanligtvis 2–5 vardagar från beställning."
+      },
+      {
+        "t": "h3",
+        "c": "Gratis leverans"
+      },
+      {
+        "t": "p",
+        "c": "Alla beställningar över 49 € levereras gratis. Erbjudandet gäller i Finland."
+      }
+    ],
+    "en": [
+      {
+        "t": "h2",
+        "c": "Shipping Terms"
+      },
+      {
+        "t": "p",
+        "c": "We deliver orders to Finland via Posti and Matkahuolto. The shipping fee is €4.90 or free for orders over €49."
+      },
+      {
+        "t": "h3",
+        "c": "Delivery Times"
+      },
+      {
+        "t": "p",
+        "c": "Processing time for orders placed on weekdays is 1–2 business days. Delivery time is typically 2–5 business days from order."
+      },
+      {
+        "t": "h3",
+        "c": "Free Shipping"
+      },
+      {
+        "t": "p",
+        "c": "All orders over €49 are shipped free of charge. Offer valid in Finland."
+      }
+    ]
+  },
+  "payments": {
+    "fi": [
+      {
+        "t": "h2",
+        "c": "Maksutavat"
+      },
+      {
+        "t": "p",
+        "c": "Hyväksymme seuraavat maksutavat verkkokaupassamme:"
+      },
+      {
+        "t": "h3",
+        "c": "Verkkopankki"
+      },
+      {
+        "t": "p",
+        "c": "Kaikki suomalaiset verkkopankit: OP, Nordea, Danske Bank, S-Pankki, Handelsbanken, Ålandsbanken, POP Pankki, Säästöpankki, Oma Säästöpankki."
+      },
+      {
+        "t": "h3",
+        "c": "Kortit"
+      },
+      {
+        "t": "p",
+        "c": "Visa, Mastercard, American Express. Maksutapahtumat ovat turvattuja SSL-salauksella."
+      },
+      {
+        "t": "h3",
+        "c": "Lasku ja osamaksu"
+      },
+      {
+        "t": "p",
+        "c": "Klarna-lasku (14 pv maksuaika) ja Klarna-osamaksu saatavilla."
+      },
+      {
+        "t": "h3",
+        "c": "MobilePay"
+      },
+      {
+        "t": "p",
+        "c": "MobilePay-mobiilimaksu on mahdollinen älypuhelimella."
+      }
+    ],
+    "sv": [
+      {
+        "t": "h2",
+        "c": "Betalningssätt"
+      },
+      {
+        "t": "p",
+        "c": "Vi accepterar följande betalningssätt i vår webbutik: Nätbank, Visa, Mastercard, American Express, Klarna faktura och delbetalning samt MobilePay."
+      }
+    ],
+    "en": [
+      {
+        "t": "h2",
+        "c": "Payment Methods"
+      },
+      {
+        "t": "p",
+        "c": "We accept the following payment methods in our online store: Online banking, Visa, Mastercard, American Express, Klarna invoice and installment payments, and MobilePay."
+      }
+    ]
+  },
+  "privacy": {
+    "fi": [
+      {
+        "t": "h2",
+        "c": "Tietosuojaseloste"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab (Y-tunnus: 3297498-4) kerää ja käsittelee henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) ja kansallisen tietosuojalain mukaisesti."
+      },
+      {
+        "t": "h3",
+        "c": "Rekisterinpitäjä"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab, asiakaspalvelu@robustnordic.fi, puh. 050 372 0007"
+      },
+      {
+        "t": "h3",
+        "c": "Kerättävät tiedot"
+      },
+      {
+        "t": "li",
+        "c": "Nimi ja yhteystiedot (osoite, sähköposti, puhelin)"
+      },
+      {
+        "t": "li",
+        "c": "Tilaus- ja maksutiedot"
+      },
+      {
+        "t": "li",
+        "c": "Käyttötiedot verkkopalvelussa (evästeet)"
+      },
+      {
+        "t": "h3",
+        "c": "Tietojen käyttö"
+      },
+      {
+        "t": "p",
+        "c": "Tietojasi käytetään tilausten käsittelyyn, toimitukseen, asiakasviestintään ja lakisääteisten velvoitteiden täyttämiseen. Emme myy henkilötietojasi kolmansille osapuolille."
+      },
+      {
+        "t": "h3",
+        "c": "Oikeutesi"
+      },
+      {
+        "t": "p",
+        "c": "Sinulla on oikeus tarkastaa, oikaista ja poistaa tietosi. Voit käyttää oikeuksiasi ottamalla yhteyttä asiakaspalveluumme."
+      }
+    ],
+    "sv": [
+      {
+        "t": "h2",
+        "c": "Sekretesspolicy"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab samlar in och behandlar personuppgifter i enlighet med EU:s allmänna dataskyddsförordning (GDPR) och nationell dataskyddslagstiftning."
+      },
+      {
+        "t": "h3",
+        "c": "Registeransvarig"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab, asiakaspalvelu@robustnordic.fi, tel. 050 372 0007"
+      }
+    ],
+    "en": [
+      {
+        "t": "h2",
+        "c": "Privacy Policy"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab collects and processes personal data in accordance with the EU General Data Protection Regulation (GDPR) and national data protection law."
+      },
+      {
+        "t": "h3",
+        "c": "Data Controller"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab, asiakaspalvelu@robustnordic.fi, tel. 050 372 0007"
+      }
+    ]
+  },
+  "terms": {
+    "fi": [
+      {
+        "t": "h2",
+        "c": "Kaupan ehdot"
+      },
+      {
+        "t": "p",
+        "c": "Nämä käyttöehdot koskevat Robust Nordic Ab:n (jäljempänä 'Robust Nordic') verkkokauppaa osoitteessa robustnordic.fi."
+      },
+      {
+        "t": "h3",
+        "c": "Palveluntarjoaja"
+      },
+      {
+        "t": "p",
+        "c": "Robust Nordic Ab, Y-tunnus 3297498-4, asiakaspalvelu@robustnordic.fi"
+      },
+      {
+        "t": "h3",
+        "c": "Tilaaminen"
+      },
+      {
+        "t": "p",
+        "c": "Tilaus syntyy, kun asiakas hyväksyy tilausvahvistuksen. Lähetämme tilausvahvistuksen sähköpostitse."
+      },
+      {
+        "t": "h3",
+        "c": "Peruuttamisoikeus"
+      },
+      {
+        "t": "p",
+        "c": "Sinulla on 14 päivän peruutusoikeus tilauksestasi. Palautukset tulee tehdä alkuperäispakkauksessa. Palautuskulut ovat asiakkaan vastuulla."
+      },
+      {
+        "t": "h3",
+        "c": "Reklamaatiot"
+      },
+      {
+        "t": "p",
+        "c": "Mahdolliset reklamaatiot tulee tehdä 14 päivän kuluessa tuotteen vastaanottamisesta. Ota yhteyttä asiakaspalveluun: asiakaspalvelu@robustnordic.fi."
+      }
+    ],
+    "sv": [
+      {
+        "t": "h2",
+        "c": "Köpvillkor"
+      },
+      {
+        "t": "p",
+        "c": "Dessa användarvillkor gäller för Robust Nordic Ab:s nätbutik på robustnordic.fi."
+      },
+      {
+        "t": "h3",
+        "c": "Ångerrätt"
+      },
+      {
+        "t": "p",
+        "c": "Du har 14 dagars ångerrätt för din beställning. Returerna ska göras i originalförpackningen."
+      }
+    ],
+    "en": [
+      {
+        "t": "h2",
+        "c": "Terms and Conditions"
+      },
+      {
+        "t": "p",
+        "c": "These terms and conditions apply to the online store of Robust Nordic Ab at robustnordic.fi."
+      },
+      {
+        "t": "h3",
+        "c": "Right of Withdrawal"
+      },
+      {
+        "t": "p",
+        "c": "You have a 14-day right of withdrawal for your order. Returns must be made in the original packaging."
+      }
+    ]
+  }
+}

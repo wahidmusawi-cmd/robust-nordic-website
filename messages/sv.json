@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Robust Nordic – Nordiskt välmående naturligt",
+    "description": "Högkvalitativa kosttillskott för hud, leder och välmående. Tillverkade i Finland av naturliga råvaror."
+  },
+  "nav": {
+    "products": "Produkter",
+    "test": "Hitta din produkt",
+    "quality": "Kvalitet & förtroende",
+    "articles": "Artiklar",
+    "blog": "Blogg",
+    "sponsors": "Sponsorberättelser",
+    "info": "Om oss",
+    "story": "Vår historia",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "buyNow": "Köp nu",
+    "openMenu": "Öppna meny",
+    "about": "Om oss"
+  },
+  "langSwitcher": {
+    "label": "Språk",
+    "fi": "Suomi",
+    "sv": "Svenska",
+    "en": "English"
+  },
+  "hero": {
+    "eyebrow": "NORDISKT VÄLMÅENDE",
+    "titleA": "Lev fullt ut",
+    "titleEm": "med naturens kraft",
+    "subtitle": "Högkvalitativa kosttillskott för din kropp och ditt sinne – tillverkade av rena nordiska råvaror.",
+    "browse": "Utforska produkterna",
+    "takeTest": "Hitta din produkt",
+    "freeShipping": "Fri frakt på beställningar över 49 €",
+    "imageAlt": "Nordisk sjölandskap"
+  },
+  "home": {
+    "features": {
+      "qualityTitle": "Hög kvalitet",
+      "qualityDesc": "Vi testar varje sats i ett tredjepartslaboratorium för att säkerställa renhet och styrka.",
+      "safeTitle": "Säkert val",
+      "safeDesc": "Alla produkter är GMP-certifierade och uppfyller EU:s krav för kosttillskott.",
+      "easyTitle": "Enkelt att beställa",
+      "easyDesc": "Snabb leverans inom 2–5 vardagar. Fri frakt på beställningar över 49 €.",
+      "goodTitle": "Verkligt effektivt",
+      "goodDesc": "Vi använder bara kliniskt studerade råvaror i effektiva doser."
+    },
+    "products": {
+      "eyebrow": "PRODUKTER",
+      "titleA": "Välj",
+      "titleEm": "rätt kosttillskott",
+      "viewAll": "Alla produkter"
+    },
+    "quality": {
+      "eyebrow": "KVALITET",
+      "title": "Varför välja Robust Nordic?",
+      "subtitle": "Vi tror att ett bra kosttillskott förändrar livet – därför kompromissar vi aldrig med råvarorna.",
+      "labTestedTitle": "Laboratorietestats",
+      "labTestedDesc": "Varje sats testas i ett tredjepartslaboratorium för tungmetaller, mikrober och innehållshalter.",
+      "gmpTitle": "GMP-certifierad",
+      "gmpDesc": "Vår tillverkning uppfyller kraven för God tillverkningspraxis (GMP).",
+      "euTitle": "Uppfyller EU-lagstiftning",
+      "euDesc": "Alla produkter uppfyller EU:s krav för kosttillskott (2002/46/EG).",
+      "madeInTitle": "Tillverkat i Finland",
+      "madeInDesc": "Våra produkter paketeras och kontrolleras i Finland för högsta kvalitet."
+    },
+    "story": {
+      "eyebrow": "VÅR HISTORIA",
+      "titleA": "Uppstod ur ett behov",
+      "titleEm": "av verkliga lösningar",
+      "subtitle": "Robust Nordic uppstod ur frustration – marknaden hade för många lågkvalitativa kosttillskott. Vi bestämde oss för att göra det bättre.",
+      "learnMore": "Läs mer"
+    },
+    "testimonials": {
+      "eyebrow": "KUNDRECENSIONER",
+      "titleA": "Vad våra kunder",
+      "titleEm": "säger"
+    },
+    "newsletter": {
+      "eyebrow": "NYHETSBREV",
+      "title": "Håll dig uppdaterad",
+      "subtitle": "Prenumerera på vårt nyhetsbrev och få nyheter om produkter, erbjudanden och välmåendetips.",
+      "placeholder": "Din e-postadress",
+      "button": "Prenumerera",
+      "disclaimer": "Ingen spam. Avprenumerera när som helst.",
+      "success": "Tack för din prenumeration!"
+    },
+    "blog": {
+      "eyebrow": "BLOGG",
+      "titleA": "Välmåendekunskap",
+      "titleEm": "med nordisk visdom",
+      "readMore": "Läs mer",
+      "allPosts": "Alla artiklar"
+    }
+  },
+  "productsPage": {
+    "metaTitle": "Produkter | Robust Nordic",
+    "metaDescription": "Alla Robust Nordic kosttillskott – för hud, leder, immunsystem och välmående.",
+    "eyebrow": "PRODUKTER",
+    "titleA": "Alla",
+    "titleEm": "våra produkter",
+    "titleB": "",
+    "subtitle": "Högkvalitativa kosttillskott för din kropp – tillverkade av rena råvaror.",
+    "supplements": "Kosttillskott",
+    "wellbeing": "Välmåendeprodukter",
+    "countSuffix": "produkter"
+  },
+  "productDetail": {
+    "notFound": "Produkten hittades inte",
+    "back": "Tillbaka till produkter",
+    "benefits": "Fördelar",
+    "ingredients": "Ingredienser",
+    "usage": "Bruksanvisning",
+    "buy": "Köp på Shopify",
+    "badgeMadeIn": "Tillverkat i Finland",
+    "badgeVeganGluten": "Vegansk & glutenfri",
+    "badgeCertified": "GMP-certifierad",
+    "badgeShipping": "Fri frakt 49 € +",
+    "related": "Du kanske också gillar"
+  },
+  "card": {
+    "view": "Läs mer"
+  },
+  "common": {
+    "readMore": "Läs mer",
+    "loading": "Laddar...",
+    "error": "Något gick fel",
+    "back": "Tillbaka"
+  },
+  "quiz": {
+    "badge": "PRODUKTTEST",
+    "introTitle": "Hitta rätt kosttillskott för dig",
+    "introText": "Svara på några frågor, så rekommenderar vi produkter som passar just dig.",
+    "feature1": "Bara 4 frågor",
+    "feature2": "Personlig rekommendation",
+    "feature3": "Gratis",
+    "start": "Starta testet",
+    "progress": "Fråga {step}/{total}",
+    "next": "Nästa",
+    "back": "Föregående",
+    "resultsBadge": "RESULTAT",
+    "resultsTitle": "Produkter som passar dig",
+    "resultsSubtitle": "Baserat på dina svar rekommenderar vi dessa produkter.",
+    "restart": "Gör om testet",
+    "buyNow": "Köp nu",
+    "viewProduct": "Läs mer",
+    "q_goal": "Vad är ditt viktigaste välmåendemål?",
+    "o_energy": "Mer energi och vitalitet",
+    "o_sleep": "Bättre sömn och återhämtning",
+    "o_joints": "Leder och hud i bra form",
+    "o_immunity": "Stöd för immunsystemet",
+    "q_concern": "Vad oroar dig mest just nu?",
+    "o_brain": "Minne och koncentrationsförmåga",
+    "o_gut": "Tarmhälsa",
+    "o_stress": "Stress och ångest",
+    "o_skin": "Hudens tillstånd",
+    "q_activity": "Hur aktiv är du fysiskt?",
+    "o_athlete": "Tävlingsidrottare eller aktiv motionär",
+    "o_active": "Tränar regelbundet (3–5 ggr/vecka)",
+    "o_moderate": "Måttligt aktiv (1–2 ggr/vecka)",
+    "o_sedentary": "Mestadels stillasittande arbete",
+    "q_mushrooms": "Är du intresserad av medicinska svampar?",
+    "o_focus": "Ja – särskilt för hjärnstöd",
+    "o_immune_m": "Ja – för immunsystemets stöd",
+    "o_antioxidant": "Ja – antioxidanter",
+    "o_no_mushrooms": "Nej, jag föredrar traditionella kosttillskott"
+  },
+  "blogPage": {
+    "metaTitle": "Blogg | Robust Nordic",
+    "metaDescription": "Välmåendeartiklar och tips inspirerade av den nordiska naturen.",
+    "eyebrow": "BLOGG",
+    "title": "Välmåendekunskap",
+    "subtitle": "Artiklar om kosttillskott, välmående och nordisk natur.",
+    "readMore": "Läs artikeln",
+    "minRead": "min lästid"
+  },
+  "articleView": {
+    "back": "Tillbaka till bloggen",
+    "minRead": "min lästid",
+    "share": "Dela artikel"
+  },
+  "sponsorPage": {
+    "metaTitle": "Sponsorberättelser | Robust Nordic",
+    "metaDescription": "Berättelser från idrottare och aktiva människor som använder Robust Nordic-produkter.",
+    "eyebrow": "SPONSORBERÄTTELSER",
+    "title": "Idrottarnas berättelser",
+    "subtitle": "Hör hur idrottare och aktiva människor använder Robust Nordic i sin vardag.",
+    "readStory": "Läs berättelsen"
+  },
+  "faqPage": {
+    "metaTitle": "Vanliga frågor | Robust Nordic",
+    "metaDescription": "Svar på de vanligaste frågorna om Robust Nordic-produkter och beställning.",
+    "eyebrow": "FAQ",
+    "title": "Vanliga frågor",
+    "subtitle": "Hitta svar på de vanligaste frågorna nedan. Om du inte hittar svaret, kontakta oss.",
+    "q1": "Vilka råvaror är produkterna tillverkade av?",
+    "a1": "Vi använder endast högkvalitativa, kliniskt studerade råvaror från pålitliga leverantörer inom EU och globalt. Varje sats testas i ett tredjepartslaboratorium.",
+    "q2": "Är produkterna veganska och glutenfria?",
+    "a2": "De flesta av våra produkter är veganska och glutenfria. Detaljerad information finns på respektive produktsida.",
+    "q3": "Hur lång tid tar leveransen?",
+    "a3": "Vi skickar beställningar inom 1–2 vardagar. Leveranstiden är vanligtvis 2–5 vardagar. Fri frakt på beställningar över 49 €.",
+    "q4": "Kan man returnera produkter?",
+    "a4": "Ja, vi har 14 dagars returrätt. Oöppnade produkter kan returneras i originalförpackningen. Returkostnaderna bekostas av kunden.",
+    "q5": "Är produkterna lämpliga för barn eller gravida?",
+    "a5": "Produkterna är avsedda för vuxna. Gravida, ammande mödrar och under 18-åriga kan använda kosttillskott enligt läkarens anvisningar.",
+    "q6": "Får jag rabatt om jag beställer flera produkter?",
+    "a6": "Vi erbjuder regelbundet kampanjer och paketerbjudanden. Prenumerera på vårt nyhetsbrev för att hålla dig uppdaterad.",
+    "ctaTitle": "Hittade du inte svaret?",
+    "ctaSubtitle": "Vår kundservice hjälper gärna.",
+    "ctaButton": "Kontakta oss"
+  },
+  "contactPage": {
+    "metaTitle": "Kontakt | Robust Nordic",
+    "metaDescription": "Kontakta Robust Nordics kundservice.",
+    "eyebrow": "KONTAKT",
+    "title": "Kontakta oss",
+    "subtitle": "Vår kundservice betjänar dig vardagar kl. 9–17.",
+    "email": "E-post",
+    "phone": "Telefon",
+    "hours": "Öppettider",
+    "hoursValue": "Mån–Fre 9:00–17:00",
+    "address": "Adress",
+    "formTitle": "Skicka meddelande",
+    "namePlaceholder": "Ditt namn",
+    "emailPlaceholder": "Din e-post",
+    "messagePlaceholder": "Ditt meddelande",
+    "send": "Skicka",
+    "success": "Meddelandet skickat!"
+  },
+  "aboutPage": {
+    "metaTitle": "Om oss | Robust Nordic",
+    "metaDescription": "Robust Nordic – ett nordiskt välmåendemärke som erbjuder högkvalitativa kosttillskott.",
+    "eyebrow": "OM OSS",
+    "title": "Vi är Robust Nordic",
+    "subtitle": "Vi tror att välmående är allas rättighet – och det börjar med rena, effektiva kosttillskott."
+  },
+  "storyPage": {
+    "metaTitle": "Vår historia | Robust Nordic",
+    "metaDescription": "Läs Robust Nordics historia – hur varumärket uppstod och vad som driver oss.",
+    "eyebrow": "VÅR HISTORIA",
+    "title": "Hur allt började",
+    "subtitle": "Robust Nordic uppstod ur frustration med lågkvalitativa kosttillskott."
+  },
+  "qualityPage": {
+    "metaTitle": "Kvalitet & förtroende | Robust Nordic",
+    "metaDescription": "Robust Nordic är engagerat i högsta kvalitet – läs hur vi säkerställer kvaliteten på våra produkter.",
+    "eyebrow": "KVALITET & FÖRTROENDE",
+    "title": "Kvalitet framför allt",
+    "subtitle": "Varje Robust Nordic-produkt genomgår en strikt kvalitetskontrollprocess."
+  },
+  "footer": {
+    "tagline": "Nordiskt välmående av rena råvaror. Tillverkat i Finland.",
+    "headingProducts": "Produkter",
+    "headingInfo": "Information",
+    "headingSupport": "Kundservice",
+    "headingContact": "Kontakt",
+    "allProducts": "Alla produkter",
+    "about": "Om oss",
+    "quality": "Kvalitet & förtroende",
+    "blog": "Blogg",
+    "sponsors": "Sponsorberättelser",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "shipping": "Leveransvillkor",
+    "payments": "Betalningssätt",
+    "privacy": "Integritetspolicy",
+    "terms": "Köpvillkor",
+    "hours": "Mån–Fre 9–17",
+    "rights": "Alla rättigheter förbehållna.",
+    "madeIn": "🇫🇮 Tillverkat i Finland"
+  },
+  "legal": {
+    "shipping": {
+      "title": "Leveransvillkor",
+      "eyebrow": "LEVERANSVILLKOR"
+    },
+    "payments": {
+      "title": "Betalningssätt",
+      "eyebrow": "BETALNINGSSÄTT"
+    },
+    "privacy": {
+      "title": "Integritetspolicy",
+      "eyebrow": "INTEGRITET"
+    },
+    "terms": {
+      "title": "Köpvillkor",
+      "eyebrow": "KÖPVILLKOR"
+    }
+  }
+}
