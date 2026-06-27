@@ -12,7 +12,6 @@ export type QuizQuestion = {
   options: QuizOption[]
 }
 
-type Locale = "fi" | "sv" | "en"
 
 export const quizQuestions: QuizQuestion[] = [
   {
@@ -57,7 +56,7 @@ export const quizQuestions: QuizQuestion[] = [
   },
 ]
 
-export function getRecommendations(answers: QuizAnswers, count: number = 3, locale: Locale = "fi"): import("./products").Product[] {
+export function getRecommendations(answers: QuizAnswers, count: number = 3, locale: string = "fi"): import("./products").Product[] {
   const scores: Record<string, number> = {}
 
   for (const [questionId, selectedOptions] of Object.entries(answers)) {
