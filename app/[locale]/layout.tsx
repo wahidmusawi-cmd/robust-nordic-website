@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { Analytics } from "@vercel/analytics/next"
-import { NextIntlClientProvider, hasLocale } from "next-intl"
+import { NextIntlClientProvider } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
@@ -43,7 +43,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }>) {
   const { locale } = await params
-  if (!hasLocale(routing.locales, locale)) {
+  if (!(routing.locales as readonly string[]).includes(locale)) {
     notFound()
   }
   setRequestLocale(locale)
