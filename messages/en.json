@@ -167,7 +167,94 @@
     "o_antioxidant": "Yes Ã¢ÂÂ for antioxidants",
     "o_no_mushrooms": "No, I prefer traditional supplements",
     "metaTitle": "Find Your Supplements | Robust Nordic",
-    "metaDescription": "Take our free quiz and find the Robust Nordic products that are right for you."
+    "metaDescription": "Take our free quiz and find the Robust Nordic products that are right for you.",
+    "questions": {
+      "goal": {
+        "question": "What is your most important health goal?",
+        "helper": "Choose one option that best describes your goal.",
+        "options": {
+          "energy": {
+            "label": "More energy and vitality",
+            "description": "I want to improve my daily energy levels and endurance."
+          },
+          "sleep": {
+            "label": "Better sleep and recovery",
+            "description": "I want to sleep more deeply and recover better."
+          },
+          "joints": {
+            "label": "Joint and skin health",
+            "description": "I want to support joint health and skin wellbeing."
+          },
+          "immunity": {
+            "label": "Immune system support",
+            "description": "I want to strengthen the body's natural defenses."
+          }
+        }
+      },
+      "concern": {
+        "question": "What concerns you most right now?",
+        "options": {
+          "brain": {
+            "label": "Memory and concentration",
+            "description": "I want to improve my cognitive performance."
+          },
+          "gut": {
+            "label": "Gut health",
+            "description": "The wellbeing of my digestive system is important to me."
+          },
+          "stress": {
+            "label": "Stress and anxiety",
+            "description": "I want to manage stress and support my mood."
+          },
+          "skin": {
+            "label": "Skin condition",
+            "description": "I want to improve skin elasticity and hydration."
+          }
+        }
+      },
+      "activity": {
+        "question": "How would you describe your physical activity level?",
+        "options": {
+          "athlete": {
+            "label": "Competitive athlete or active enthusiast",
+            "description": "I train intensively and need support for recovery."
+          },
+          "active": {
+            "label": "Exercise regularly (3–5 times/week)",
+            "description": "Exercise is an important part of my daily life."
+          },
+          "moderate": {
+            "label": "Moderate exerciser (1–2 times/week)",
+            "description": "I exercise sometimes but not regularly."
+          },
+          "sedentary": {
+            "label": "Mostly sedentary work or little exercise",
+            "description": "My daily life mostly involves sitting."
+          }
+        }
+      },
+      "mushrooms": {
+        "question": "Are you interested in medicinal mushrooms?",
+        "options": {
+          "focus": {
+            "label": "Yes – especially for brain support",
+            "description": "I am interested in medicinal mushrooms for cognitive performance."
+          },
+          "immune_m": {
+            "label": "Yes – for immune system support",
+            "description": "I want to use medicinal mushrooms to strengthen my immune system."
+          },
+          "antioxidant": {
+            "label": "Yes – for antioxidants",
+            "description": "I am interested in the antioxidant effects of mushrooms."
+          },
+          "no_mushrooms": {
+            "label": "No, I prefer traditional supplements",
+            "description": "I prefer traditional vitamins and minerals."
+          }
+        }
+      }
+    }
   },
   "blogPage": {
     "metaTitle": "Blog | Robust Nordic",

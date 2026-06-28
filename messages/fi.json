@@ -167,7 +167,94 @@
     "o_antioxidant": "KyllÃÂ¤ Ã¢ÂÂ antioksidantteja",
     "o_no_mushrooms": "En, suosin perinteisiÃÂ¤ ravintolisiÃÂ¤",
     "metaTitle": "Löydä sopivat ravintolisät | Robust Nordic",
-    "metaDescription": "Tee ilmainen tuotetesti ja löydä juuri sinulle sopivat Robust Nordic -tuotteet."
+    "metaDescription": "Tee ilmainen tuotetesti ja löydä juuri sinulle sopivat Robust Nordic -tuotteet.",
+    "questions": {
+      "goal": {
+        "question": "Mikä on tärkein hyvinvointitavoitteesi?",
+        "helper": "Voit valita yhden vaihtoehdon, joka kuvaa parhaiten tavoitettasi.",
+        "options": {
+          "energy": {
+            "label": "Enemmän energiaa ja vireyttä",
+            "description": "Haluan parantaa päivittäistä energiatasoani ja jaksamistani."
+          },
+          "sleep": {
+            "label": "Parempi uni ja palautuminen",
+            "description": "Haluan nukkua syvemmin ja palautua paremmin."
+          },
+          "joints": {
+            "label": "Nivelet ja iho kuntoon",
+            "description": "Haluan tukea nivelterveyttä ja ihon hyvinvointia."
+          },
+          "immunity": {
+            "label": "Immuunijärjestelmän tuki",
+            "description": "Haluan vahvistaa kehon luonnollista puolustuskykyä."
+          }
+        }
+      },
+      "concern": {
+        "question": "Mikä asia huolestuttaa sinua eniten tällä hetkellä?",
+        "options": {
+          "brain": {
+            "label": "Muisti ja keskittymiskyky",
+            "description": "Haluaisin parantaa kognitiivista suorituskykyä."
+          },
+          "gut": {
+            "label": "Suoliston terveys",
+            "description": "Suoliston hyvinvointi on minulle tärkeää."
+          },
+          "stress": {
+            "label": "Stressi ja ahdistus",
+            "description": "Haluan hallita stressiä ja tukea mielialaani."
+          },
+          "skin": {
+            "label": "Ihon kunto",
+            "description": "Haluan parantaa ihon kimmoisuutta ja kosteutta."
+          }
+        }
+      },
+      "activity": {
+        "question": "Mikä kuvaa fyysistä aktiivisuuttasi?",
+        "options": {
+          "athlete": {
+            "label": "Kilpaurheilija tai aktiivinen harrastaja",
+            "description": "Harjoittelen intensiivisesti ja tarvitsen tukea palautumiseen."
+          },
+          "active": {
+            "label": "Liikun säännöllisesti (3–5 krt/vk)",
+            "description": "Liikunta on tärkeä osa arkeani."
+          },
+          "moderate": {
+            "label": "Kohtalainen liikkuja (1–2 krt/vk)",
+            "description": "Liikun jonkin verran mutta en säännöllisesti."
+          },
+          "sedentary": {
+            "label": "Pääosin istumatyö tai vähän liikuntaa",
+            "description": "Arkeni on enimmäkseen istumista."
+          }
+        }
+      },
+      "mushrooms": {
+        "question": "Oletko kiinnostunut lääkesienistä?",
+        "options": {
+          "focus": {
+            "label": "Kyllä – erityisesti aivojen tueksi",
+            "description": "Olen kiinnostunut lääkesienistä kognitiivisen tuen näkökulmasta."
+          },
+          "immune_m": {
+            "label": "Kyllä – immuunijärjestelmän tueksi",
+            "description": "Haluan käyttää lääkesieniä immuunipuolustuksen tukemiseen."
+          },
+          "antioxidant": {
+            "label": "Kyllä – antioksidantteja",
+            "description": "Olen kiinnostunut lääkesienien antioksidanttivaikutuksista."
+          },
+          "no_mushrooms": {
+            "label": "En, suosin perinteisiä ravintolisiä",
+            "description": "Pidän enemmän perinteisistä vitamiini- ja mineraalilisistä."
+          }
+        }
+      }
+    }
   },
   "blogPage": {
     "metaTitle": "Blogi | Robust Nordic",

@@ -167,7 +167,94 @@
     "o_antioxidant": "Ja Ã¢ÂÂ antioxidanter",
     "o_no_mushrooms": "Nej, jag fÃÂ¶redrar traditionella kosttillskott",
     "metaTitle": "Hitta rätt kosttillskott | Robust Nordic",
-    "metaDescription": "Gör vårt kostnadsfria test och hitta de Robust Nordic-produkter som passar dig."
+    "metaDescription": "Gör vårt kostnadsfria test och hitta de Robust Nordic-produkter som passar dig.",
+    "questions": {
+      "goal": {
+        "question": "Vad är ditt viktigaste hälsomål?",
+        "helper": "Välj ett alternativ som bäst beskriver ditt mål.",
+        "options": {
+          "energy": {
+            "label": "Mer energi och vitalitet",
+            "description": "Jag vill förbättra min dagliga energinivå och uthållighet."
+          },
+          "sleep": {
+            "label": "Bättre sömn och återhämtning",
+            "description": "Jag vill sova djupare och återhämta mig bättre."
+          },
+          "joints": {
+            "label": "Leder och hud i form",
+            "description": "Jag vill stödja ledhälsan och hudens välmående."
+          },
+          "immunity": {
+            "label": "Stöd för immunsystemet",
+            "description": "Jag vill stärka kroppens naturliga försvar."
+          }
+        }
+      },
+      "concern": {
+        "question": "Vad oroar dig mest just nu?",
+        "options": {
+          "brain": {
+            "label": "Minne och koncentration",
+            "description": "Jag vill förbättra min kognitiva förmåga."
+          },
+          "gut": {
+            "label": "Tarmhälsa",
+            "description": "Tarmens välmående är viktigt för mig."
+          },
+          "stress": {
+            "label": "Stress och ångest",
+            "description": "Jag vill hantera stress och stödja mitt humör."
+          },
+          "skin": {
+            "label": "Hudens kondition",
+            "description": "Jag vill förbättra hudens elasticitet och fukt."
+          }
+        }
+      },
+      "activity": {
+        "question": "Hur beskriver du din fysiska aktivitetsnivå?",
+        "options": {
+          "athlete": {
+            "label": "Tävlingsidrottare eller aktiv utövare",
+            "description": "Jag tränar intensivt och behöver stöd för återhämtning."
+          },
+          "active": {
+            "label": "Tränar regelbundet (3–5 ggr/vecka)",
+            "description": "Motion är en viktig del av min vardag."
+          },
+          "moderate": {
+            "label": "Tränar måttligt (1–2 ggr/vecka)",
+            "description": "Jag motionerar lite men inte regelbundet."
+          },
+          "sedentary": {
+            "label": "Mestadels stillasittande arbete",
+            "description": "Min vardag består mest av sittande."
+          }
+        }
+      },
+      "mushrooms": {
+        "question": "Är du intresserad av medicinska svampar?",
+        "options": {
+          "focus": {
+            "label": "Ja – för hjärnans stöd",
+            "description": "Jag är intresserad av medicinska svampar för kognitiv prestation."
+          },
+          "immune_m": {
+            "label": "Ja – för immunsystemets stöd",
+            "description": "Jag vill använda medicinska svampar för att stärka immunförsvaret."
+          },
+          "antioxidant": {
+            "label": "Ja – för antioxidanter",
+            "description": "Jag är intresserad av svamparnas antioxidantegenskaper."
+          },
+          "no_mushrooms": {
+            "label": "Nej, jag föredrar traditionella kosttillskott",
+            "description": "Jag föredrar traditionella vitaminer och mineraler."
+          }
+        }
+      }
+    }
   },
   "blogPage": {
     "metaTitle": "Blogg | Robust Nordic",
