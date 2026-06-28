@@ -412,13 +412,12 @@ function localizeProduct(product: Product, locale?: string): Product {
   if (!copy) return product
   return {
     ...product,
-    name: copy.name,
-    shortName: copy.shortName,
-    tagline: copy.tagline,
-    description: copy.description,
-    benefits: copy.benefits,
+    name: copy.name ?? product.name,
+    shortName: copy.shortName ?? product.shortName,
+    tagline: copy.tagline ?? product.tagline,
+    description: copy.description ?? product.description,
+    benefits: copy.benefits ?? product.benefits,
     usage: copy.usage ?? product.usage,
-    badge: copy.badge ?? product.badge,
   }
 }
 
