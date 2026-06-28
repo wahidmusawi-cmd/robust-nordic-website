@@ -3,9 +3,9 @@ import { notFound } from "next/navigation"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Check, ArrowLeft, Leaf, ShieldCheck, MapPin, Truck } from "lucide-react"
 import { Link } from "@/i18n/navigation"
-import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
-import { products, getProduct, getRelatedProducts, getBuyUrl } from "@/lib/products"
+import { BuyButton } from "@/components/buy-button"
+import { products, getProduct, getRelatedProducts } from "@/lib/products"
 import type { Locale } from "@/i18n/routing"
 
 export function generateStaticParams() {
@@ -40,7 +40,6 @@ export default async function ProductPage({
   if (!product) notFound()
 
   const related = getRelatedProducts(slug, 4, locale)
-  const buyUrl = getBuyUrl(slug)
 
   const trustBadges = [
     { icon: MapPin, label: t("badgeMadeIn") },
@@ -102,10 +101,7 @@ export default async function ProductPage({
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-accent px-8 py-6 text-base tracking-wide flex-1"
               >
-                <a href={buyUrl} target="_blank" rel="noopener noreferrer">
-                  {t("buy")}
-                </a>
-              </Button>
+                <BuyButton slug={slug} locale={locale} label={t("buy")} size="lg" className="w-full" />
             </div>
 
             {/* Benefits */}
