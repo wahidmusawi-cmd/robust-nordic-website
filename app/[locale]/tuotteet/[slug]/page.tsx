@@ -96,12 +96,13 @@ export default async function ProductPage({
             </div>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
+              <BuyButton
+                slug={slug}
+                locale={locale}
+                label={t("buy")}
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-accent px-8 py-6 text-base tracking-wide flex-1"
-              >
-                <BuyButton slug={slug} locale={locale} label={t("buy")} size="lg" className="w-full" />
+                className="flex-1 bg-primary text-primary-foreground hover:bg-accent px-8 py-6 text-base tracking-wide"
+              />
             </div>
 
             {/* Benefits */}
