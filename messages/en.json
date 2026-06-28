@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Robust Nordic Ã¢ÂÂ Nordic Wellbeing Naturally",
+    "title": "Robust Nordic – Nordic Wellbeing Naturally",
     "description": "High-quality supplements for skin, joints and wellbeing. Made in Finland from natural ingredients."
   },
   "nav": {
@@ -28,7 +28,7 @@
     "eyebrow": "NORDIC WELLBEING",
     "titleA": "Live life fully",
     "titleEm": "with nature's power",
-    "subtitle": "High-quality supplements for your body and mind Ã¢ÂÂ made from pure Nordic ingredients.",
+    "subtitle": "High-quality supplements for your body and mind – made from pure Nordic ingredients.",
     "browse": "Explore products",
     "takeTest": "Find your product",
     "freeShipping": "Free shipping on orders over Ã¢ÂÂ¬49",
@@ -54,7 +54,7 @@
     "quality": {
       "eyebrow": "QUALITY",
       "title": "Why choose Robust Nordic?",
-      "subtitle": "We believe a quality supplement changes lives Ã¢ÂÂ so we never compromise on ingredients.",
+      "subtitle": "We believe a quality supplement changes lives – so we never compromise on ingredients.",
       "labTestedTitle": "Lab tested",
       "labTestedDesc": "Every batch is tested at a third-party lab for heavy metals, microbes and potency.",
       "gmpTitle": "GMP certified",
@@ -75,7 +75,7 @@
       "noAdditivesDesc": "Clean ingredients without unnecessary additives.",
       "researchedTitle": "Scientifically researched",
       "researchedDesc": "Our formulations are based on proven research.",
-      "intro": "Highest quality is a given for us – not marketing jargon.",
+      "intro": "Highest quality is a given for us  not marketing jargon.",
       "capsuleAlt": "Robust Nordic capsules",
       "certEyebrow": "CERTIFIED",
       "certTitle": "GMP-certified quality",
@@ -89,13 +89,13 @@
       "eyebrow": "OUR STORY",
       "titleA": "Born from a need",
       "titleEm": "for real solutions",
-      "subtitle": "Robust Nordic was born out of frustration Ã¢ÂÂ there were too many low-quality supplements. We decided to do better.",
+      "subtitle": "Robust Nordic was born out of frustration – there were too many low-quality supplements. We decided to do better.",
       "learnMore": "Learn more",
       "title": "About us and the need for a better solution",
-      "p1": "Robust Nordic was born from frustration with low-quality supplements and the desire to do better – cleaner, more effective, more transparent.",
-      "p2": "We believe everyone deserves quality supplements that actually work – without unnecessary fillers or unclear formulations.",
+      "p1": "Robust Nordic was born from frustration with low-quality supplements and the desire to do better  cleaner, more effective, more transparent.",
+      "p2": "We believe everyone deserves quality supplements that actually work  without unnecessary fillers or unclear formulations.",
       "cta": "Read our story",
-      "imageAlt": "Robust Nordic – Nordic nature"
+      "imageAlt": "Robust Nordic  Nordic nature"
     },
     "testimonials": {
       "eyebrow": "CUSTOMER REVIEWS",
@@ -130,12 +130,12 @@
   },
   "productsPage": {
     "metaTitle": "Products | Robust Nordic",
-    "metaDescription": "All Robust Nordic supplements Ã¢ÂÂ for skin, joints, immune system and wellbeing.",
+    "metaDescription": "All Robust Nordic supplements – for skin, joints, immune system and wellbeing.",
     "eyebrow": "PRODUCTS",
     "titleA": "All",
     "titleEm": "our products",
     "titleB": "",
-    "subtitle": "High-quality supplements for your body Ã¢ÂÂ made from pure ingredients.",
+    "subtitle": "High-quality supplements for your body – made from pure ingredients.",
     "supplements": "Supplements",
     "wellbeing": "Wellbeing products",
     "countSuffix": "products"
@@ -197,12 +197,12 @@
     "q_activity": "How physically active are you?",
     "o_athlete": "Competitive athlete or avid exerciser",
     "o_active": "Exercise regularly (3Ã¢ÂÂ5 times/week)",
-    "o_moderate": "Moderately active (1Ã¢ÂÂ2 times/week)",
+    "o_moderate": "Moderately active (1–2 times/week)",
     "o_sedentary": "Mostly sedentary work or little exercise",
     "q_mushrooms": "Are you interested in medicinal mushrooms?",
-    "o_focus": "Yes Ã¢ÂÂ especially for brain support",
-    "o_immune_m": "Yes Ã¢ÂÂ for immune system support",
-    "o_antioxidant": "Yes Ã¢ÂÂ for antioxidants",
+    "o_focus": "Yes – especially for brain support",
+    "o_immune_m": "Yes – for immune system support",
+    "o_antioxidant": "Yes – for antioxidants",
     "o_no_mushrooms": "No, I prefer traditional supplements",
     "metaTitle": "Find Your Supplements | Robust Nordic",
     "metaDescription": "Take our free quiz and find the Robust Nordic products that are right for you.",
@@ -262,7 +262,7 @@
             "description": "Exercise is an important part of my daily life."
           },
           "moderate": {
-            "label": "Moderate exerciser (1–2 times/week)",
+            "label": "Moderate exerciser (12 times/week)",
             "description": "I exercise sometimes but not regularly."
           },
           "sedentary": {
@@ -275,15 +275,15 @@
         "question": "Are you interested in medicinal mushrooms?",
         "options": {
           "focus": {
-            "label": "Yes – especially for brain support",
+            "label": "Yes  especially for brain support",
             "description": "I am interested in medicinal mushrooms for cognitive performance."
           },
           "immune_m": {
-            "label": "Yes – for immune system support",
+            "label": "Yes  for immune system support",
             "description": "I want to use medicinal mushrooms to strengthen my immune system."
           },
           "antioxidant": {
-            "label": "Yes – for antioxidants",
+            "label": "Yes  for antioxidants",
             "description": "I am interested in the antioxidant effects of mushrooms."
           },
           "no_mushrooms": {
@@ -360,7 +360,7 @@
     "metaDescription": "Contact Robust Nordic customer service.",
     "eyebrow": "CONTACT",
     "title": "Get in touch",
-    "subtitle": "Our customer service is available weekdays 9Ã¢ÂÂ17.",
+    "subtitle": "Our customer service is available weekdays 9–17.",
     "email": "Email",
     "phone": "Phone",
     "hours": "Opening hours",
@@ -382,39 +382,39 @@
   },
   "aboutPage": {
     "metaTitle": "About | Robust Nordic",
-    "metaDescription": "Robust Nordic Ã¢ÂÂ a Nordic wellbeing brand offering high-quality supplements.",
+    "metaDescription": "Robust Nordic – a Nordic wellbeing brand offering high-quality supplements.",
     "eyebrow": "ABOUT US",
     "title": "We are Robust Nordic",
-    "subtitle": "We believe wellbeing is everyone's right Ã¢ÂÂ and it starts with pure, effective supplements.",
+    "subtitle": "We believe wellbeing is everyone's right – and it starts with pure, effective supplements.",
     "value1Title": "Nordic Purity",
     "value1Desc": "We use only clean, carefully selected ingredients with no unnecessary additives.",
     "value2Title": "Scientific Foundation",
     "value2Desc": "Our formulations are based on proven research and nutritional expertise.",
     "value3Title": "Full Transparency",
-    "value3Desc": "We openly share what is in our products – and what is not.",
+    "value3Desc": "We openly share what is in our products  and what is not.",
     "value4Title": "Responsibility",
     "value4Desc": "We operate with respect for the environment and a long-term perspective.",
-    "p1": "Robust Nordic was founded out of a genuine need – the desire to offer clean, high-quality supplements without compromise.",
+    "p1": "Robust Nordic was founded out of a genuine need  the desire to offer clean, high-quality supplements without compromise.",
     "p2": "Our team consists of experts in health, nutrition and sports who believe in honesty and transparency in everything we do."
   },
   "storyPage": {
     "metaTitle": "Our Story | Robust Nordic",
-    "metaDescription": "Read the Robust Nordic story Ã¢ÂÂ how the brand started and what drives us.",
+    "metaDescription": "Read the Robust Nordic story – how the brand started and what drives us.",
     "eyebrow": "OUR STORY",
     "title": "How it all started",
     "subtitle": "Robust Nordic was born out of frustration with low-quality supplements.",
     "p1": "It all began with the wonders of Nordic nature and a personal journey towards better wellbeing.",
     "p2": "Our founder noticed that the supplements on the market were full of unnecessary additives and unclear formulations.",
     "turningPoint": "A Turning Point",
-    "p3": "He decided to develop his own formulations together with nutrition experts – with purity and efficacy as guiding principles.",
+    "p3": "He decided to develop his own formulations together with nutrition experts  with purity and efficacy as guiding principles.",
     "p4": "The first product was created inspired by Finland's clean nature: minimalist, effective and completely transparent.",
     "p5": "Today Robust Nordic is a growing brand backed by a team of passionate wellness professionals.",
     "p6": "We believe that everyone deserves high-quality supplements that actually work.",
-    "p7": "Nordic nature, scientific research and genuine care – that is the story of Robust Nordic."
+    "p7": "Nordic nature, scientific research and genuine care  that is the story of Robust Nordic."
   },
   "qualityPage": {
     "metaTitle": "Quality & Trust | Robust Nordic",
-    "metaDescription": "Robust Nordic is committed to the highest quality Ã¢ÂÂ read how we ensure product quality.",
+    "metaDescription": "Robust Nordic is committed to the highest quality – read how we ensure product quality.",
     "eyebrow": "QUALITY & TRUST",
     "title": "Quality above all",
     "subtitle": "Every Robust Nordic product goes through a rigorous quality control process.",
@@ -427,7 +427,7 @@
     "c4Title": "No Unnecessary Additives",
     "c4Desc": "We use no synthetic additives, fillers, or unnecessary binders.",
     "c5Title": "Vegan & Gluten-Free",
-    "c5Desc": "Our products are suitable for vegans and those with gluten sensitivity – no compromise.",
+    "c5Desc": "Our products are suitable for vegans and those with gluten sensitivity  no compromise.",
     "c6Title": "Scientific Foundation",
     "c6Desc": "Our formulations are based on the latest nutritional science research."
   },
@@ -472,10 +472,10 @@
     "eyebrowCustomerService": "CUSTOMER SERVICE",
     "eyebrowTerms": "TERMS",
     "privacyTitle": "Privacy Policy",
-    "privacyMeta": "Read Robust Nordic's privacy policy â how we handle your data.",
+    "privacyMeta": "Read Robust Nordic's privacy policy  how we handle your data.",
     "privacyIntro": "We handle your personal data responsibly and transparently.",
     "shippingTitle": "Shipping Policy",
-    "shippingMeta": "Read Robust Nordic's shipping policy â fast and secure delivery.",
+    "shippingMeta": "Read Robust Nordic's shipping policy  fast and secure delivery.",
     "shippingIntro": "We deliver all orders quickly and safely to your door.",
     "paymentTitle": "Payment Methods",
     "paymentMeta": "Read about Robust Nordic's accepted payment methods.",

@@ -1,22 +1,22 @@
 {
   "meta": {
-    "title": "Robust Nordic Ã¢ÂÂ Pohjoinen hyvinvointi luonnollisesti",
-    "description": "Laadukkaat ravintolisÃÂ¤t iholle, nivelille ja hyvinvoinnille. Valmistettu Suomessa luonnollisista raaka-aineista."
+    "title": "Robust Nordic – Pohjoinen hyvinvointi luonnollisesti",
+    "description": "Laadukkaat ravintolisät iholle, nivelille ja hyvinvoinnille. Valmistettu Suomessa luonnollisista raaka-aineista."
   },
   "nav": {
     "products": "Tuotteet",
-    "test": "LÃÂ¶ydÃÂ¤ tuotteesi",
+    "test": "Löydä tuotteesi",
     "quality": "Laatu & luottamus",
     "articles": "Artikkelit",
     "blog": "Blogi",
     "sponsors": "Sponsoritarinat",
-    "info": "Tietoa meistÃÂ¤",
+    "info": "Tietoa meistä",
     "story": "Tarinamme",
     "contact": "Yhteystiedot",
     "faq": "UKK",
     "buyNow": "Osta nyt",
     "openMenu": "Avaa valikko",
-    "about": "MeistÃÂ¤"
+    "about": "Meistä"
   },
   "langSwitcher": {
     "label": "Kieli",
@@ -28,37 +28,37 @@
     "eyebrow": "POHJOINEN HYVINVOINTI",
     "titleA": "ElÃÂ¤ tÃÂ¤ysillÃÂ¤",
     "titleEm": "luonnon voimalla",
-    "subtitle": "Laadukkaat ravintolisÃÂ¤t kehollesi ja mielellesi Ã¢ÂÂ valmistettu puhtaista pohjoismaisista raaka-aineista.",
+    "subtitle": "Laadukkaat ravintolisät kehollesi ja mielellesi – valmistettu puhtaista pohjoismaisista raaka-aineista.",
     "browse": "Tutustu tuotteisiin",
-    "takeTest": "LÃÂ¶ydÃÂ¤ tuotteesi",
-    "freeShipping": "Ilmainen toimitus yli 49 Ã¢ÂÂ¬ tilauksille",
-    "imageAlt": "Pohjoismainen jÃÂ¤rvimaisema"
+    "takeTest": "Löydä tuotteesi",
+    "freeShipping": "Ilmainen toimitus yli 49 € tilauksille",
+    "imageAlt": "Pohjoismainen järvimaisema"
   },
   "home": {
     "features": {
       "qualityTitle": "Korkea laatu",
-      "qualityDesc": "Testaamme jokaisen erÃÂ¤n kolmannessa laboratoriossa puhtauden ja tehon varmistamiseksi.",
+      "qualityDesc": "Testaamme jokaisen erän kolmannessa laboratoriossa puhtauden ja tehon varmistamiseksi.",
       "safeTitle": "Turvallinen valinta",
       "safeDesc": "Kaikki tuotteet ovat GMP-sertifioituja ja tÃÂ¤yttÃÂ¤vÃÂ¤t EU:n ravintolisÃÂ¤asetuksen vaatimukset.",
       "easyTitle": "Helppo tilata",
-      "easyDesc": "Nopea toimitus 2Ã¢ÂÂ5 arkipÃÂ¤ivÃÂ¤ssÃÂ¤. Ilmainen toimitus yli 49 Ã¢ÂÂ¬ tilauksille.",
+      "easyDesc": "Nopea toimitus 2–5 arkipäivässä. Ilmainen toimitus yli 49 € tilauksille.",
       "goodTitle": "Aidosti vaikuttava",
-      "goodDesc": "KÃÂ¤ytÃÂ¤mme vain kliinisesti tutkittuja raaka-aineita tehokkailla annoksilla."
+      "goodDesc": "Käytämme vain kliinisesti tutkittuja raaka-aineita tehokkailla annoksilla."
     },
     "products": {
       "eyebrow": "TUOTTEET",
       "titleA": "Valitse sinulle",
-      "titleEm": "sopivat ravintolisÃÂ¤t",
+      "titleEm": "sopivat ravintolisät",
       "viewAll": "Kaikki tuotteet"
     },
     "quality": {
       "eyebrow": "LAATU",
       "title": "Miksi valita Robust Nordic?",
-      "subtitle": "Uskomme, ettÃÂ¤ laadukas ravintolisÃÂ¤ muuttaa elÃÂ¤mÃÂ¤ÃÂ¤ Ã¢ÂÂ siksi emme tinkii raaka-aineista.",
+      "subtitle": "Uskomme, että laadukas ravintolisä muuttaa elämää – siksi emme tinkii raaka-aineista.",
       "labTestedTitle": "Laboratoriotesrattu",
-      "labTestedDesc": "Jokainen erÃÂ¤ testataan kolmannessa laboratoriossa raskasmetalleille, mikrobeille ja pitoisuuksille.",
+      "labTestedDesc": "Jokainen erä testataan kolmannessa laboratoriossa raskasmetalleille, mikrobeille ja pitoisuuksille.",
       "gmpTitle": "GMP-sertifioitu",
-      "gmpDesc": "Valmistuksemme tÃÂ¤yttÃÂ¤ÃÂ¤ Good Manufacturing Practice (GMP) -standardin vaatimukset.",
+      "gmpDesc": "Valmistuksemme täyttää Good Manufacturing Practice (GMP) -standardin vaatimukset.",
       "euTitle": "EU-lainsÃÂ¤ÃÂ¤dÃÂ¤nnÃÂ¶n mukainen",
       "euDesc": "Kaikki tuotteet tÃÂ¤yttÃÂ¤vÃÂ¤t EU:n ravintolisÃÂ¤asetuksen (2002/46/EY) vaatimukset.",
       "madeInTitle": "Valmistettu Suomessa",
@@ -66,16 +66,16 @@
       "veganTitle": "Vegaaninen",
       "veganDesc": "Kaikki tuotteemme sopivat vegaaneille.",
       "lactoseTitle": "Laktoositon",
-      "lactoseDesc": "Tuotteemme eivät sisällä laktoosia.",
+      "lactoseDesc": "Tuotteemme eiv�t sis�ll� laktoosia.",
       "madeTitle": "Valmistettu Suomessa",
-      "madeDesc": "Ylpeänä suomalainen – valmistettu pohjoisessa.",
+      "madeDesc": "Ylpe�n� suomalainen  valmistettu pohjoisessa.",
       "glutenTitle": "Gluteeniton",
       "glutenDesc": "Tuotteemme soveltuvat gluteeniherkille.",
       "noAdditivesTitle": "Ei lisäaineita",
-      "noAdditivesDesc": "Puhtaita raaka-aineita ilman turhia lisäaineita.",
+      "noAdditivesDesc": "Puhtaita raaka-aineita ilman turhia lis�aineita.",
       "researchedTitle": "Tieteellisesti tutkittu",
       "researchedDesc": "Formulaatiomme perustuvat tutkittuun tietoon.",
-      "intro": "Korkein laatu on meille itsestäänselvyys – ei markkinointijargoni.",
+      "intro": "Korkein laatu on meille itsest��nselvyys  ei markkinointijargoni.",
       "capsuleAlt": "Robust Nordic -kapseleita",
       "certEyebrow": "SERTIFIOITU",
       "certTitle": "GMP-sertifioitu laatu",
@@ -89,32 +89,32 @@
       "eyebrow": "TARINAMME",
       "titleA": "Syntyi tarpeesta",
       "titleEm": "aidoille ratkaisuille",
-      "subtitle": "Robust Nordic syntyi turhautumisesta Ã¢ÂÂ markkinoilla oli liian monta heikkolaatuista ravintolisÃÂ¤ÃÂ¤. PÃÂ¤ÃÂ¤timme tehdÃÂ¤ paremmin.",
-      "learnMore": "Lue lisÃÂ¤ÃÂ¤",
-      "title": "Meistä ja tarpeesta löytää parempi tapa",
-      "p1": "Robust Nordic syntyi turhautumisesta heikkolaatuisiin ravintolisiin ja halusta tehdä paremmin – puhtaampaa, tehokkaampaa, läpinäkyvämpää.",
-      "p2": "Uskomme, että jokainen ansaitsee laadukkaat ravintolisät, jotka todella toimivat – ilman turhia täyteaineita tai epämääräisiä formulaatioita.",
+      "subtitle": "Robust Nordic syntyi turhautumisesta – markkinoilla oli liian monta heikkolaatuista ravintolisää. Päätimme tehdä paremmin.",
+      "learnMore": "Lue lisää",
+      "title": "Meist� ja tarpeesta l�yt�� parempi tapa",
+      "p1": "Robust Nordic syntyi turhautumisesta heikkolaatuisiin ravintolisiin ja halusta tehd� paremmin  puhtaampaa, tehokkaampaa, l�pin�kyv�mp��.",
+      "p2": "Uskomme, ett� jokainen ansaitsee laadukkaat ravintolis�t, jotka todella toimivat  ilman turhia t�yteaineita tai ep�m��r�isi� formulaatioita.",
       "cta": "Lue tarinaamme",
-      "imageAlt": "Robust Nordic – pohjoinen luonto"
+      "imageAlt": "Robust Nordic  pohjoinen luonto"
     },
     "testimonials": {
       "eyebrow": "ASIAKASKOKEMUKSIA",
-      "titleA": "MitÃÂ¤ asiakkaamme",
+      "titleA": "Mitä asiakkaamme",
       "titleEm": "sanovat",
       "t1Name": "Johanna M.",
-      "t1Text": "Olen käyttänyt Robust Nordicin tuotteita kolme kuukautta ja energiataso on selvästi parempi. Laatu välittyy jo purkista avattaessa.",
+      "t1Text": "Olen k�ytt�nyt Robust Nordicin tuotteita kolme kuukautta ja energiataso on selv�sti parempi. Laatu v�littyy jo purkista avattaessa.",
       "t2Name": "Mikko K.",
-      "t2Text": "Viimein ravintolisä, jonka ainesosat ovat puhtaat ja selkeät. Ashwagandha on muuttanut suhtautumiseni stressinhallintaan.",
-      "title": "Mitä asiakkaamme sanovat",
+      "t2Text": "Viimein ravintolis�, jonka ainesosat ovat puhtaat ja selke�t. Ashwagandha on muuttanut suhtautumiseni stressinhallintaan.",
+      "title": "Mit� asiakkaamme sanovat",
       "trustPre": "Yli",
       "trustCount": "500+",
-      "trustPost": "tyytyväistä asiakasta"
+      "trustPost": "tyytyv�ist� asiakasta"
     },
     "newsletter": {
       "eyebrow": "UUTISKIRJE",
       "title": "Pysy ajan tasalla",
-      "subtitle": "Tilaa uutiskirjeemme ja saat ensimmÃÂ¤isenÃÂ¤ tiedon uusista tuotteista, tarjouksista ja hyvinvointivinkeistÃÂ¤.",
-      "placeholder": "SÃÂ¤hkÃÂ¶postiosoitteesi",
+      "subtitle": "Tilaa uutiskirjeemme ja saat ensimmäisenä tiedon uusista tuotteista, tarjouksista ja hyvinvointivinkeistä.",
+      "placeholder": "Sähköpostiosoitteesi",
       "button": "Tilaa",
       "disclaimer": "Ei roskapostia. Peruuta milloin tahansa.",
       "success": "Kiitos tilauksesta!",
@@ -124,44 +124,44 @@
       "eyebrow": "BLOGI",
       "titleA": "Hyvinvointitietoa",
       "titleEm": "pohjoisen viisaudella",
-      "readMore": "Lue lisÃÂ¤ÃÂ¤",
+      "readMore": "Lue lisää",
       "allPosts": "Kaikki artikkelit"
     }
   },
   "productsPage": {
     "metaTitle": "Tuotteet | Robust Nordic",
-    "metaDescription": "Kaikki Robust Nordic ravintolisÃÂ¤t Ã¢ÂÂ iholle, nivelille, immuunijÃÂ¤rjestelmÃÂ¤lle ja hyvinvoinnille.",
+    "metaDescription": "Kaikki Robust Nordic ravintolisät – iholle, nivelille, immuunijärjestelmälle ja hyvinvoinnille.",
     "eyebrow": "TUOTTEET",
     "titleA": "Kaikki",
     "titleEm": "tuotteemme",
     "titleB": "",
-    "subtitle": "Laadukkaat ravintolisÃÂ¤t kehollesi Ã¢ÂÂ valmistettu puhtaista raaka-aineista.",
-    "supplements": "RavintolisÃÂ¤t",
+    "subtitle": "Laadukkaat ravintolisät kehollesi – valmistettu puhtaista raaka-aineista.",
+    "supplements": "Ravintolisät",
     "wellbeing": "Hyvinvointituotteet",
     "countSuffix": "tuotetta"
   },
   "productDetail": {
-    "notFound": "Tuotetta ei lÃÂ¶ydy",
+    "notFound": "Tuotetta ei löydy",
     "back": "Takaisin tuotteisiin",
-    "benefits": "HyÃÂ¶dyt",
+    "benefits": "Hyödyt",
     "ingredients": "Ainesosat",
-    "usage": "KÃÂ¤yttÃÂ¶ohje",
+    "usage": "Käyttöohje",
     "buy": "Osta Shopifysta",
     "badgeMadeIn": "Valmistettu Suomessa",
     "badgeVeganGluten": "Vegaaninen & gluteeniton",
     "badgeCertified": "GMP-sertifioitu",
-    "badgeShipping": "Ilmainen toimitus 49 Ã¢ÂÂ¬ +",
-    "related": "Saattaa kiinnostaa myÃÂ¶s",
+    "badgeShipping": "Ilmainen toimitus 49 € +",
+    "related": "Saattaa kiinnostaa myös",
     "vat": "sis. ALV",
-    "usageTitle": "Käyttöohje"
+    "usageTitle": "K�ytt�ohje"
   },
   "card": {
-    "view": "Lue lisÃÂ¤ÃÂ¤",
+    "view": "Lue lisää",
     "minRead": "min. lukuaika",
     "readMore": "Lue artikkeli"
   },
   "common": {
-    "readMore": "Lue lisÃÂ¤ÃÂ¤",
+    "readMore": "Lue lisää",
     "loading": "Ladataan...",
     "error": "Jokin meni pieleen",
     "back": "Takaisin",
@@ -169,10 +169,10 @@
   },
   "quiz": {
     "badge": "TUOTETESTI",
-    "introTitle": "LÃÂ¶ydÃÂ¤ sinulle sopivat ravintolisÃÂ¤t",
+    "introTitle": "Löydä sinulle sopivat ravintolisät",
     "introText": "Vastaa muutamaan kysymykseen, niin suosittelemme juuri sinulle sopivat tuotteet.",
-    "feature1": "Vain 4 kysymystÃÂ¤",
-    "feature2": "HenkilÃÂ¶kohtainen suositus",
+    "feature1": "Vain 4 kysymystä",
+    "feature2": "Henkilökohtainen suositus",
     "feature3": "Ilmainen",
     "start": "Aloita testi",
     "progress": "Kysymys {step}/{total}",
@@ -180,40 +180,40 @@
     "back": "Edellinen",
     "resultsBadge": "TULOKSET",
     "resultsTitle": "Sinulle sopivat tuotteet",
-    "resultsSubtitle": "Vastaustesi perusteella suosittelemme nÃÂ¤itÃÂ¤ tuotteita.",
+    "resultsSubtitle": "Vastaustesi perusteella suosittelemme näitä tuotteita.",
     "restart": "Tee testi uudelleen",
     "buyNow": "Osta nyt",
-    "viewProduct": "Lue lisÃÂ¤ÃÂ¤",
-    "q_goal": "MikÃÂ¤ on tÃÂ¤rkein hyvinvointitavoitteesi?",
+    "viewProduct": "Lue lisää",
+    "q_goal": "Mikä on tärkein hyvinvointitavoitteesi?",
     "o_energy": "EnemmÃÂ¤n energiaa ja vireyttÃÂ¤",
     "o_sleep": "Parempi uni ja palautuminen",
     "o_joints": "Nivelet ja iho kuntoon",
-    "o_immunity": "ImmuunijÃÂ¤rjestelmÃÂ¤n tuki",
-    "q_concern": "MikÃÂ¤ asia huolestuttaa sinua eniten tÃÂ¤llÃÂ¤ hetkellÃÂ¤?",
+    "o_immunity": "Immuunijärjestelmän tuki",
+    "q_concern": "Mikä asia huolestuttaa sinua eniten tällä hetkellä?",
     "o_brain": "Muisti ja keskittymiskyky",
     "o_gut": "Suoliston terveys",
     "o_stress": "Stressi ja ahdistus",
     "o_skin": "Ihon kunto",
-    "q_activity": "MikÃÂ¤ kuvaa fyysistÃÂ¤ aktiivisuuttasi?",
+    "q_activity": "Mikä kuvaa fyysistä aktiivisuuttasi?",
     "o_athlete": "Kilpaurheilija tai aktiivinen harrastaja",
-    "o_active": "Liikun sÃÂ¤ÃÂ¤nnÃÂ¶llisesti (3Ã¢ÂÂ5 krt/vk)",
-    "o_moderate": "Kohtalainen liikkuja (1Ã¢ÂÂ2 krt/vk)",
-    "o_sedentary": "PÃÂ¤ÃÂ¤osin istumatyÃÂ¶ tai vÃÂ¤hÃÂ¤n liikuntaa",
-    "q_mushrooms": "Oletko kiinnostunut lÃÂ¤ÃÂ¤kesienistÃÂ¤?",
-    "o_focus": "KyllÃÂ¤ Ã¢ÂÂ erityisesti aivojen tueksi",
-    "o_immune_m": "KyllÃÂ¤ Ã¢ÂÂ immuunijÃÂ¤rjestelmÃÂ¤n tueksi",
-    "o_antioxidant": "KyllÃÂ¤ Ã¢ÂÂ antioksidantteja",
+    "o_active": "Liikun säännöllisesti (3–5 krt/vk)",
+    "o_moderate": "Kohtalainen liikkuja (1–2 krt/vk)",
+    "o_sedentary": "Pääosin istumatyö tai vähän liikuntaa",
+    "q_mushrooms": "Oletko kiinnostunut lääkesienistä?",
+    "o_focus": "Kyllä – erityisesti aivojen tueksi",
+    "o_immune_m": "Kyllä – immuunijärjestelmän tueksi",
+    "o_antioxidant": "Kyllä – antioksidantteja",
     "o_no_mushrooms": "En, suosin perinteisiÃÂ¤ ravintolisiÃÂ¤",
-    "metaTitle": "Löydä sopivat ravintolisät | Robust Nordic",
-    "metaDescription": "Tee ilmainen tuotetesti ja löydä juuri sinulle sopivat Robust Nordic -tuotteet.",
+    "metaTitle": "L�yd� sopivat ravintolis�t | Robust Nordic",
+    "metaDescription": "Tee ilmainen tuotetesti ja l�yd� juuri sinulle sopivat Robust Nordic -tuotteet.",
     "questions": {
       "goal": {
-        "question": "Mikä on tärkein hyvinvointitavoitteesi?",
+        "question": "Mik� on t�rkein hyvinvointitavoitteesi?",
         "helper": "Voit valita yhden vaihtoehdon, joka kuvaa parhaiten tavoitettasi.",
         "options": {
           "energy": {
             "label": "Enemmän energiaa ja vireyttä",
-            "description": "Haluan parantaa päivittäistä energiatasoani ja jaksamistani."
+            "description": "Haluan parantaa p�ivitt�ist� energiatasoani ja jaksamistani."
           },
           "sleep": {
             "label": "Parempi uni ja palautuminen",
@@ -221,28 +221,28 @@
           },
           "joints": {
             "label": "Nivelet ja iho kuntoon",
-            "description": "Haluan tukea nivelterveyttä ja ihon hyvinvointia."
+            "description": "Haluan tukea nivelterveytt� ja ihon hyvinvointia."
           },
           "immunity": {
-            "label": "Immuunijärjestelmän tuki",
-            "description": "Haluan vahvistaa kehon luonnollista puolustuskykyä."
+            "label": "Immuunij�rjestelm�n tuki",
+            "description": "Haluan vahvistaa kehon luonnollista puolustuskyky�."
           }
         }
       },
       "concern": {
-        "question": "Mikä asia huolestuttaa sinua eniten tällä hetkellä?",
+        "question": "Mik� asia huolestuttaa sinua eniten t�ll� hetkell�?",
         "options": {
           "brain": {
             "label": "Muisti ja keskittymiskyky",
-            "description": "Haluaisin parantaa kognitiivista suorituskykyä."
+            "description": "Haluaisin parantaa kognitiivista suorituskyky�."
           },
           "gut": {
             "label": "Suoliston terveys",
-            "description": "Suoliston hyvinvointi on minulle tärkeää."
+            "description": "Suoliston hyvinvointi on minulle t�rke��."
           },
           "stress": {
             "label": "Stressi ja ahdistus",
-            "description": "Haluan hallita stressiä ja tukea mielialaani."
+            "description": "Haluan hallita stressi� ja tukea mielialaani."
           },
           "skin": {
             "label": "Ihon kunto",
@@ -251,44 +251,44 @@
         }
       },
       "activity": {
-        "question": "Mikä kuvaa fyysistä aktiivisuuttasi?",
+        "question": "Mik� kuvaa fyysist� aktiivisuuttasi?",
         "options": {
           "athlete": {
             "label": "Kilpaurheilija tai aktiivinen harrastaja",
             "description": "Harjoittelen intensiivisesti ja tarvitsen tukea palautumiseen."
           },
           "active": {
-            "label": "Liikun säännöllisesti (3–5 krt/vk)",
-            "description": "Liikunta on tärkeä osa arkeani."
+            "label": "Liikun s��nn�llisesti (35 krt/vk)",
+            "description": "Liikunta on t�rke� osa arkeani."
           },
           "moderate": {
-            "label": "Kohtalainen liikkuja (1–2 krt/vk)",
-            "description": "Liikun jonkin verran mutta en säännöllisesti."
+            "label": "Kohtalainen liikkuja (12 krt/vk)",
+            "description": "Liikun jonkin verran mutta en s��nn�llisesti."
           },
           "sedentary": {
-            "label": "Pääosin istumatyö tai vähän liikuntaa",
-            "description": "Arkeni on enimmäkseen istumista."
+            "label": "P��osin istumaty� tai v�h�n liikuntaa",
+            "description": "Arkeni on enimm�kseen istumista."
           }
         }
       },
       "mushrooms": {
-        "question": "Oletko kiinnostunut lääkesienistä?",
+        "question": "Oletko kiinnostunut l��kesienist�?",
         "options": {
           "focus": {
-            "label": "Kyllä – erityisesti aivojen tueksi",
-            "description": "Olen kiinnostunut lääkesienistä kognitiivisen tuen näkökulmasta."
+            "label": "Kyll�  erityisesti aivojen tueksi",
+            "description": "Olen kiinnostunut l��kesienist� kognitiivisen tuen n�k�kulmasta."
           },
           "immune_m": {
-            "label": "Kyllä – immuunijärjestelmän tueksi",
-            "description": "Haluan käyttää lääkesieniä immuunipuolustuksen tukemiseen."
+            "label": "Kyll�  immuunij�rjestelm�n tueksi",
+            "description": "Haluan k�ytt�� l��kesieni� immuunipuolustuksen tukemiseen."
           },
           "antioxidant": {
-            "label": "Kyllä – antioksidantteja",
-            "description": "Olen kiinnostunut lääkesienien antioksidanttivaikutuksista."
+            "label": "Kyll�  antioksidantteja",
+            "description": "Olen kiinnostunut l��kesienien antioksidanttivaikutuksista."
           },
           "no_mushrooms": {
             "label": "En, suosin perinteisiä ravintolisiä",
-            "description": "Pidän enemmän perinteisistä vitamiini- ja mineraalilisistä."
+            "description": "Pid�n enemm�n perinteisist� vitamiini- ja mineraalilisist�."
           }
         }
       }
@@ -296,26 +296,26 @@
     "questionLabel": "Kysymys",
     "of": "/",
     "goalHelper": "Valitse yksi vaihtoehto, joka kuvaa parhaiten tavoitettasi.",
-    "resultsText": "Vastaustesi perusteella suosittelemme näitä tuotteita – valittu juuri sinulle.",
+    "resultsText": "Vastaustesi perusteella suosittelemme n�it� tuotteita  valittu juuri sinulle.",
     "bestMatch": "Paras vastine",
-    "readMore": "Lue lisää",
-    "complement": "Täydentävät tuotteet",
+    "readMore": "Lue lis��",
+    "complement": "T�ydent�v�t tuotteet",
     "view": "Katso tuote",
     "browseAll": "Selaa kaikkia tuotteita",
-    "showResults": "Näytä tulokset",
+    "showResults": "N�yt� tulokset",
     "nextStep": "Seuraava"
   },
   "blogPage": {
     "metaTitle": "Blogi | Robust Nordic",
-    "metaDescription": "Hyvinvointiartikkeleita ja -vinkkejÃÂ¤ pohjoisen luonnon innoittamana.",
+    "metaDescription": "Hyvinvointiartikkeleita ja -vinkkejä pohjoisen luonnon innoittamana.",
     "eyebrow": "BLOGI",
     "title": "Hyvinvointitietoa",
-    "subtitle": "Artikkeleita ravintolisistÃÂ¤, hyvinvoinnista ja pohjoismaisesta luonnosta.",
+    "subtitle": "Artikkeleita ravintolisistä, hyvinvoinnista ja pohjoismaisesta luonnosta.",
     "readMore": "Lue artikkeli",
     "minRead": "min lukuaika",
-    "articleNotFound": "Artikkelia ei löydy",
+    "articleNotFound": "Artikkelia ei l�ydy",
     "backToBlog": "Takaisin blogiin",
-    "readAlso": "Lue myös"
+    "readAlso": "Lue my�s"
   },
   "articleView": {
     "back": "Takaisin blogiin",
@@ -324,55 +324,55 @@
   },
   "sponsorPage": {
     "metaTitle": "Sponsoritarinat | Robust Nordic",
-    "metaDescription": "Tarinoita urheilijoilta ja aktiivisilta ihmisiltÃÂ¤, jotka kÃÂ¤yttÃÂ¤vÃÂ¤t Robust Nordic -tuotteita.",
+    "metaDescription": "Tarinoita urheilijoilta ja aktiivisilta ihmisiltä, jotka käyttävät Robust Nordic -tuotteita.",
     "eyebrow": "SPONSORITARINAT",
     "title": "Urheilijoiden tarinat",
-    "subtitle": "Kuule, miten urheilijat ja aktiiviset ihmiset hyÃÂ¶dyntÃÂ¤vÃÂ¤t Robust Nordic -tuotteita osana arkeaan.",
+    "subtitle": "Kuule, miten urheilijat ja aktiiviset ihmiset hyödyntävät Robust Nordic -tuotteita osana arkeaan.",
     "readStory": "Lue tarina",
-    "storyNotFound": "Tarinaa ei löydy",
+    "storyNotFound": "Tarinaa ei l�ydy",
     "backToStories": "Takaisin tarinoihin",
-    "readAlso": "Lue myös"
+    "readAlso": "Lue my�s"
   },
   "faqPage": {
     "metaTitle": "Usein kysytyt kysymykset | Robust Nordic",
     "metaDescription": "Vastaukset yleisimpiin kysymyksiin Robust Nordic -tuotteista ja tilaamisesta.",
     "eyebrow": "UKK",
     "title": "Usein kysytyt kysymykset",
-    "subtitle": "LÃÂ¶ydÃÂ¤t vastaukset yleisimpiin kysymyksiin alta. Jos et lÃÂ¶ydÃÂ¤ vastausta, ota yhteyttÃÂ¤.",
-    "q1": "MistÃÂ¤ raaka-aineista tuotteet on valmistettu?",
+    "subtitle": "Löydät vastaukset yleisimpiin kysymyksiin alta. Jos et löydä vastausta, ota yhteyttä.",
+    "q1": "Mistä raaka-aineista tuotteet on valmistettu?",
     "a1": "KÃÂ¤ytÃÂ¤mme vain korkealaatuisia, kliinisesti tutkittuja raaka-aineita. Raaka-aineet hankitaan luotettavilta toimittajilta EU:sta ja muualta maailmasta. Kaikki erÃÂ¤t testataan kolmannessa laboratoriossa.",
     "q2": "Ovatko tuotteet vegaanisia ja gluteenittomia?",
-    "a2": "Suurin osa tuotteistamme on vegaanisia ja gluteenittomia. Tarkemmat tiedot lÃÂ¶ydÃÂ¤t kunkin tuotteen omalta sivulta.",
-    "q3": "Kuinka kauan toimitus kestÃÂ¤ÃÂ¤?",
-    "a3": "Toimitamme tilaukset 1Ã¢ÂÂ2 arkipÃÂ¤ivÃÂ¤n kuluessa. Toimitusaika on tyypillisesti 2Ã¢ÂÂ5 arkipÃÂ¤ivÃÂ¤ÃÂ¤. Ilmainen toimitus yli 49 Ã¢ÂÂ¬ tilauksille.",
+    "a2": "Suurin osa tuotteistamme on vegaanisia ja gluteenittomia. Tarkemmat tiedot löydät kunkin tuotteen omalta sivulta.",
+    "q3": "Kuinka kauan toimitus kestää?",
+    "a3": "Toimitamme tilaukset 1–2 arkipäivän kuluessa. Toimitusaika on tyypillisesti 2–5 arkipäivää. Ilmainen toimitus yli 49 € tilauksille.",
     "q4": "Voiko tuotteet palauttaa?",
-    "a4": "KyllÃÂ¤, meillÃÂ¤ on 14 pÃÂ¤ivÃÂ¤n palautusoikeus. Avaamattomat tuotteet voidaan palauttaa alkuperÃÂ¤ispakkauksessa. Palautuskulut ovat asiakkaan vastuulla.",
+    "a4": "Kyllä, meillä on 14 päivän palautusoikeus. Avaamattomat tuotteet voidaan palauttaa alkuperäispakkauksessa. Palautuskulut ovat asiakkaan vastuulla.",
     "q5": "Sopivatko tuotteet lapsille tai raskaana oleville?",
-    "a5": "Tuotteet on suunnattu aikuisille. Raskaana olevat, imettÃÂ¤vÃÂ¤t ÃÂ¤idit ja alle 18-vuotiaat voivat kÃÂ¤yttÃÂ¤ÃÂ¤ ravintolisiÃÂ¤ lÃÂ¤ÃÂ¤kÃÂ¤rin ohjeiden mukaan.",
+    "a5": "Tuotteet on suunnattu aikuisille. Raskaana olevat, imettävät äidit ja alle 18-vuotiaat voivat käyttää ravintolisiä lääkärin ohjeiden mukaan.",
     "q6": "Saanko alennusta, jos tilaan useamman tuotteen?",
-    "a6": "Tarjoamme sÃÂ¤ÃÂ¤nnÃÂ¶llisesti kampanjoita ja pakettitarjouksia. Tilaa uutiskirjeemme pysyÃÂ¤ksesi ajan tasalla.",
+    "a6": "Tarjoamme säännöllisesti kampanjoita ja pakettitarjouksia. Tilaa uutiskirjeemme pysyäksesi ajan tasalla.",
     "ctaTitle": "EikÃÂ¶ lÃÂ¶ytynyt vastausta?",
-    "ctaSubtitle": "Asiakaspalvelumme auttaa mielellÃÂ¤ÃÂ¤n.",
-    "ctaButton": "Ota yhteyttÃÂ¤"
+    "ctaSubtitle": "Asiakaspalvelumme auttaa mielellään.",
+    "ctaButton": "Ota yhteyttä"
   },
   "contactPage": {
     "metaTitle": "Yhteystiedot | Robust Nordic",
-    "metaDescription": "Ota yhteyttÃÂ¤ Robust Nordicin asiakaspalveluun.",
+    "metaDescription": "Ota yhteyttä Robust Nordicin asiakaspalveluun.",
     "eyebrow": "YHTEYSTIEDOT",
-    "title": "Ota yhteyttÃÂ¤",
-    "subtitle": "Asiakaspalvelumme palvelee sinua arkisin klo 9Ã¢ÂÂ17.",
-    "email": "SÃÂ¤hkÃÂ¶posti",
+    "title": "Ota yhteyttä",
+    "subtitle": "Asiakaspalvelumme palvelee sinua arkisin klo 9–17.",
+    "email": "Sähköposti",
     "phone": "Puhelin",
     "hours": "Aukioloajat",
-    "hoursValue": "MaÃ¢ÂÂPe 9:00Ã¢ÂÂ17:00",
+    "hoursValue": "Ma–Pe 9:00–17:00",
     "address": "Osoite",
-    "formTitle": "LÃÂ¤hetÃÂ¤ viesti",
+    "formTitle": "Lähetä viesti",
     "namePlaceholder": "Nimesi",
-    "emailPlaceholder": "SÃÂ¤hkÃÂ¶postisi",
+    "emailPlaceholder": "Sähköpostisi",
     "messagePlaceholder": "Viestisi",
-    "send": "LÃÂ¤hetÃÂ¤",
-    "success": "Viesti lÃÂ¤hetetty!",
-    "emailLabel": "Sähköposti",
+    "send": "Lähetä",
+    "success": "Viesti lähetetty!",
+    "emailLabel": "S�hk�posti",
     "phoneLabel": "Puhelin",
     "hoursLabel": "Aukioloajat",
     "locationLabel": "Sijainti",
@@ -381,53 +381,53 @@
     "companyAddress": "Robust Nordic Oy\nHelsinki, Suomi"
   },
   "aboutPage": {
-    "metaTitle": "MeistÃÂ¤ | Robust Nordic",
-    "metaDescription": "Robust Nordic Ã¢ÂÂ pohjoismainen hyvinvointibrÃÂ¤ndi, joka tarjoaa laadukkaita ravintolisiÃÂ¤.",
+    "metaTitle": "Meistä | Robust Nordic",
+    "metaDescription": "Robust Nordic – pohjoismainen hyvinvointibrändi, joka tarjoaa laadukkaita ravintolisiä.",
     "eyebrow": "MEISTÃÂ",
     "title": "Olemme Robust Nordic",
-    "subtitle": "Uskomme, ettÃÂ¤ hyvÃÂ¤ olo on jokaisen oikeus Ã¢ÂÂ ja se alkaa puhtaista, tehokkaista ravintolisistÃÂ¤.",
+    "subtitle": "Uskomme, että hyvä olo on jokaisen oikeus – ja se alkaa puhtaista, tehokkaista ravintolisistä.",
     "value1Title": "Pohjoinen puhtaus",
-    "value1Desc": "Käytämme vain puhtaita, huolellisesti valittuja raaka-aineita ilman turhia lisäaineita.",
+    "value1Desc": "K�yt�mme vain puhtaita, huolellisesti valittuja raaka-aineita ilman turhia lis�aineita.",
     "value2Title": "Tieteellinen pohja",
     "value2Desc": "Formulaatiomme perustuvat tutkittuun tietoon ja ravitsemusasiantuntijoiden osaamiseen.",
-    "value3Title": "Täysi avoimuus",
-    "value3Desc": "Kerromme avoimesti, mitä tuotteissamme on – ja mitä ei.",
+    "value3Title": "T�ysi avoimuus",
+    "value3Desc": "Kerromme avoimesti, mit� tuotteissamme on  ja mit� ei.",
     "value4Title": "Vastuullisuus",
-    "value4Desc": "Toimimme ympäristöä kunnioittaen ja pitkäjänteisesti.",
-    "p1": "Robust Nordic syntyi aidosta tarpeesta – halusta tarjota suomalaisille puhtaita, laadukkaita ravintolisiä ilman kompromisseja.",
-    "p2": "Tiimimme koostuu hyvinvoinnin, ravitsemustieteen ja urheilun ammattilaisista, jotka uskovat rehellisyyteen ja läpinäkyvyyteen kaikessa toiminnassamme."
+    "value4Desc": "Toimimme ymp�rist�� kunnioittaen ja pitk�j�nteisesti.",
+    "p1": "Robust Nordic syntyi aidosta tarpeesta  halusta tarjota suomalaisille puhtaita, laadukkaita ravintolisi� ilman kompromisseja.",
+    "p2": "Tiimimme koostuu hyvinvoinnin, ravitsemustieteen ja urheilun ammattilaisista, jotka uskovat rehellisyyteen ja l�pin�kyvyyteen kaikessa toiminnassamme."
   },
   "storyPage": {
     "metaTitle": "Tarinamme | Robust Nordic",
-    "metaDescription": "Lue Robust Nordicin tarina Ã¢ÂÂ miten brÃÂ¤ndi sai alkunsa ja mikÃÂ¤ meitÃÂ¤ ohjaa.",
+    "metaDescription": "Lue Robust Nordicin tarina – miten brändi sai alkunsa ja mikä meitä ohjaa.",
     "eyebrow": "TARINAMME",
     "title": "Miten kaikki alkoi",
     "subtitle": "Robust Nordic syntyi turhautumisesta heikkolaatuisiin ravintolisiin.",
-    "p1": "Kaikki alkoi pohjoisen luonnon ihmeistä ja henkilökohtaisesta matkasta kohti parempaa hyvinvointia.",
-    "p2": "Perustajamme huomasi, että markkinoilla olevat ravintolisät olivat täynnä turhia lisäaineita ja epäselviä formulaatioita.",
-    "turningPoint": "Käänteentekevä hetki",
-    "p3": "Hän päätti kehittää omat formulaatiot yhdessä ravitsemusasiantuntijoiden kanssa – lähtökohtana puhtaus ja teho.",
+    "p1": "Kaikki alkoi pohjoisen luonnon ihmeist� ja henkil�kohtaisesta matkasta kohti parempaa hyvinvointia.",
+    "p2": "Perustajamme huomasi, ett� markkinoilla olevat ravintolis�t olivat t�ynn� turhia lis�aineita ja ep�selvi� formulaatioita.",
+    "turningPoint": "K��nteentekev� hetki",
+    "p3": "H�n p��tti kehitt�� omat formulaatiot yhdess� ravitsemusasiantuntijoiden kanssa  l�ht�kohtana puhtaus ja teho.",
     "p4": "Ensimmäinen tuote syntyi Suomen puhtaasta luonnosta inspiroituneena: minimalistinen, tehokas ja täysin läpinäkyvä.",
-    "p5": "Tänään Robust Nordic on kasvava brändi, jonka takana on joukko intohimoisia hyvinvoinnin ammattilaisia.",
-    "p6": "Uskomme, että jokainen ansaitsee laadukkaat ravintolisät, jotka todella toimivat.",
-    "p7": "Pohjoinen luonto, tieteellinen tutkimus ja aito välittäminen – siinä on Robust Nordicin tarina."
+    "p5": "T�n��n Robust Nordic on kasvava br�ndi, jonka takana on joukko intohimoisia hyvinvoinnin ammattilaisia.",
+    "p6": "Uskomme, ett� jokainen ansaitsee laadukkaat ravintolis�t, jotka todella toimivat.",
+    "p7": "Pohjoinen luonto, tieteellinen tutkimus ja aito v�litt�minen  siin� on Robust Nordicin tarina."
   },
   "qualityPage": {
     "metaTitle": "Laatu & luottamus | Robust Nordic",
-    "metaDescription": "Robust Nordic sitoutuu korkeimpaan laatuun Ã¢ÂÂ lue, miten varmistamme tuotteidemme laadun.",
+    "metaDescription": "Robust Nordic sitoutuu korkeimpaan laatuun – lue, miten varmistamme tuotteidemme laadun.",
     "eyebrow": "LAATU & LUOTTAMUS",
     "title": "Laatu ennen kaikkea",
-    "subtitle": "Jokainen Robust Nordic -tuote kÃÂ¤y lÃÂ¤pi tiukan laadunvalvontaprosessin.",
+    "subtitle": "Jokainen Robust Nordic -tuote käy läpi tiukan laadunvalvontaprosessin.",
     "c1Title": "GMP-sertifioitu tuotanto",
     "c1Desc": "Kaikki tuotteemme valmistetaan GMP-sertifioiduissa tiloissa korkeimpien standardien mukaan.",
     "c2Title": "Valmistettu Suomessa",
-    "c2Desc": "Tuotteemme valmistetaan Suomessa pohjoisen puhtauden hengessä.",
+    "c2Desc": "Tuotteemme valmistetaan Suomessa pohjoisen puhtauden hengess�.",
     "c3Title": "Kolmannen osapuolen testaus",
     "c3Desc": "Jokainen tuote testataan riippumattomassa laboratoriossa puhtauden ja tehon varmistamiseksi.",
     "c4Title": "Ei turhia lisäaineita",
     "c4Desc": "Emme käytä synteettisiä lisäaineita, täyteaineita tai tarpeettomia sidosaineita.",
     "c5Title": "Vegaaninen & gluteeniton",
-    "c5Desc": "Tuotteemme sopivat vegaaneille ja gluteeniherkille – ilman kompromisseja.",
+    "c5Desc": "Tuotteemme sopivat vegaaneille ja gluteeniherkille  ilman kompromisseja.",
     "c6Title": "Tieteellinen pohja",
     "c6Desc": "Formulaatiomme perustuvat viimeisimpään ravitsemustieteelliseen tutkimukseen."
   },
@@ -438,7 +438,7 @@
     "headingSupport": "Asiakaspalvelu",
     "headingContact": "Yhteystiedot",
     "allProducts": "Kaikki tuotteet",
-    "about": "MeistÃÂ¤",
+    "about": "Meistä",
     "quality": "Laatu & luottamus",
     "blog": "Blogi",
     "sponsors": "Sponsoritarinat",
@@ -448,9 +448,9 @@
     "payments": "Maksutavat",
     "privacy": "Tietosuoja",
     "terms": "Kaupan ehdot",
-    "hours": "MaÃ¢ÂÂPe 9Ã¢ÂÂ17",
-    "rights": "Kaikki oikeudet pidÃÂ¤tetÃÂ¤ÃÂ¤n.",
-    "madeIn": "Ã°ÂÂÂ«Ã°ÂÂÂ® Valmistettu Suomessa"
+    "hours": "Ma–Pe 9–17",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "madeIn": "🇫🇮 Valmistettu Suomessa"
   },
   "legal": {
     "shipping": {
@@ -472,30 +472,30 @@
     "eyebrowCustomerService": "ASIAKASPALVELU",
     "eyebrowTerms": "KAUPAN EHDOT",
     "privacyTitle": "Tietosuojaseloste",
-    "privacyMeta": "Lue Robust Nordicin tietosuojaseloste â tietoa henkilÃ¶tietojen kÃ¤sittelystÃ¤.",
-    "privacyIntro": "KÃ¤sittelemme henkilÃ¶tietojasi vastuullisesti ja lÃ¤pinÃ¤kyvÃ¤sti.",
+    "privacyMeta": "Lue Robust Nordicin tietosuojaseloste  tietoa henkil�tietojen k�sittelyst�.",
+    "privacyIntro": "K�sittelemme henkil�tietojasi vastuullisesti ja l�pin�kyv�sti.",
     "shippingTitle": "Toimitusehdot",
-    "shippingMeta": "Lue Robust Nordicin toimitusehdot â nopea ja turvallinen toimitus.",
+    "shippingMeta": "Lue Robust Nordicin toimitusehdot  nopea ja turvallinen toimitus.",
     "shippingIntro": "Toimitamme kaikki tilaukset nopeasti suoraan kotiisi.",
     "paymentTitle": "Maksutavat",
-    "paymentMeta": "Lue tietoa Robust Nordicin hyvÃ¤ksymistÃ¤ maksutavoista.",
-    "paymentIntro": "HyvÃ¤ksymme laajan valikoiman turvallisia maksuvaihtoehtoja.",
+    "paymentMeta": "Lue tietoa Robust Nordicin hyv�ksymist� maksutavoista.",
+    "paymentIntro": "Hyv�ksymme laajan valikoiman turvallisia maksuvaihtoehtoja.",
     "payment": {
       "intro": "Tarjoamme useita turvallisia ja helppoja maksutapoja.",
       "cardsTitle": "Korttimaksut",
-      "cardsText": "HyvÃ¤ksymme Visa-, Mastercard- ja Amex-kortit.",
+      "cardsText": "Hyv�ksymme Visa-, Mastercard- ja Amex-kortit.",
       "mobilepayTitle": "MobilePay",
       "mobilepayText": "Maksa vaivattomasti mobiilisovelluksella.",
       "banksTitle": "Verkkopankit",
       "banksText": "Maksa kaikkien suomalaisten verkkopankkien kautta.",
       "klarnaTitle": "Klarna",
-      "klarnaText": "Maksa laskulla tai erissÃ¤ Klarnan kautta.",
+      "klarnaText": "Maksa laskulla tai eriss� Klarnan kautta.",
       "securityTitle": "Maksuturvallisuus",
       "securityText": "Kaikki maksutapahtumat suojataan SSL-salauksella.",
-      "contactText": "Tarvitsetko apua? Ota yhteyttÃ¤ asiakaspalveluumme."
+      "contactText": "Tarvitsetko apua? Ota yhteytt� asiakaspalveluumme."
     },
-    "kopvillkorTitle": "KÃ¶pvillkor",
-    "kopvillkorMeta": "LÃ¤s Robust Nordics kÃ¶pvillkor fÃ¶r trygga kÃ¶p.",
-    "kopvillkorIntro": "HÃ¤r hittar du all viktig information om dina rÃ¤ttigheter vid kÃ¶p."
+    "kopvillkorTitle": "K�pvillkor",
+    "kopvillkorMeta": "L�s Robust Nordics k�pvillkor f�r trygga k�p.",
+    "kopvillkorIntro": "H�r hittar du all viktig information om dina r�ttigheter vid k�p."
   }
 }
