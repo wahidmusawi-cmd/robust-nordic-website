@@ -406,7 +406,9 @@ export function getBuyUrl(slug: string): string {
 
 function localizeProduct(product: Product, locale?: string): Product {
   if (!locale || locale === "fi") return product
-  const copy = productTranslations[product.slug]?.[locale as "sv" | "en"]
+  const translations = productTranslations[product.slug]
+  if (!translations) return product
+  const copy = translations[locale as "sv" | "en"]
   if (!copy) return product
   return {
     ...product,
