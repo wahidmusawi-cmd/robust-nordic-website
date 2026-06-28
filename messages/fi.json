@@ -295,7 +295,15 @@
     },
     "questionLabel": "Kysymys",
     "of": "/",
-    "goalHelper": "Valitse yksi vaihtoehto, joka kuvaa parhaiten tavoitettasi."
+    "goalHelper": "Valitse yksi vaihtoehto, joka kuvaa parhaiten tavoitettasi.",
+    "resultsText": "Vastaustesi perusteella suosittelemme näitä tuotteita – valittu juuri sinulle.",
+    "bestMatch": "Paras vastine",
+    "readMore": "Lue lisää",
+    "complement": "Täydentävät tuotteet",
+    "view": "Katso tuote",
+    "browseAll": "Selaa kaikkia tuotteita",
+    "showResults": "Näytä tulokset",
+    "nextStep": "Seuraava"
   },
   "blogPage": {
     "metaTitle": "Blogi | Robust Nordic",

@@ -295,7 +295,15 @@
     },
     "questionLabel": "Question",
     "of": "of",
-    "goalHelper": "Choose one option that best describes your goal."
+    "goalHelper": "Choose one option that best describes your goal.",
+    "resultsText": "Based on your answers, we recommend these products – chosen just for you.",
+    "bestMatch": "Best match",
+    "readMore": "Read more",
+    "complement": "Complementary products",
+    "view": "View product",
+    "browseAll": "Browse all products",
+    "showResults": "Show results",
+    "nextStep": "Next"
   },
   "blogPage": {
     "metaTitle": "Blog | Robust Nordic",

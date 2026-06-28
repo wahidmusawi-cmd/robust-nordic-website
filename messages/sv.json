@@ -295,7 +295,15 @@
     },
     "questionLabel": "Fråga",
     "of": "/",
-    "goalHelper": "Välj ett alternativ som bäst beskriver ditt mål."
+    "goalHelper": "Välj ett alternativ som bäst beskriver ditt mål.",
+    "resultsText": "Baserat på dina svar rekommenderar vi dessa produkter – valda just för dig.",
+    "bestMatch": "Bästa matchning",
+    "readMore": "Läs mer",
+    "complement": "Kompletterande produkter",
+    "view": "Visa produkt",
+    "browseAll": "Se alla produkter",
+    "showResults": "Visa resultat",
+    "nextStep": "Nästa"
   },
   "blogPage": {
     "metaTitle": "Blogg | Robust Nordic",
