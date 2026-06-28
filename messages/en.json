@@ -31,7 +31,7 @@
     "subtitle": "High-quality supplements for your body and mind – made from pure Nordic ingredients.",
     "browse": "Explore products",
     "takeTest": "Find your product",
-    "freeShipping": "Free shipping on orders over Ã¢ÂÂ¬49",
+    "freeShipping": "Free shipping on orders over €49",
     "imageAlt": "Nordic lake landscape"
   },
   "home": {
@@ -41,7 +41,7 @@
       "safeTitle": "Safe choice",
       "safeDesc": "All products are GMP-certified and meet EU supplement regulations.",
       "easyTitle": "Easy to order",
-      "easyDesc": "Fast delivery in 2Ã¢ÂÂ5 business days. Free shipping on orders over Ã¢ÂÂ¬49.",
+      "easyDesc": "Fast delivery in 2–5 business days. Free shipping on orders over €49.",
       "goodTitle": "Genuinely effective",
       "goodDesc": "We use only clinically studied ingredients at effective doses."
     },
@@ -66,24 +66,24 @@
       "veganTitle": "Vegan",
       "veganDesc": "All our products are suitable for vegans.",
       "lactoseTitle": "Lactose-free",
-      "lactoseDesc": "Our products contain no lactose.",
+      "lactoseDesc": "Our products do not contain lactose.",
       "madeTitle": "Made in Finland",
       "madeDesc": "Proudly Finnish – made in the north.",
       "glutenTitle": "Gluten-free",
-      "glutenDesc": "Our products are suitable for gluten sensitivity.",
+      "glutenDesc": "Our products are suitable for those with gluten sensitivity.",
       "noAdditivesTitle": "No additives",
       "noAdditivesDesc": "Clean ingredients without unnecessary additives.",
       "researchedTitle": "Scientifically researched",
       "researchedDesc": "Our formulations are based on proven research.",
-      "intro": "Highest quality is a given for us  not marketing jargon.",
+      "intro": "Highest quality is a given for us – not marketing jargon.",
       "capsuleAlt": "Robust Nordic capsules",
       "certEyebrow": "CERTIFIED",
       "certTitle": "GMP-certified quality",
-      "certBody": "Every product is manufactured in GMP-certified facilities with the strictest hygiene and quality control standards.",
-      "certRatingLabel": "Average customer rating",
-      "certYearsLabel": "Years in the industry",
-      "certMadeValue": "FI",
-      "certMadeLabel": "Made"
+      "certBody": "Every product is manufactured in GMP-certified facilities according to the strictest quality control standards.",
+      "certRatingLabel": "Customer rating",
+      "certYearsLabel": "Years in business",
+      "certMadeValue": "Finland",
+      "certMadeLabel": "Made in"
     },
     "story": {
       "eyebrow": "OUR STORY",
@@ -91,24 +91,24 @@
       "titleEm": "for real solutions",
       "subtitle": "Robust Nordic was born out of frustration – there were too many low-quality supplements. We decided to do better.",
       "learnMore": "Learn more",
-      "title": "About us and the need for a better solution",
-      "p1": "Robust Nordic was born from frustration with low-quality supplements and the desire to do better  cleaner, more effective, more transparent.",
-      "p2": "We believe everyone deserves quality supplements that actually work  without unnecessary fillers or unclear formulations.",
+      "title": "About us and the need to find a better way",
+      "p1": "Robust Nordic was born out of frustration – the market was full of poor-quality supplements packed with unnecessary fillers.",
+      "p2": "We wanted to do better: clinically studied ingredients, transparent manufacturing, and a genuine commitment to quality.",
       "cta": "Read our story",
-      "imageAlt": "Robust Nordic  Nordic nature"
+      "imageAlt": "Nordic lake landscape"
     },
     "testimonials": {
       "eyebrow": "CUSTOMER REVIEWS",
       "titleA": "What our customers",
       "titleEm": "say",
-      "t1Name": "Johanna M.",
-      "t1Text": "I've been using Robust Nordic products for three months and my energy level is clearly better. The quality shows from the moment you open the jar.",
-      "t2Name": "Mikko K.",
-      "t2Text": "Finally a supplement with clean and clear ingredients. Ashwagandha has changed how I handle stress.",
       "title": "What our customers say",
+      "t1Name": "Johanna M.",
+      "t1Text": "I have been using Robust Nordic's D3+K2 vitamin through the whole winter – my energy has clearly improved and autumn fatigue is gone.",
+      "t2Name": "Mikael T.",
+      "t2Text": "Quattro Magnesium is the best magnesium I have found. My sleep has improved and muscle recovery is faster.",
       "trustPre": "Over",
-      "trustCount": "500+",
-      "trustPost": "satisfied customers"
+      "trustCount": "1,000",
+      "trustPost": "happy customers"
     },
     "newsletter": {
       "eyebrow": "NEWSLETTER",
@@ -150,22 +150,21 @@
     "badgeMadeIn": "Made in Finland",
     "badgeVeganGluten": "Vegan & gluten-free",
     "badgeCertified": "GMP certified",
-    "badgeShipping": "Free shipping Ã¢ÂÂ¬49 +",
+    "badgeShipping": "Free shipping €49 +",
     "related": "You might also like",
     "vat": "incl. VAT",
     "usageTitle": "Usage Instructions"
   },
   "card": {
     "view": "View product",
-    "minRead": "min read",
-    "readMore": "Read article"
+    "minRead": "min. read",
+    "readMore": "Read more"
   },
   "common": {
     "readMore": "Read more",
     "loading": "Loading...",
     "error": "Something went wrong",
-    "back": "Back",
-    "exploreProducts": "Explore our products"
+    "back": "Back"
   },
   "quiz": {
     "badge": "PRODUCT TEST",
@@ -196,7 +195,7 @@
     "o_skin": "Skin condition",
     "q_activity": "How physically active are you?",
     "o_athlete": "Competitive athlete or avid exerciser",
-    "o_active": "Exercise regularly (3Ã¢ÂÂ5 times/week)",
+    "o_active": "Exercise regularly (3–5 times/week)",
     "o_moderate": "Moderately active (1–2 times/week)",
     "o_sedentary": "Mostly sedentary work or little exercise",
     "q_mushrooms": "Are you interested in medicinal mushrooms?",
@@ -262,7 +261,7 @@
             "description": "Exercise is an important part of my daily life."
           },
           "moderate": {
-            "label": "Moderate exerciser (12 times/week)",
+            "label": "Moderate exerciser (1–2 times/week)",
             "description": "I exercise sometimes but not regularly."
           },
           "sedentary": {
@@ -275,15 +274,15 @@
         "question": "Are you interested in medicinal mushrooms?",
         "options": {
           "focus": {
-            "label": "Yes  especially for brain support",
+            "label": "Yes – especially for brain support",
             "description": "I am interested in medicinal mushrooms for cognitive performance."
           },
           "immune_m": {
-            "label": "Yes  for immune system support",
+            "label": "Yes – for immune system support",
             "description": "I want to use medicinal mushrooms to strengthen my immune system."
           },
           "antioxidant": {
-            "label": "Yes  for antioxidants",
+            "label": "Yes – for antioxidants",
             "description": "I am interested in the antioxidant effects of mushrooms."
           },
           "no_mushrooms": {
@@ -294,14 +293,14 @@
       }
     },
     "questionLabel": "Question",
-    "of": "of",
-    "goalHelper": "Choose one option that best describes your goal.",
+    "of": "/",
+    "goalHelper": "Choose one",
     "resultsText": "Based on your answers, we recommend these products – chosen just for you.",
     "bestMatch": "Best match",
     "readMore": "Read more",
-    "complement": "Complementary products",
-    "view": "View product",
-    "browseAll": "Browse all products",
+    "complement": "Complements",
+    "view": "View",
+    "browseAll": "All products",
     "showResults": "Show results",
     "nextStep": "Next"
   },
@@ -344,7 +343,7 @@
     "q2": "Are the products vegan and gluten-free?",
     "a2": "Most of our products are vegan and gluten-free. Detailed information is available on each product page.",
     "q3": "How long does delivery take?",
-    "a3": "We ship orders within 1Ã¢ÂÂ2 business days. Delivery time is typically 2Ã¢ÂÂ5 business days. Free shipping on orders over Ã¢ÂÂ¬49.",
+    "a3": "We ship orders within 1–2 business days. Delivery time is typically 2–5 business days. Free shipping on orders over €49.",
     "q4": "Can products be returned?",
     "a4": "Yes, we have a 14-day right of return. Unopened products can be returned in original packaging. Return costs are the customer's responsibility.",
     "q5": "Are products suitable for children or pregnant women?",
@@ -364,7 +363,7 @@
     "email": "Email",
     "phone": "Phone",
     "hours": "Opening hours",
-    "hoursValue": "MonÃ¢ÂÂFri 9:00Ã¢ÂÂ17:00",
+    "hoursValue": "Mon–Fri 9:00–17:00",
     "address": "Address",
     "formTitle": "Send a message",
     "namePlaceholder": "Your name",
@@ -391,10 +390,10 @@
     "value2Title": "Scientific Foundation",
     "value2Desc": "Our formulations are based on proven research and nutritional expertise.",
     "value3Title": "Full Transparency",
-    "value3Desc": "We openly share what is in our products  and what is not.",
+    "value3Desc": "We openly share what is in our products – and what is not.",
     "value4Title": "Responsibility",
-    "value4Desc": "We operate with respect for the environment and a long-term perspective.",
-    "p1": "Robust Nordic was founded out of a genuine need  the desire to offer clean, high-quality supplements without compromise.",
+    "value4Desc": "We operate with respect for the environment and with a long-term perspective.",
+    "p1": "Robust Nordic was founded out of a genuine need – the desire to offer clean, high-quality supplements without compromise.",
     "p2": "Our team consists of experts in health, nutrition and sports who believe in honesty and transparency in everything we do."
   },
   "storyPage": {
@@ -406,11 +405,11 @@
     "p1": "It all began with the wonders of Nordic nature and a personal journey towards better wellbeing.",
     "p2": "Our founder noticed that the supplements on the market were full of unnecessary additives and unclear formulations.",
     "turningPoint": "A Turning Point",
-    "p3": "He decided to develop his own formulations together with nutrition experts  with purity and efficacy as guiding principles.",
+    "p3": "He decided to develop his own formulations together with nutrition experts – with purity and efficacy as guiding principles.",
     "p4": "The first product was created inspired by Finland's clean nature: minimalist, effective and completely transparent.",
     "p5": "Today Robust Nordic is a growing brand backed by a team of passionate wellness professionals.",
     "p6": "We believe that everyone deserves high-quality supplements that actually work.",
-    "p7": "Nordic nature, scientific research and genuine care  that is the story of Robust Nordic."
+    "p7": "Nordic nature, scientific research and genuine care – that is the story of Robust Nordic."
   },
   "qualityPage": {
     "metaTitle": "Quality & Trust | Robust Nordic",
@@ -427,7 +426,7 @@
     "c4Title": "No Unnecessary Additives",
     "c4Desc": "We use no synthetic additives, fillers, or unnecessary binders.",
     "c5Title": "Vegan & Gluten-Free",
-    "c5Desc": "Our products are suitable for vegans and those with gluten sensitivity  no compromise.",
+    "c5Desc": "Our products are suitable for vegans and those with gluten sensitivity – no compromise.",
     "c6Title": "Scientific Foundation",
     "c6Desc": "Our formulations are based on the latest nutritional science research."
   },
@@ -448,9 +447,9 @@
     "payments": "Payment methods",
     "privacy": "Privacy policy",
     "terms": "Terms & conditions",
-    "hours": "MonÃ¢ÂÂFri 9Ã¢ÂÂ17",
+    "hours": "Mon–Fri 9–17",
     "rights": "All rights reserved.",
-    "madeIn": "Ã°ÂÂÂ«Ã°ÂÂÂ® Made in Finland"
+    "madeIn": "🇫🇮 Made in Finland"
   },
   "legal": {
     "shipping": {
@@ -472,10 +471,10 @@
     "eyebrowCustomerService": "CUSTOMER SERVICE",
     "eyebrowTerms": "TERMS",
     "privacyTitle": "Privacy Policy",
-    "privacyMeta": "Read Robust Nordic's privacy policy  how we handle your data.",
+    "privacyMeta": "Read Robust Nordic's privacy policy – how we handle your data.",
     "privacyIntro": "We handle your personal data responsibly and transparently.",
     "shippingTitle": "Shipping Policy",
-    "shippingMeta": "Read Robust Nordic's shipping policy  fast and secure delivery.",
+    "shippingMeta": "Read Robust Nordic's shipping policy – fast and secure delivery.",
     "shippingIntro": "We deliver all orders quickly and safely to your door.",
     "paymentTitle": "Payment Methods",
     "paymentMeta": "Read about Robust Nordic's accepted payment methods.",
