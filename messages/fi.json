@@ -62,19 +62,53 @@
       "euTitle": "EU-lainsÃÂ¤ÃÂ¤dÃÂ¤nnÃÂ¶n mukainen",
       "euDesc": "Kaikki tuotteet tÃÂ¤yttÃÂ¤vÃÂ¤t EU:n ravintolisÃÂ¤asetuksen (2002/46/EY) vaatimukset.",
       "madeInTitle": "Valmistettu Suomessa",
-      "madeInDesc": "Tuotteemme pakataan ja tarkistetaan Suomessa korkeimman laadun varmistamiseksi."
+      "madeInDesc": "Tuotteemme pakataan ja tarkistetaan Suomessa korkeimman laadun varmistamiseksi.",
+      "veganTitle": "Vegaaninen",
+      "veganDesc": "Kaikki tuotteemme sopivat vegaaneille.",
+      "lactoseTitle": "Laktoositon",
+      "lactoseDesc": "Tuotteemme eivät sisällä laktoosia.",
+      "madeTitle": "Valmistettu Suomessa",
+      "madeDesc": "Ylpeänä suomalainen – valmistettu pohjoisessa.",
+      "glutenTitle": "Gluteeniton",
+      "glutenDesc": "Tuotteemme soveltuvat gluteeniherkille.",
+      "noAdditivesTitle": "Ei lisäaineita",
+      "noAdditivesDesc": "Puhtaita raaka-aineita ilman turhia lisäaineita.",
+      "researchedTitle": "Tieteellisesti tutkittu",
+      "researchedDesc": "Formulaatiomme perustuvat tutkittuun tietoon.",
+      "intro": "Korkein laatu on meille itsestäänselvyys – ei markkinointijargoni.",
+      "capsuleAlt": "Robust Nordic -kapseleita",
+      "certEyebrow": "SERTIFIOITU",
+      "certTitle": "GMP-sertifioitu laatu",
+      "certBody": "Jokainen tuotteemme valmistetaan GMP-sertifioiduissa tiloissa tiukimpien laadunvalvontastandardien mukaan.",
+      "certRatingLabel": "Asiakasarviointien keskiarvo",
+      "certYearsLabel": "Vuotta alalla",
+      "certMadeValue": "FI",
+      "certMadeLabel": "Valmistettu"
     },
     "story": {
       "eyebrow": "TARINAMME",
       "titleA": "Syntyi tarpeesta",
       "titleEm": "aidoille ratkaisuille",
       "subtitle": "Robust Nordic syntyi turhautumisesta Ã¢ÂÂ markkinoilla oli liian monta heikkolaatuista ravintolisÃÂ¤ÃÂ¤. PÃÂ¤ÃÂ¤timme tehdÃÂ¤ paremmin.",
-      "learnMore": "Lue lisÃÂ¤ÃÂ¤"
+      "learnMore": "Lue lisÃÂ¤ÃÂ¤",
+      "title": "Meistä ja tarpeesta löytää parempi tapa",
+      "p1": "Robust Nordic syntyi turhautumisesta heikkolaatuisiin ravintolisiin ja halusta tehdä paremmin – puhtaampaa, tehokkaampaa, läpinäkyvämpää.",
+      "p2": "Uskomme, että jokainen ansaitsee laadukkaat ravintolisät, jotka todella toimivat – ilman turhia täyteaineita tai epämääräisiä formulaatioita.",
+      "cta": "Lue tarinaamme",
+      "imageAlt": "Robust Nordic – pohjoinen luonto"
     },
     "testimonials": {
       "eyebrow": "ASIAKASKOKEMUKSIA",
       "titleA": "MitÃÂ¤ asiakkaamme",
-      "titleEm": "sanovat"
+      "titleEm": "sanovat",
+      "t1Name": "Johanna M.",
+      "t1Text": "Olen käyttänyt Robust Nordicin tuotteita kolme kuukautta ja energiataso on selvästi parempi. Laatu välittyy jo purkista avattaessa.",
+      "t2Name": "Mikko K.",
+      "t2Text": "Viimein ravintolisä, jonka ainesosat ovat puhtaat ja selkeät. Ashwagandha on muuttanut suhtautumiseni stressinhallintaan.",
+      "title": "Mitä asiakkaamme sanovat",
+      "trustPre": "Yli",
+      "trustCount": "500+",
+      "trustPost": "tyytyväistä asiakasta"
     },
     "newsletter": {
       "eyebrow": "UUTISKIRJE",
@@ -83,7 +117,8 @@
       "placeholder": "SÃÂ¤hkÃÂ¶postiosoitteesi",
       "button": "Tilaa",
       "disclaimer": "Ei roskapostia. Peruuta milloin tahansa.",
-      "success": "Kiitos tilauksesta!"
+      "success": "Kiitos tilauksesta!",
+      "submit": "Tilaa"
     },
     "blog": {
       "eyebrow": "BLOGI",
@@ -121,7 +156,9 @@
     "usageTitle": "Käyttöohje"
   },
   "card": {
-    "view": "Lue lisÃÂ¤ÃÂ¤"
+    "view": "Lue lisÃÂ¤ÃÂ¤",
+    "minRead": "min. lukuaika",
+    "readMore": "Lue artikkeli"
   },
   "common": {
     "readMore": "Lue lisÃÂ¤ÃÂ¤",

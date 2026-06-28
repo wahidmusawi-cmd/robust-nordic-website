@@ -62,19 +62,53 @@
       "euTitle": "EU compliant",
       "euDesc": "All products meet EU supplement directive (2002/46/EC) requirements.",
       "madeInTitle": "Made in Finland",
-      "madeInDesc": "Our products are packaged and inspected in Finland for highest quality."
+      "madeInDesc": "Our products are packaged and inspected in Finland for highest quality.",
+      "veganTitle": "Vegan",
+      "veganDesc": "All our products are suitable for vegans.",
+      "lactoseTitle": "Lactose-free",
+      "lactoseDesc": "Our products contain no lactose.",
+      "madeTitle": "Made in Finland",
+      "madeDesc": "Proudly Finnish – made in the north.",
+      "glutenTitle": "Gluten-free",
+      "glutenDesc": "Our products are suitable for gluten sensitivity.",
+      "noAdditivesTitle": "No additives",
+      "noAdditivesDesc": "Clean ingredients without unnecessary additives.",
+      "researchedTitle": "Scientifically researched",
+      "researchedDesc": "Our formulations are based on proven research.",
+      "intro": "Highest quality is a given for us – not marketing jargon.",
+      "capsuleAlt": "Robust Nordic capsules",
+      "certEyebrow": "CERTIFIED",
+      "certTitle": "GMP-certified quality",
+      "certBody": "Every product is manufactured in GMP-certified facilities with the strictest hygiene and quality control standards.",
+      "certRatingLabel": "Average customer rating",
+      "certYearsLabel": "Years in the industry",
+      "certMadeValue": "FI",
+      "certMadeLabel": "Made"
     },
     "story": {
       "eyebrow": "OUR STORY",
       "titleA": "Born from a need",
       "titleEm": "for real solutions",
       "subtitle": "Robust Nordic was born out of frustration Ã¢ÂÂ there were too many low-quality supplements. We decided to do better.",
-      "learnMore": "Learn more"
+      "learnMore": "Learn more",
+      "title": "About us and the need for a better solution",
+      "p1": "Robust Nordic was born from frustration with low-quality supplements and the desire to do better – cleaner, more effective, more transparent.",
+      "p2": "We believe everyone deserves quality supplements that actually work – without unnecessary fillers or unclear formulations.",
+      "cta": "Read our story",
+      "imageAlt": "Robust Nordic – Nordic nature"
     },
     "testimonials": {
       "eyebrow": "CUSTOMER REVIEWS",
       "titleA": "What our customers",
-      "titleEm": "say"
+      "titleEm": "say",
+      "t1Name": "Johanna M.",
+      "t1Text": "I've been using Robust Nordic products for three months and my energy level is clearly better. The quality shows from the moment you open the jar.",
+      "t2Name": "Mikko K.",
+      "t2Text": "Finally a supplement with clean and clear ingredients. Ashwagandha has changed how I handle stress.",
+      "title": "What our customers say",
+      "trustPre": "Over",
+      "trustCount": "500+",
+      "trustPost": "satisfied customers"
     },
     "newsletter": {
       "eyebrow": "NEWSLETTER",
@@ -83,7 +117,8 @@
       "placeholder": "Your email address",
       "button": "Subscribe",
       "disclaimer": "No spam. Unsubscribe at any time.",
-      "success": "Thank you for subscribing!"
+      "success": "Thank you for subscribing!",
+      "submit": "Subscribe"
     },
     "blog": {
       "eyebrow": "BLOG",
@@ -121,7 +156,9 @@
     "usageTitle": "Usage Instructions"
   },
   "card": {
-    "view": "View product"
+    "view": "View product",
+    "minRead": "min read",
+    "readMore": "Read article"
   },
   "common": {
     "readMore": "Read more",

@@ -62,19 +62,53 @@
       "euTitle": "Uppfyller EU-lagstiftning",
       "euDesc": "Alla produkter uppfyller EU:s krav fÃÂ¶r kosttillskott (2002/46/EG).",
       "madeInTitle": "Tillverkat i Finland",
-      "madeInDesc": "VÃÂ¥ra produkter paketeras och kontrolleras i Finland fÃÂ¶r hÃÂ¶gsta kvalitet."
+      "madeInDesc": "VÃÂ¥ra produkter paketeras och kontrolleras i Finland fÃÂ¶r hÃÂ¶gsta kvalitet.",
+      "veganTitle": "Vegansk",
+      "veganDesc": "Alla våra produkter passar veganer.",
+      "lactoseTitle": "Laktosfri",
+      "lactoseDesc": "Våra produkter innehåller inte laktos.",
+      "madeTitle": "Tillverkat i Finland",
+      "madeDesc": "Stolt finländskt – tillverkat i norr.",
+      "glutenTitle": "Glutenfri",
+      "glutenDesc": "Våra produkter passar glutenintoleranta.",
+      "noAdditivesTitle": "Inga tillsatser",
+      "noAdditivesDesc": "Rena råvaror utan onödiga tillsatser.",
+      "researchedTitle": "Vetenskapligt beprövat",
+      "researchedDesc": "Våra formuleringar baseras på beprövad forskning.",
+      "intro": "Högsta kvalitet är en självklarhet för oss – inte ett marknadsföringsord.",
+      "capsuleAlt": "Robust Nordic kapslar",
+      "certEyebrow": "CERTIFIERAD",
+      "certTitle": "GMP-certifierad kvalitet",
+      "certBody": "Varje produkt tillverkas i GMP-certifierade anläggningar med de striktaste hygien- och kvalitetsstandarderna.",
+      "certRatingLabel": "Genomsnittligt kundbetyg",
+      "certYearsLabel": "År i branschen",
+      "certMadeValue": "FI",
+      "certMadeLabel": "Tillverkat"
     },
     "story": {
       "eyebrow": "VÃÂR HISTORIA",
       "titleA": "Uppstod ur ett behov",
       "titleEm": "av verkliga lÃÂ¶sningar",
       "subtitle": "Robust Nordic uppstod ur frustration Ã¢ÂÂ marknaden hade fÃÂ¶r mÃÂ¥nga lÃÂ¥gkvalitativa kosttillskott. Vi bestÃÂ¤mde oss fÃÂ¶r att gÃÂ¶ra det bÃÂ¤ttre.",
-      "learnMore": "LÃÂ¤s mer"
+      "learnMore": "LÃÂ¤s mer",
+      "title": "Om oss och behovet av ett bättre alternativ",
+      "p1": "Robust Nordic grundades ur frustration över lågkvalitativa kosttillskott och viljan att göra det bättre – renare, effektivare, mer transparent.",
+      "p2": "Vi tror att alla förtjänar högkvalitativa kosttillskott som faktiskt fungerar – utan onödiga fyllnadsmedel eller oklara formuleringar.",
+      "cta": "Läs vår berättelse",
+      "imageAlt": "Robust Nordic – nordisk natur"
     },
     "testimonials": {
       "eyebrow": "KUNDRECENSIONER",
       "titleA": "Vad vÃÂ¥ra kunder",
-      "titleEm": "sÃÂ¤ger"
+      "titleEm": "sÃÂ¤ger",
+      "t1Name": "Johanna M.",
+      "t1Text": "Jag har använt Robust Nordics produkter i tre månader och energinivån är klart bättre. Kvaliteten märks redan när man öppnar burken.",
+      "t2Name": "Mikko K.",
+      "t2Text": "Äntligen ett kosttillskott med rena och tydliga ingredienser. Ashwagandha har förändrat mitt sätt att hantera stress.",
+      "title": "Vad våra kunder säger",
+      "trustPre": "Mer än",
+      "trustCount": "500+",
+      "trustPost": "nöjda kunder"
     },
     "newsletter": {
       "eyebrow": "NYHETSBREV",
@@ -83,7 +117,8 @@
       "placeholder": "Din e-postadress",
       "button": "Prenumerera",
       "disclaimer": "Ingen spam. Avprenumerera nÃÂ¤r som helst.",
-      "success": "Tack fÃÂ¶r din prenumeration!"
+      "success": "Tack fÃÂ¶r din prenumeration!",
+      "submit": "Prenumerera"
     },
     "blog": {
       "eyebrow": "BLOGG",
@@ -121,7 +156,9 @@
     "usageTitle": "Användningsanvisning"
   },
   "card": {
-    "view": "LÃÂ¤s mer"
+    "view": "LÃÂ¤s mer",
+    "minRead": "min. läsning",
+    "readMore": "Läs artikel"
   },
   "common": {
     "readMore": "LÃÂ¤s mer",
