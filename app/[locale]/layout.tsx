@@ -51,7 +51,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${activeFonts.serif.variable} ${activeFonts.sans.variable} bg-background`}>
       <body className="font-sans antialiased">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider onError={() => {}} getMessageFallback={() => ""}>
           <SiteHeader />
           {children}
           <Footer />

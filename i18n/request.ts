@@ -10,15 +10,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   return {
     locale,
     messages: (await import(`../messages/${locale}.json`)).default,
-    onError(error) {
-      // Log missing messages as warnings instead of throwing
-      // Prevents build failure from dynamic/missing translation keys
-      if (typeof console !== "undefined") {
-        console.warn("[i18n] Missing translation:", error.originalMessage ?? "(dynamic key)")
-      }
-    },
-    getMessageFallback({ key, namespace }: { key: string; namespace?: string }) {
-      return "" // Return empty string for missing keys
-    }
+    onError() {},
+    getMessageFallback() { return "" }
   }
 })
