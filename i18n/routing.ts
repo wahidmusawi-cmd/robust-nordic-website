@@ -6,6 +6,6 @@ export type Locale = (typeof locales)[number]
 export const routing = defineRouting({
   locales,
   defaultLocale: "fi",
-  // Finnish stays at the root (/tuotteet), Swedish/English get a prefix (/sv, /en)
-  localePrefix: "as-needed",
+  // All locales use explicit prefix: /fi/, /sv/, /en/
+  localePrefix: "always",
 })
