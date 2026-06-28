@@ -127,7 +127,8 @@
     "readMore": "Read more",
     "loading": "Loading...",
     "error": "Something went wrong",
-    "back": "Back"
+    "back": "Back",
+    "exploreProducts": "Explore our products"
   },
   "quiz": {
     "badge": "PRODUCT TEST",
@@ -254,7 +255,10 @@
           }
         }
       }
-    }
+    },
+    "questionLabel": "Question",
+    "of": "of",
+    "goalHelper": "Choose one option that best describes your goal."
   },
   "blogPage": {
     "metaTitle": "Blog | Robust Nordic",

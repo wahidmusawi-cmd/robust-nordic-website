@@ -185,8 +185,7 @@ export function WellnessQuiz() {
   }
 
   // ---------- QUESTIONS ----------
-  const qKey = `questions.${current.id}`
-  const hasHelper = current.id === "goal" || current.id === "diet"
+  const hasHelper = current.id === "goal"
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -208,16 +207,16 @@ export function WellnessQuiz() {
 
       {/* Question */}
       <h2 className="font-serif text-3xl sm:text-4xl text-foreground leading-tight text-balance">
-        {t(`${qKey}.question`)}
+        {t(current.questionKey)}
       </h2>
-      {hasHelper && <p className="mt-3 text-muted-foreground leading-relaxed">{t(`${qKey}.helper`)}</p>}
+      {hasHelper && <p className="mt-3 text-muted-foreground leading-relaxed">{t("goalHelper")}</p>}
 
       {/* Options */}
       <div className="mt-8 grid gap-3">
         {current.options.map((option) => {
           const selected = (answers[current.id] || []).includes(option.id)
-          const label = t(`${qKey}.options.${option.id}.label`)
-          const description = t(`${qKey}.options.${option.id}.description`)
+          const label = t(option.labelKey)
+          const description = ""
           return (
             <button
               key={option.id}

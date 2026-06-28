@@ -127,7 +127,8 @@
     "readMore": "Lue lisÃÂ¤ÃÂ¤",
     "loading": "Ladataan...",
     "error": "Jokin meni pieleen",
-    "back": "Takaisin"
+    "back": "Takaisin",
+    "exploreProducts": "Tutustu tuotteisiimme"
   },
   "quiz": {
     "badge": "TUOTETESTI",
@@ -254,7 +255,10 @@
           }
         }
       }
-    }
+    },
+    "questionLabel": "Kysymys",
+    "of": "/",
+    "goalHelper": "Valitse yksi vaihtoehto, joka kuvaa parhaiten tavoitettasi."
   },
   "blogPage": {
     "metaTitle": "Blogi | Robust Nordic",
