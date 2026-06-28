@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { Analytics } from "@vercel/analytics/next"
-import { NextIntlClientProvider } from "next-intl"
+import { IntlProvider } from "@/components/intl-provider"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
@@ -51,11 +51,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${activeFonts.serif.variable} ${activeFonts.sans.variable} bg-background`}>
       <body className="font-sans antialiased">
-        <NextIntlClientProvider onError={() => {}} getMessageFallback={() => ""}>
+        <IntlProvider>
           <SiteHeader />
           {children}
           <Footer />
-        </NextIntlClientProvider>
+        </IntlProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
