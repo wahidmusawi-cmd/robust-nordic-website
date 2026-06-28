@@ -1,4 +1,4 @@
-import { productTranslations } from "./product-translations"
+import { productTranslations } from "@/lib/product-translations"
 
 export type Product = {
   slug: string
@@ -6,6 +6,7 @@ export type Product = {
   shortName: string
   size?: string
   price: string
+  stripePriceId?: string
   image: string
   category: "ravintolisat" | "hyvinvointi"
   tagline: string
@@ -17,357 +18,433 @@ export type Product = {
   productColor: string
 }
 
-type Locale = "fi" | "sv" | "en"
-
-// Shopify product handle mapping (slug → Shopify handle)
-const liveHandles: Record<string, string> = {
-  "biocell-kollageeni-hyaluronihappo": "biocell-kollageeni-hyaluronihappo",
-  "quattro-magnesium": "quattro-magnesium",
-  "omega-3-krillioljy": "omega-3-krillioljy",
-  "biotic-boost-probiootti": "biotic-boost-probiootti",
-  "lions-mane-sienikapseli": "lions-mane-sienikapseli",
-  "reishi-sienikapseli": "reishi-sienikapseli",
-  "chaga-sienikapseli": "chaga-sienikapseli",
-  "d3-k2-vitamiini": "d3-k2-vitamiini",
-  "b12-folaatti": "b12-folaatti",
-  "c-vitamiini-bioflavonoidit": "c-vitamiini-bioflavonoidit",
-  "ashwagandha-ks66": "ashwagandha-ks66",
-  "omega-3-kalaoljy": "omega-3-kalaoljy",
-  "unikombo-magnesium-l-tryptofaani": "unikombo-magnesium-l-tryptofaani",
-}
-
-export function getBuyUrl(slug: string): string {
-  const handle = liveHandles[slug] ?? slug
-  return `https://robustnordic.fi/products/${handle}`
-}
-
-// Base Finnish product data
-const baseProducts: Product[] = [
+// Kaikki tuotteet haettu robustnordic.fi -kaupasta (oikeat kuvat, hinnat ja kuvaukset)
+export const products: Product[] = [
   {
     slug: "biocell-kollageeni-hyaluronihappo",
     name: "BioCell Kollageeni® + Hyaluronihappo",
     shortName: "BioCell Kollageeni®",
-    size: "120 kapselia",
-    price: "42,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/biocell-kollageen.jpg",
+    size: "60 kaps.",
+    price: "36,90",
+    stripePriceId: "price_1TnPmcHoGJuna68gkA3eh4fZ",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/kollageeni.png?v=1767721990",
     category: "ravintolisat",
-    tagline: "Iho, nivelet ja sidekudos – patentoidulla BioCell Kollageeni® -teknologialla",
+    tagline: "Iholle & nivelille",
     description:
-      "BioCell Kollageeni® on kliinisesti tutkittu hydrolysoitu kollageenimatriisi, joka sisältää tyypin II kollageenia, hyaluronihappoa ja kondroitiinisulfaattia. Se tukee ihon elastisuutta, nivelten toimintaa ja sidekudoksen terveyttä.",
+      "Patentoitu BioCell Collagen® yhdistettynä hyaluronihappoon tukee ihon kimmoisuutta, nivelten liikkuvuutta ja rustokudoksen hyvinvointia. Kliinisesti tutkittu koostumus, joka imeytyy tehokkaasti.",
     benefits: [
-      "Tukee ihon kosteutta ja elastisuutta",
-      "Edistää nivelten liikkuvuutta",
-      "Sisältää hyaluronihappoa ja kondroitiinisulfaattia",
-      "Kliinisesti tutkittu BioCell Kollageeni®",
-      "Valmistettu Suomessa",
+      "Tukee ihon, hiusten ja kynsien terveyttä",
+      "Edistää nivelten liikkuvuutta ja rustokudosta",
+      "Patentoitu BioCell Collagen® -raaka-aine",
+      "Sisältää hyaluronihappoa ja kondroitiinia",
     ],
-    ingredients: "BioCell Kollageeni® (hydrolysoitu tyypin II kollageeni, hyaluronihappo, kondroitiinisulfaatti), kapselinkuori (HPMC).",
-    usage: "2 kapselia päivittäin ruuan kanssa.",
-    badge: "Bestseller",
-    productColor: "#1a4f80",
+    usage: "2 kapselia päivässä veden kanssa, mieluiten tyhjään vatsaan.",
+    badge: "Suosittu",
+    productColor: "#e8c4cb",
   },
   {
     slug: "quattro-magnesium",
     name: "Quattro Magnesium",
     shortName: "Quattro Magnesium",
-    size: "90 kapselia",
-    price: "34,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/quattro-magnesium.jpg",
+    size: "60 kaps.",
+    price: "36,90",
+    stripePriceId: "price_1TnPmdHoGJuna68gKcprhQuF",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/quattro-magnesium.png?v=1767722068",
     category: "ravintolisat",
-    tagline: "Neljä magnesiummuotoa yhdessä kapselissa – optimaalinen imeytyminen",
+    tagline: "Lihaksille, luustolle & hermostolle",
     description:
-      "Quattro Magnesium yhdistää neljä erilaista magnesiumin muotoa: sitraatin, bisglysinaatin, malaaatin ja tauraatin. Tämä yhdistelmä varmistaa erinomaisen biosaatavuuden ja kattaa magnesiumin moninaiset tarpeet.",
+      "Neljä erilaista hyvin imeytyvää magnesiummuotoa yhdessä kapselissa: glysinaatti, sitraatti, malaatti ja tauraatti. Täydennettynä bioaktiivisella B6-vitamiinilla lihasten, hermoston ja energia-aineenvaihdunnan tueksi.",
     benefits: [
-      "Neljä magnesiummuotoa optimaaliseen imeytymiseen",
-      "Tukee lihasten normaalia toimintaa",
-      "Edistää hermoston normaalia toimintaa",
-      "Auttaa vähentämään väsymystä",
-      "Tukee normaalia psykologista toimintaa",
+      "Tukee lihasten normaalia toimintaa ja rentoutumista",
+      "Edistää hermoston ja psyykkisten toimintojen toimintaa",
+      "Vähentää väsymystä ja uupumusta",
+      "Neljä magnesiummuotoa + bioaktiivinen B6",
     ],
-    ingredients: "Magnesiumsitraatti, magnesiumbisglysinaatti, magnesiummalaaatti, magnesiumtauraatti, kapselinkuori (HPMC).",
-    usage: "3 kapselia päivittäin ruuan kanssa.",
+    usage: "2 kapselia päivässä, mieluiten illalla veden kanssa.",
+    badge: "Suosittu",
     productColor: "#6590b2",
   },
   {
     slug: "omega-3-krillioljy",
     name: "Omega-3 Krilliöljy",
-    shortName: "Krilliöljy",
-    size: "60 kapselia",
-    price: "36,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/omega3-krillioljy.jpg",
+    shortName: "Omega-3 Krilliöljy",
+    size: "60 kaps.",
+    price: "39,90",
+    stripePriceId: "price_1TnPmeHoGJuna68gLPBj8Y4v",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/krillioljy-omega.png?v=1767722033",
     category: "ravintolisat",
-    tagline: "Luonnollinen krilliöljy EPA:lla, DHA:lla ja astaksantiinilla",
+    tagline: "Aivoille, sydämelle & maksalle",
     description:
-      "Krilliöljy on erityinen omega-3:n lähde, sillä sen rasvahapot ovat fosfolipidimuodossa, mikä parantaa imeytymistä merkittävästi verrattuna tavalliseen kalaöljyyn. Sisältää myös luonnollista astaksantiinia.",
+      "Luonnostaan fosfolipidimuodossa olevat Omega-3-rasvahapot (EPA ja DHA) tukevat sydämen, aivojen ja maksan hyvinvointia tehokkaasti. Sisältää Superba2™ -krilliöljyä ja astaksantiinia, joka imeytyy paremmin kuin tavallinen kalaöljy.",
     benefits: [
-      "Fosfolipidimuotoinen omega-3 – parempi imeytyminen",
-      "Tukee sydämen ja aivojen terveyttä",
-      "Sisältää luonnollista astaksantiinia",
-      "Ei kalaöljyn hajua tai sivumakua",
-      "Kestävästä lähtökohdasta",
+      "Tukee sydämen normaalia toimintaa",
+      "Edistää aivojen ja näön normaalia toimintaa",
+      "Sisältää astaksantiinia – voimakasta antioksidanttia",
+      "Superba2™ – erinomainen imeytyvyys",
     ],
-    ingredients: "Krilliöljy (Euphausia superba), gelatiinikapselikuori, glyseroli.",
-    usage: "2 kapselia päivittäin ruuan yhteydessä.",
-    badge: "Uutuus",
-    productColor: "#d2534f",
+    usage: "2 kapselia päivässä ruokailun yhteydessä.",
+    productColor: "#c44a4a",
+  },
+  {
+    slug: "reishi-chaga-lions-mane",
+    name: "Reishi, Chaga, Lion's Mane",
+    shortName: "Reishi, Chaga, Lion's Mane",
+    size: "60 kaps.",
+    price: "36,90",
+    stripePriceId: "price_1TnPmeHoGJuna68gNSTkY6YS",
+    image:
+      "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Sienettuotekuva_79da6894-d8c9-402f-8599-a60e35aa2c21.png?v=1764063319",
+    category: "ravintolisat",
+    tagline: "Vastustuskyvyn & jaksamisen tueksi",
+    description:
+      "Kolme tehokasta adaptogeenisientä yhdessä: Reishi tukee stressinhallintaa, Chaga on runsas antioksidanttien lähde ja Lion's Mane tukee muistia ja keskittymistä.",
+    benefits: [
+      "Reishi – stressinhallinta ja palautuminen",
+      "Chaga – runsaasti antioksidantteja",
+      "Lion's Mane – muisti ja keskittyminen",
+      "Kolme adaptogeenisientä yhdessä kapselissa",
+    ],
+    usage: "2 kapselia päivässä veden kanssa.",
+    productColor: "#8a6d3b",
   },
   {
     slug: "biotic-boost-probiootti",
-    name: "Biotic Boost Probiootti",
+    name: "Biotic Boost (Probiootti)",
     shortName: "Biotic Boost",
-    size: "60 kapselia",
-    price: "32,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/biotic-boost.jpg",
+    size: "60 kaps.",
+    price: "41,90",
+    stripePriceId: "price_1TnPmfHoGJuna68gCdeG1wVx",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/BioticBoostproductpic.png?v=1765455204",
     category: "ravintolisat",
-    tagline: "10 miljardia bakteerikantaa – suoliston ja immuunijärjestelmän tuki",
+    tagline: "Suolistolle & immuniteetille",
     description:
-      "Biotic Boost sisältää 10 erilaista probioottikantaa, joilla on yhteensä 10 miljardia CFU per kapseli. Kansien suojaava enteropäällyste varmistaa, että bakteerit saavuttavat suoliston elossa.",
+      "Sisältää 16 erilaista bakteerikantaa sekä prebiootteja, jotka tukevat ruoansulatusta, suoliston hyvinvointia, immuunijärjestelmää ja mielen tasapainoa.",
     benefits: [
-      "10 miljardia CFU per kapseli",
-      "10 erilaista probioottikantaa",
-      "Tukee suoliston tasapainoa",
-      "Vahvistaa immuunijärjestelmää",
-      "Enteropäällyste – bakteerit säilyvät elossa",
+      "16 erilaista bakteerikantaa",
+      "Sisältää prebiootteja bakteerien ravinnoksi",
+      "Tukee ruoansulatusta ja suoliston hyvinvointia",
+      "Edistää immuunijärjestelmän toimintaa",
     ],
-    ingredients: "Probioottiseos (Lactobacillus acidophilus, L. rhamnosus, L. plantarum, Bifidobacterium longum, B. bifidum), prebiootit (inuliini), HPMC-kapselikuori.",
-    usage: "1 kapseli päivittäin tyhjään mahaan.",
-    productColor: "#2d7d52",
+    usage: "1 kapseli päivässä, mieluiten aamulla tyhjään vatsaan.",
+    productColor: "#5a8f6b",
   },
   {
-    slug: "lions-mane-sienikapseli",
-    name: "Lion's Mane Sienikapseli",
-    shortName: "Lion's Mane",
-    size: "60 kapselia",
-    price: "38,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/lions-mane.jpg",
-    category: "hyvinvointi",
-    tagline: "Aivojen ja hermoston tuki – patentoidulla uutteella",
-    description:
-      "Lion's Mane (Hericium erinaceus) on erikoissieni, joka tunnetaan aivojen toimintaa tukevista ominaisuuksistaan. Sisältää hericenoneita ja erinacineita, jotka tukevat hermokasvutekijän (NGF) tuotantoa.",
-    benefits: [
-      "Tukee kognitiivista toimintaa ja muistia",
-      "Edistää hermoston terveyttä",
-      "Tukee mielialaa ja stressinhallintaa",
-      "Uute hedelmäkehosta (30% polysakkaridiit)",
-      "Vegaaninen ja gluteeniton",
-    ],
-    ingredients: "Lion's Mane -sienikuivausuute (Hericium erinaceus, hedelmäkeho, 30% polysakkaridiit), HPMC-kapselikuori.",
-    usage: "2 kapselia päivittäin.",
-    badge: "Suosittu",
-    productColor: "#8b6b4a",
-  },
-  {
-    slug: "reishi-sienikapseli",
-    name: "Reishi Sienikapseli",
-    shortName: "Reishi",
-    size: "60 kapselia",
+    slug: "c-vitamiini-pureway-c-sinkki",
+    name: "C-vitamiini Pureway-C® + Sinkki",
+    shortName: "C-vitamiini + Sinkki",
+    size: "60 kaps.",
     price: "36,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/reishi.jpg",
-    category: "hyvinvointi",
-    tagline: "Kuninkaallinen sieni – immuunijärjestelmän ja unen tuki",
-    description:
-      "Reishi (Ganoderma lucidum) on yksi maailman arvostetuimmista lääkekasveista. Se sisältää beetaglukaaneja ja triterpenoideja, jotka tukevat immuunijärjestelmää ja edistävät rentoutumista.",
-    benefits: [
-      "Tukee immuunijärjestelmän toimintaa",
-      "Edistää rentoutumista ja unen laatua",
-      "Adaptogeen – auttaa stressinhallinnassa",
-      "Sisältää beetaglukaaneja ja triterpenoideja",
-      "Luonnonmukainen viljely",
-    ],
-    ingredients: "Reishi-sienikuivausuute (Ganoderma lucidum, 30% polysakkaridiit, 2% triterpenoidit), HPMC-kapselikuori.",
-    usage: "2 kapselia illalla ruuan kanssa.",
-    productColor: "#7b3f3f",
-  },
-  {
-    slug: "chaga-sienikapseli",
-    name: "Chaga Sienikapseli",
-    shortName: "Chaga",
-    size: "60 kapselia",
-    price: "34,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/chaga.jpg",
-    category: "hyvinvointi",
-    tagline: "Pohjoisen superruoka – antioksidanttien kuningas",
-    description:
-      "Chaga (Inonotus obliquus) kasvaa Pohjois-Euroopan ja Venäjän koivumetsissä. Se on yksi antioksidanttirikkaimmista luonnontuotteista ja on käytetty perinteisessä pohjoismaisessa kansanlääkinnässä vuosisatoja.",
-    benefits: [
-      "Erittäin korkea antioksidanttipitoisuus (ORAC)",
-      "Tukee immuunijärjestelmää",
-      "Edistää ihon terveyttä",
-      "Kerätty luonnosta Skandinaviasta",
-      "Ei lisäaineita",
-    ],
-    ingredients: "Chaga-sienikuivausuute (Inonotus obliquus, 30% polysakkaridiit), HPMC-kapselikuori.",
-    usage: "2 kapselia päivittäin.",
-    productColor: "#5c4523",
-  },
-  {
-    slug: "d3-k2-vitamiini",
-    name: "D3 + K2 Vitamiini",
-    shortName: "D3 + K2",
-    size: "90 kapselia",
-    price: "28,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/d3-k2.jpg",
+    stripePriceId: "price_1TnPmfHoGJuna68gMKoTQFUm",
+    image:
+      "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Cvitamiinituotekuva_75a69245-3ed2-4e52-9567-475730b2ed04.png?v=1764062650",
     category: "ravintolisat",
-    tagline: "D3 ja K2 yhdessä – luusto, immuuni ja sydän",
+    tagline: "Vastustuskyvylle",
     description:
-      "D3-vitamiini ja K2-vitamiini (MK-7) toimivat synergisesti: D3 auttaa kalsiumin imeytymisessä, K2 ohjaa kalsiumin luustoon sen sijaan, että se kertyisi valtimoihin.",
+      "Robustin laadukas PUREWAY-C® on tehokkaasti imeytyvä ja pitkävaikutteinen C-vitamiinin muoto. Yhdistettynä sinkkiin se tukee immuunijärjestelmän normaalia toimintaa.",
     benefits: [
-      "Tukee luuston ja hampaiden terveyttä",
-      "D3 5000 IU + K2 (MK-7) 100 µg",
-      "Tukee immuunijärjestelmää",
-      "Edistää sydämen terveyttä",
-      "Vegaaninen D3 (lanoliinivapaa vaihtoehto saatavilla)",
+      "PUREWAY-C® – imeytyy nopeammin kuin tavallinen C-vitamiini",
+      "Pitkävaikutteinen koostumus",
+      "Sinkki tukee immuunijärjestelmää",
+      "Suojaa soluja oksidatiiviselta stressiltä",
     ],
-    ingredients: "Kolekalsifedioli (D3-vitamiini), menakinoni-7 (K2-vitamiini MK-7), MCT-öljy, HPMC-kapselikuori.",
-    usage: "1 kapseli päivittäin ruuan kanssa.",
-    productColor: "#d4a017",
+    usage: "1 kapseli päivässä veden kanssa.",
+    productColor: "#e0913b",
   },
   {
-    slug: "b12-folaatti",
-    name: "B12 + Folaatti",
+    slug: "zma-magnesiumglysinaatti",
+    name: "ZMA – Magnesiumglysinaatti",
+    shortName: "ZMA",
+    size: "120 kaps.",
+    price: "35,90",
+    stripePriceId: "price_1TnPmgHoGJuna68gKS85OHNY",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/ZMAproductpic.png?v=1765373403",
+    category: "ravintolisat",
+    tagline: "Palautumiseen & hormonitasapainoon",
+    description:
+      "ZMA sisältää magnesiumglysinaattia, B6-vitamiinia, sinkkiä ja hampunsiemenproteiinia – tukee unta, hormonitoimintaa ja lihasten palautumista. Klassikoiden klassikko urheilijoille.",
+    benefits: [
+      "Tukee lihasten palautumista",
+      "Edistää normaalia hormonitoimintaa",
+      "Magnesium ja B6 tukevat unta",
+      "Sinkki ylläpitää normaalia testosteronitasoa",
+    ],
+    usage: "3 kapselia päivässä ennen nukkumaanmenoa, tyhjään vatsaan.",
+    productColor: "#4a6b8a",
+  },
+  {
+    slug: "moringa-luonnon-multivitamiini",
+    name: "Moringa (luonnon multivitamiini)",
+    shortName: "Moringa",
+    size: "60 kaps.",
+    price: "39,90",
+    stripePriceId: "price_1TnPmgHoGJuna68go1d8I1zm",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Moringaproductpic.png?v=1765456961",
+    category: "ravintolisat",
+    tagline: "Energiaa & vastustuskykyä",
+    description:
+      "Luomu-moringa on luonnollinen kasvilähde A- ja E-vitamiinille sekä raudalle, jotka tukevat normaalia energiantuotantoa, immuunijärjestelmän toimintaa ja auttavat vähentämään väsymystä.",
+    benefits: [
+      "Superfood täynnä vitamiineja ja mineraaleja",
+      "Tukee energiantuotantoa",
+      "Sisältää rautaa ja A- sekä E-vitamiinia",
+      "Auttaa vähentämään väsymystä",
+    ],
+    usage: "2 kapselia päivässä veden kanssa.",
+    productColor: "#5a8f4a",
+  },
+  {
+    slug: "b12-vitamiini-folaatti",
+    name: "B12-vitamiini + Folaatti",
     shortName: "B12 + Folaatti",
-    size: "90 tablettia",
-    price: "24,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/b12-folaatti.jpg",
+    size: "120 tbl.",
+    price: "39,90",
+    stripePriceId: "price_1TnPmhHoGJuna68gcUXyklVv",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/b12.png?v=1767721905",
     category: "ravintolisat",
-    tagline: "Aktiivinen B12 ja 5-MTHF folaatti – energia ja hermoston tuki",
+    tagline: "Hermostolle & muistille",
     description:
-      "Tämä tuote sisältää aktiivista B12-vitamiinia (metyylikobalamiini) sekä aktiivista folaattimuotoa (5-MTHF), joka on biosaatavammassa muodossa kuin tavallinen foolihappo. Yhdessä ne tukevat energiaa ja hermoston toimintaa.",
+      "Metyloitu B12 (metyylikobalamiini) yhdistettynä aktiiviseen folaattiin hermoston ja muistin tueksi. Sisältää suomalaista villimustikkaa.",
     benefits: [
-      "Aktiivinen B12 (metyylikobalamiini) 1000 µg",
-      "5-MTHF folaatti – paremmin imeytyvä muoto",
-      "Tukee hermoston ja immuunijärjestelmän toimintaa",
-      "Vähentää väsymystä",
-      "Tukee punasolujen muodostumista",
+      "Tukee hermoston normaalia toimintaa",
+      "Edistää punasolujen muodostumista",
+      "Aktiivinen, hyvin imeytyvä B12-muoto",
+      "Sisältää suomalaista villimustikkaa",
     ],
-    ingredients: "Metyylikobalamiini (B12-vitamiini), 5-metyylitertahydrofolaatti (folaatti), täyteaine (mikrokristalliinen selluloosa).",
-    usage: "1 tabletti päivittäin.",
-    productColor: "#3a5fa5",
+    usage: "1 tabletti päivässä.",
+    productColor: "#7a2d4a",
   },
   {
-    slug: "ashwagandha-ks66",
-    name: "Ashwagandha KS66®",
-    shortName: "Ashwagandha",
-    size: "60 kapselia",
-    price: "36,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/ashwagandha.jpg",
+    slug: "bone-boost-kalsium-d3-k2",
+    name: "Bone Boost – Kalsium + D3 + K2",
+    shortName: "Bone Boost",
+    size: "60 kaps.",
+    price: "26,90",
+    stripePriceId: "price_1TnPmhHoGJuna68gZrLZNfT5",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/BoneBoostproductpic.png?v=1765373691",
+    category: "ravintolisat",
+    tagline: "Luustolle & hampaille",
+    description:
+      "Luonnollinen yhdistelmä D₃- ja K₂-vitamiinia kalsiumilla vahvistaa luustoa ja hampaita sekä tukee kehon normaalia verenkiertoa. D3 ja K2 ohjaavat kalsiumin oikeaan paikkaan.",
+    benefits: [
+      "Vahvistaa luustoa ja hampaita",
+      "D3 tukee kalsiumin imeytymistä",
+      "K2 ohjaa kalsiumin luihin",
+      "Tukee normaalia verenkiertoa",
+    ],
+    usage: "2 kapselia päivässä ruokailun yhteydessä.",
+    productColor: "#6b8a9c",
+  },
+  {
+    slug: "kelp-luonnollinen-jodi",
+    name: "Kelp (Luonnollinen jodi)",
+    shortName: "Kelp – Jodi",
+    size: "90 kaps.",
+    price: "29,90",
+    stripePriceId: "price_1TnPmiHoGJuna68gQvE051Di",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Kelpproductpic.png?v=1765456057",
+    category: "ravintolisat",
+    tagline: "Kilpirauhaselle & aineenvaihdunnalle",
+    description:
+      "Pohjoisnorjalaisesta merilevästä valmistettu kelp on luonnollinen jodilähde aineenvaihdunnan, hormonitasapainon ja energiantuotannon tueksi. Runsaasti mineraaleja ja antioksidantteja.",
+    benefits: [
+      "Luonnollinen jodin lähde merilevästä",
+      "Tukee kilpirauhasen normaalia toimintaa",
+      "Edistää energia-aineenvaihduntaa",
+      "Runsaasti mineraaleja",
+    ],
+    usage: "1 kapseli päivässä veden kanssa.",
+    productColor: "#3b6b5a",
+  },
+  {
+    slug: "arctic-menoboost",
+    name: "Arctic Menoboost",
+    shortName: "Arctic Menoboost",
+    size: "60 kaps.",
+    price: "35,90",
+    stripePriceId: "price_1TnPmiHoGJuna68gEYdu89EE",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Menoboostproductpic_1.png?v=1765372383",
+    category: "ravintolisat",
+    tagline: "Tasapainoa vaihdevuosiin",
+    description:
+      "Luonnollinen tuki vaihdevuosien ajalle. Arctic MenoBoost yhdistää huolella valitut kasviuutteet ja B-vitamiinit, jotka auttavat ylläpitämään tasapainoa, jaksamista ja levollista oloa.",
+    benefits: [
+      "Luonnolliset kasviuutteet vaihdevuosien tueksi",
+      "Tukee jaksamista ja tasapainoa",
+      "B-vitamiinit edistävät hermoston toimintaa",
+      "Auttaa ylläpitämään levollista oloa",
+    ],
+    usage: "2 kapselia päivässä veden kanssa.",
+    productColor: "#9c6b8a",
+  },
+  {
+    slug: "amin-x-robust-eaa",
+    name: "Amin X Robust EAA-jauhe",
+    shortName: "Amin X EAA",
+    price: "34,90",
+    stripePriceId: "price_1TnPmjHoGJuna68gFN3PA8AF",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Mockup-1_1.png?v=1766217693",
+    category: "ravintolisat",
+    tagline: "Lihasten palautumiseen",
+    description:
+      "Laadukas EAA- ja BCAA-yhdistelmä aktiivisille liikkujille. Sisältää kaikki välttämättömät aminohapot (EAA) sekä BCAA-aminohapot optimaalisessa 2:1:1-suhteessa lihasten palautumisen ja kehon suorituskyvyn tueksi.",
+    benefits: [
+      "Kaikki välttämättömät aminohapot (EAA)",
+      "BCAA 2:1:1-suhteessa",
+      "Tukee lihasten palautumista ja kasvua",
+      "Ihanteellinen harjoittelun aikana ja jälkeen",
+    ],
+    usage: "1 annos (mittalusikka) veteen sekoitettuna harjoittelun yhteydessä.",
+    productColor: "#4a7a8a",
+  },
+  {
+    slug: "grape-punch-elektrolyytti",
+    name: "Grape Punch – Elektrolyyttijuoma",
+    shortName: "Grape Punch",
+    price: "39,90",
+    stripePriceId: "price_1TnPmjHoGJuna68g0IEEqcvn",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Grapepunchproductpicture_1.png?v=1765977042",
+    category: "ravintolisat",
+    tagline: "Nesteytykseen & energiaan",
+    description:
+      "Grape Punch -elektrolyyttijuoma tarjoaa tehokkaan nesteytyksen, tärkeät mineraalit sekä raikkaan maun täysin ilman sokeria, kaloreita tai kofeiinia. Suunniteltu urheilijoille ja aktiiviseen elämäntapaan.",
+    benefits: [
+      "Tehokas nesteytys ja elektrolyytit",
+      "Ei sokeria, kaloreita tai kofeiinia",
+      "Raikas rypäleen maku",
+      "Urheilijoille ja aktiiviseen arkeen",
+    ],
+    usage: "1 annos veteen sekoitettuna tarpeen mukaan.",
+    badge: "Uutuus",
+    productColor: "#6b4a8a",
+  },
+  {
+    slug: "airflow-nenateippi",
+    name: "AirFlow Nenäteippi",
+    shortName: "AirFlow Nenäteippi",
+    price: "29,90",
+    stripePriceId: "price_1TnPmkHoGJuna68gOGYjR550",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Nenateippikuva.png?v=1766066300",
     category: "hyvinvointi",
-    tagline: "Stressinhallintaan – patentoitu KS66® ashwagandha-uute",
+    tagline: "Parempaan hengitykseen & uneen",
     description:
-      "Ashwagandha (Withania somnifera) on ayurveda-lääketieteen keskeinen adaptogeen. KS66®-uute on kliinisesti tutkittu ja sisältää 5% witanolideita, jotka tukevat stressinhallintaa ja palautumista.",
+      "Nopeavaikutteinen nenäteippi lievittää nenän tukkoisuutta ja vähentää kuorsaamista. Parantaa urheilusuoritusta ja unen laatua avaamalla hengitystiet luonnollisesti.",
     benefits: [
-      "Patentoitu KS66® uute – 5% witanolideja",
-      "Kliinisesti tutkittu stressinhallintaan",
-      "Tukee palautumista ja unen laatua",
-      "Edistää normaalia energiatasoa",
-      "Adaptogeen – kehon mukautumiskyky stressiin",
+      "Lievittää nenän tukkoisuutta",
+      "Vähentää kuorsaamista",
+      "Parantaa urheilusuoritusta",
+      "Edistää parempaa unta",
     ],
-    ingredients: "Ashwagandha-juuriuute (Withania somnifera, KS66®, 5% witanolideja), HPMC-kapselikuori.",
-    usage: "1–2 kapselia päivittäin ruuan kanssa.",
-    productColor: "#8b5e3c",
+    usage: "Kiinnitä puhtaalle ja kuivalle iholle nenän päälle ennen nukkumista tai urheilua.",
+    productColor: "#4a6b8a",
   },
   {
-    slug: "unikombo-magnesium-l-tryptofaani",
-    name: "Unikombo – Magnesium + L-Tryptofaani",
-    shortName: "Unikombo",
-    size: "60 kapselia",
-    price: "32,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/unikombo.jpg",
+    slug: "migreenimyssy",
+    name: "Migreenimyssy",
+    shortName: "Migreenimyssy",
+    price: "39,90",
+    stripePriceId: "price_1TnPmkHoGJuna68g2zNQgCn9",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Migreenimyssykuva.png?v=1766066159",
     category: "hyvinvointi",
-    tagline: "Luonnollinen univalmiste – magnesium ja L-tryptofaani",
+    tagline: "Helpotusta migreeniin & stressiin",
     description:
-      "Unikombo yhdistää magnesiumbisglysinaatin (rauhoittava magnesiummuoto) ja L-tryptofaanin, joka on serotoniinin ja melatoniinin esiaste. Yhdessä ne edistävät luonnollista, laadukasta unta.",
+      "Tehokasta helpotusta migreeniin, päänsärkyyn, stressiin ja lihasjäykkyyteen. Kylmä- ja painekäsittely rentouttaa ja rauhoittaa luonnollisesti ilman lääkkeitä.",
     benefits: [
-      "Edistää nukahtamista luonnollisesti",
-      "Magnesiumbisglysinaatti – rauhoittava muoto",
-      "L-tryptofaani – serotoniinin esiaste",
-      "Ei riippuvuutta",
-      "Sopii pitkäaikaiseen käyttöön",
+      "Helpottaa migreeniä ja päänsärkyä",
+      "Rentouttaa ja vähentää stressiä",
+      "Lievittää lihasjäykkyyttä",
+      "Uudelleenkäytettävä ja helppokäyttöinen",
     ],
-    ingredients: "L-tryptofaani, magnesiumbisglysinaatti, HPMC-kapselikuori.",
-    usage: "2 kapselia 30–60 min ennen nukkumaanmenoa.",
-    productColor: "#2c3e6b",
+    usage: "Säilytä pakastimessa ja aseta päähän 15–20 minuutiksi tarpeen mukaan.",
+    productColor: "#4a5a8a",
   },
   {
-    slug: "c-vitamiini-bioflavonoidit",
-    name: "C-vitamiini + Bioflavonoidit",
-    shortName: "C-vitamiini",
-    size: "90 tablettia",
-    price: "22,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/c-vitamiini.jpg",
-    category: "ravintolisat",
-    tagline: "Vahvistettu C-vitamiini bioflavonoideilla – immuunisuoja",
+    slug: "pilleriannostelija",
+    name: "Pilleriannostelija",
+    shortName: "Pilleriannostelija",
+    price: "14,90",
+    stripePriceId: "price_1TnPmlHoGJuna68gW7JREY3F",
+    image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Robustpilleriannostelija.png?v=1766219097",
+    category: "hyvinvointi",
+    tagline: "Päivittäisten lisien annosteluun",
     description:
-      "C-vitamiini on keskeinen antioksidantti ja immuunijärjestelmän rakentaja. Bioflavonoidit (hesperidiini, rutiini) parantavat C-vitamiinin imeytymistä ja vahvistavat hiussuonistoa.",
+      "Kätevä Robust Nordic -pilleriannostelija auttaa pitämään päivittäiset ravintolisät järjestyksessä ja mukana matkalla. Selkeä ja kestävä muotoilu.",
     benefits: [
-      "1000 mg C-vitamiinia per tabletti",
-      "Bioflavonoidit parantavat imeytymistä",
-      "Tukee immuunijärjestelmää",
-      "Edistää kollageenin muodostumista",
-      "Antioksidanttisuoja",
+      "Pidä ravintolisät järjestyksessä",
+      "Kätevä mukaan matkalle",
+      "Kestävä ja laadukas materiaali",
+      "Selkeä Robust Nordic -muotoilu",
     ],
-    ingredients: "L-askorbiinihappo (C-vitamiini), sitrusbioflavonoidit (hesperidiini, rutiini), täyteaine.",
-    usage: "1 tabletti päivittäin ruuan kanssa.",
-    productColor: "#e07b39",
-  },
-  {
-    slug: "omega-3-kalaoljy",
-    name: "Omega-3 Kalaöljy",
-    shortName: "Kalaöljy",
-    size: "90 kapselia",
-    price: "28,90",
-    image: "https://cdn.shopify.com/s/files/1/0735/6023/4323/files/omega3-kalaoljy.jpg",
-    category: "ravintolisat",
-    tagline: "Korkealaatuinen kalaöljy – 60% omega-3 EPA+DHA",
-    description:
-      "Korkealaatuinen kalaöljy pohjoisen kylmien vesien kalasta. Sisältää 60% omega-3-rasvahappoja, joista EPA ja DHA -muodossa. IFOS-sertifioitu puhtaus ja laatu.",
-    benefits: [
-      "60% omega-3 (EPA + DHA)",
-      "IFOS-sertifioitu puhtaus",
-      "Tukee sydämen terveyttä",
-      "Edistää aivojen toimintaa",
-      "Ei kalan hajua – enterokapselit",
-    ],
-    ingredients: "Kalaöljy (Engraulis encrasicolus), gelatiinikapselikuori, glyseroli, tokoferoli (E-vitamiini).",
-    usage: "3 kapselia päivittäin ruuan kanssa.",
-    productColor: "#1a6b8a",
+    productColor: "#6590b2",
   },
 ]
 
-export const products: Product[] = baseProducts
-
-export function getAllProducts(locale: string = "fi"): Product[] {
-  if (locale === "fi") return baseProducts
-  return baseProducts.map((p) => {
-    const t = productTranslations[p.slug]?.[locale as "sv" | "en"]
-    if (!t) return p
-    return { ...p, ...t }
-  })
+// Slug -> live-kaupan handle ostolinkkejä varten
+const liveHandles: Record<string, string> = {
+  "biocell-kollageeni-hyaluronihappo": "biocell-kollageeni®-hyaluronihappo",
+  "quattro-magnesium": "quattro-magnesium",
+  "omega-3-krillioljy": "omega-3-krillioljy",
+  "reishi-chaga-lions-mane": "reishi-chaga-lions-mane",
+  "biotic-boost-probiootti": "biotic-boost-probiootti",
+  "c-vitamiini-pureway-c-sinkki": "c-vitamiini-pureway-c®-sinkki",
+  "zma-magnesiumglysinaatti": "magnesiumglysinaatti",
+  "moringa-luonnon-multivitamiini": "moringa-luonnon-multivitamiini",
+  "b12-vitamiini-folaatti": "b12-vitamiini-folaatti",
+  "bone-boost-kalsium-d3-k2": "bone-boost-kalsium-d3-k2",
+  "kelp-luonnollinen-jodi": "kelp-luonnollinen-jodi",
+  "arctic-menoboost": "arctic-menoboost",
+  "amin-x-robust-eaa": "amin-x-robust-eaa",
+  "grape-punch-elektrolyytti": "ice-grape-12pack",
+  "airflow-nenateippi": "airflow-nenateippi",
+  "migreenimyssy": "migreenimyssy-1",
+  "pilleriannostelija": "pilleriannostelija",
 }
 
-export function getProduct(slug: string, locale: string = "fi"): Product | undefined {
-  const p = baseProducts.find((p) => p.slug === slug)
-  if (!p) return undefined
-  if (locale === "fi") return p
-  const t = productTranslations[p.slug]?.[locale as "sv" | "en"]
-  if (!t) return p
-  return { ...p, ...t }
+export function getBuyUrl(slug: string): string {
+  const handle = liveHandles[slug]
+  return handle ? `https://robustnordic.fi/products/${handle}` : "https://robustnordic.fi/collections/kaikki-tuotteet"
 }
 
-export function getFeaturedProducts(locale: string = "fi"): Product[] {
-  const featured = [
-    "biocell-kollageeni-hyaluronihappo",
-    "quattro-magnesium",
-    "omega-3-krillioljy",
-    "lions-mane-sienikapseli",
-  ]
-  return featured.map((slug) => getProduct(slug, locale)).filter(Boolean) as Product[]
+function localizeProduct(product: Product, locale?: string): Product {
+  if (!locale || locale === "fi") return product
+  const copy = productTranslations[product.slug]?.[locale as "sv" | "en"]
+  if (!copy) return product
+  return {
+    ...product,
+    name: copy.name,
+    shortName: copy.shortName,
+    tagline: copy.tagline,
+    description: copy.description,
+    benefits: copy.benefits,
+    usage: copy.usage ?? product.usage,
+    badge: copy.badge ?? product.badge,
+  }
 }
 
-export function getRelatedProducts(slug: string, count: number = 4, locale: string = "fi"): Product[] {
-  const current = getProduct(slug)
-  if (!current) return []
-  return getAllProducts(locale)
-    .filter((p) => p.slug !== slug && p.category === current.category)
+export function getProduct(slug: string, locale?: string): Product | undefined {
+  const product = products.find((p) => p.slug === slug)
+  return product ? localizeProduct(product, locale) : undefined
+}
+
+export function getRelatedProducts(slug: string, count = 4, locale?: string): Product[] {
+  const current = products.find((p) => p.slug === slug)
+  return products
+    .filter((p) => p.slug !== slug && p.category === current?.category)
     .slice(0, count)
+    .map((p) => localizeProduct(p, locale))
+}
+
+export function getAllProducts(locale?: string): Product[] {
+  return products.map((p) => localizeProduct(p, locale))
+}
+
+// Etusivun esikatselu – neljä nostotuotetta
+export const featuredSlugs = [
+  "biocell-kollageeni-hyaluronihappo",
+  "quattro-magnesium",
+  "omega-3-krillioljy",
+  "reishi-chaga-lions-mane",
+]
+
+export function getFeaturedProducts(locale?: string): Product[] {
+  return featuredSlugs.map((s) => getProduct(s, locale)).filter(Boolean) as Product[]
 }
