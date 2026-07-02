@@ -1,13 +1,15 @@
 import { NextRequest, NextResponse } from "next/server"
-import Stripe from "stripe"
 import { products } from "@/lib/products"
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-02-24.acacia",
-})
+import { getStripe } from "@/lib/admin/stripe"
 
 export async function POST(req: NextRequest) {
   try {
+    // Lazy init so a missing key fails the request, not the whole build.
+    const stripe = getStripe()
+    if (!stripe) {
+      return NextResponse.json({ error: "Stripe is not configured" }, { status: 503 })
+    }
+
     const { slug, locale = "fi", quantity = 1 } = await req.json()
 
     const product = products.find((p) => p.slug === slug)

@@ -1,14 +1,20 @@
 import { NextRequest, NextResponse } from "next/server"
-import Stripe from "stripe"
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-02-24.acacia",
-})
+import type Stripe from "stripe"
+import { getStripe } from "@/lib/admin/stripe"
 
 export async function POST(req: NextRequest) {
+  // Lazy init so a missing key fails the request, not the whole build.
+  const stripe = getStripe()
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET
+  if (!stripe || !webhookSecret) {
+    return NextResponse.json({ error: "Stripe is not configured" }, { status: 503 })
+  }
+
   const body = await req.text()
-  const sig = req.headers.get("stripe-signature")!
-  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!
+  const sig = req.headers.get("stripe-signature")
+  if (!sig) {
+    return NextResponse.json({ error: "Missing stripe-signature header" }, { status: 400 })
+  }
 
   let event: Stripe.Event
 
