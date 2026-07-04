@@ -13,7 +13,7 @@ export default function OrderNotFound() {
         description="Tilausta ei ole olemassa tai tunniste on virheellinen."
         action={
           <Button variant="outline" asChild>
-            <Link href="/admin/tilaukset">Takaisin tilauksiin</Link>
+            <Link href="/adminlog/tilaukset">Takaisin tilauksiin</Link>
           </Button>
         }
       />

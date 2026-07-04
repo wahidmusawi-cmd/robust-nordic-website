@@ -98,7 +98,7 @@ export function CommandMenu({ stripeUrl }: { stripeUrl: string }) {
                     <Command.Item
                       key={product.slug}
                       value={`tuote ${product.name}`}
-                      onSelect={() => go(`/admin/tuotteet/${product.slug}`)}
+                      onSelect={() => go(`/adminlog/tuotteet/${product.slug}`)}
                       className="data-[selected=true]:bg-secondary text-foreground flex cursor-pointer items-center gap-2.5 rounded-md px-3 py-2 text-sm"
                     >
                       <span
@@ -133,7 +133,7 @@ export function CommandMenu({ stripeUrl }: { stripeUrl: string }) {
                   </Command.Item>
                   <Command.Item
                     value="toiminto vie tilaukset csv"
-                    onSelect={() => openExternal("/admin/tilaukset/vie")}
+                    onSelect={() => openExternal("/adminlog/tilaukset/vie")}
                     className="data-[selected=true]:bg-secondary text-foreground flex cursor-pointer items-center gap-2.5 rounded-md px-3 py-2 text-sm"
                   >
                     <Download className="text-muted-foreground size-4" aria-hidden />

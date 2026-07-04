@@ -15,7 +15,7 @@ export default async function LoginPage({
   searchParams: Promise<{ seuraava?: string; ulos?: string }>
 }) {
   const params = await searchParams
-  const nextPath = params.seuraava ?? "/admin"
+  const nextPath = params.seuraava ?? "/adminlog"
   const configured = isAdminConfigured()
   const isDev = process.env.NODE_ENV !== "production"
 
@@ -59,7 +59,7 @@ export default async function LoginPage({
                     <Info className="mt-0.5 size-4 shrink-0" aria-hidden />
                     <p>
                       Kehitystilassa kirjautuminen ohitetaan —{" "}
-                      <Link href="/admin" className="text-primary underline underline-offset-2">
+                      <Link href="/adminlog" className="text-primary underline underline-offset-2">
                         siirry hallintaan
                       </Link>
                       .

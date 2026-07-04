@@ -69,7 +69,7 @@ export default async function AsiakkaatPage({
     if (q) sp.set("q", q)
     if (p > 1) sp.set("sivu", String(p))
     const s = sp.toString()
-    return s ? `/admin/asiakkaat?${s}` : "/admin/asiakkaat"
+    return s ? `/adminlog/asiakkaat?${s}` : "/adminlog/asiakkaat"
   }
 
   return (
@@ -90,7 +90,7 @@ export default async function AsiakkaatPage({
 
       <Card>
         <CardContent className="space-y-4">
-          <form action="/admin/asiakkaat" method="get" className="flex max-w-md items-center gap-2">
+          <form action="/adminlog/asiakkaat" method="get" className="flex max-w-md items-center gap-2">
             <div className="relative w-full">
               <Search
                 className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2"
@@ -138,7 +138,7 @@ export default async function AsiakkaatPage({
                       <TableCell>
                         <div className="flex items-center gap-2">
                           <Link
-                            href={`/admin/tilaukset?jakso=90&q=${encodeURIComponent(customer.email)}`}
+                            href={`/adminlog/tilaukset?jakso=90&q=${encodeURIComponent(customer.email)}`}
                             className="font-medium hover:underline after:absolute after:inset-0 after:content-['']"
                           >
                             {customer.name ?? "—"}

@@ -47,7 +47,7 @@ export default async function TuotePage({
   return (
     <>
       <PageHeader
-        backHref="/admin/tuotteet"
+        backHref="/adminlog/tuotteet"
         backLabel="Tuotteet"
         title={product.shortName}
         description={product.tagline}

@@ -15,7 +15,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { formatDateTime, formatEur, formatNumber } from "@/lib/admin/format"
+import { formatDateTime, formatMoney, formatNumber } from "@/lib/admin/format"
 import { getOrders } from "@/lib/admin/orders"
 import {
   RANGE_LABELS,
@@ -57,7 +57,7 @@ function listHref(query: { jakso?: string; tila?: string; q?: string; sivu?: str
   if (query.q) sp.set("q", query.q)
   if (query.sivu) sp.set("sivu", query.sivu)
   const s = sp.toString()
-  return s ? `/admin/tilaukset?${s}` : "/admin/tilaukset"
+  return s ? `/adminlog/tilaukset?${s}` : "/adminlog/tilaukset"
 }
 
 function countByStatuses(orders: AdminOrder[], statuses: OrderStatus[] | null): number {
@@ -130,7 +130,7 @@ export default async function TilauksetPage({
           <>
             <DateRangeTabs />
             <Button variant="outline" asChild>
-              <a href="/admin/tilaukset/vie">
+              <a href="/adminlog/tilaukset/vie">
                 <Download aria-hidden />
                 Vie CSV
               </a>
@@ -165,7 +165,7 @@ export default async function TilauksetPage({
           ))}
         </nav>
 
-        <form action="/admin/tilaukset" method="get" className="relative w-full sm:w-80">
+        <form action="/adminlog/tilaukset" method="get" className="relative w-full sm:w-80">
           {jakso && <input type="hidden" name="jakso" value={jakso} />}
           {activeFilter.value && <input type="hidden" name="tila" value={activeFilter.value} />}
           <Search
@@ -213,7 +213,7 @@ export default async function TilauksetPage({
                 <TableRow key={order.id} className="relative">
                   <TableCell className="pl-5">
                     <Link
-                      href={`/admin/tilaukset/${order.id}`}
+                      href={`/adminlog/tilaukset/${order.id}`}
                       className="font-medium hover:underline after:absolute after:inset-0 after:content-['']"
                     >
                       {order.number}
@@ -235,10 +235,15 @@ export default async function TilauksetPage({
                     {formatNumber(order.itemCount)} kpl
                   </TableCell>
                   <TableCell className="pr-5 text-right tabular-nums">
-                    <div>{formatEur(order.amountTotal)}</div>
+                    <div>{formatMoney(order.amountTotal, order.currency)}</div>
+                    {order.presentment && (
+                      <div className="text-muted-foreground text-xs">
+                        maksettu {formatMoney(order.presentment.amountTotal, order.presentment.currency)}
+                      </div>
+                    )}
                     {order.amountRefunded > 0 && (
                       <div className="text-xs text-rose-700">
-                        -{formatEur(order.amountRefunded)}
+                        -{formatMoney(order.amountRefunded, order.currency)}
                       </div>
                     )}
                   </TableCell>

@@ -3,7 +3,7 @@ import { isStripeConfigured, stripeDashboardUrl } from "@/lib/admin/stripe"
 import { AdminSidebar } from "@/components/admin/sidebar"
 import { AdminTopbar } from "@/components/admin/topbar"
 import { DemoBanner } from "@/components/admin/demo-banner"
-import { logout } from "@/app/admin/kirjaudu/actions"
+import { logout } from "@/app/adminlog/kirjaudu/actions"
 
 export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
   const isDemo = !isStripeConfigured()

@@ -7,7 +7,7 @@ import { StatusBadge } from "@/components/admin/status-badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { formatDateTime, formatEur, formatNumber } from "@/lib/admin/format"
+import { formatDateTime, formatMoney, formatNumber } from "@/lib/admin/format"
 import { COUNTRY_LABELS, isPaidLike } from "@/lib/admin/metrics"
 import { getOrder } from "@/lib/admin/orders"
 import { stripePaymentUrl } from "@/lib/admin/stripe"
@@ -66,7 +66,7 @@ export default async function OrderDetailPage({
     .entries()) {
     events.push({
       key: `refund-${i}`,
-      label: `Hyvitys ${formatEur(refund.amount)}`,
+      label: `Hyvitys ${formatMoney(refund.amount, order.currency)}`,
       at: refund.created,
       dotClass: "bg-rose-500",
     })
@@ -81,7 +81,7 @@ export default async function OrderDetailPage({
   return (
     <>
       <PageHeader
-        backHref="/admin/tilaukset"
+        backHref="/adminlog/tilaukset"
         backLabel="Tilaukset"
         title={order.number}
         meta={<StatusBadge status={order.status} />}
@@ -141,7 +141,7 @@ export default async function OrderDetailPage({
                     <div className="min-w-0 flex-1">
                       {item.slug ? (
                         <Link
-                          href={`/admin/tuotteet/${item.slug}`}
+                          href={`/adminlog/tuotteet/${item.slug}`}
                           className="text-sm font-medium hover:underline"
                         >
                           {item.description}
@@ -151,12 +151,12 @@ export default async function OrderDetailPage({
                       )}
                       {item.unitAmount !== null && (
                         <p className="text-muted-foreground text-sm">
-                          {formatNumber(item.quantity)} × {formatEur(item.unitAmount)}
+                          {formatNumber(item.quantity)} × {formatMoney(item.unitAmount, order.currency)}
                         </p>
                       )}
                     </div>
                     <p className="text-right text-sm tabular-nums">
-                      {formatEur(item.amountTotal)}
+                      {formatMoney(item.amountTotal, order.currency)}
                     </p>
                   </div>
                 ))}
@@ -169,31 +169,38 @@ export default async function OrderDetailPage({
               <CardTitle className="text-base font-semibold">Maksu</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              <PaymentRow label="Välisumma" value={formatEur(order.amountSubtotal)} />
+              <PaymentRow label="Välisumma" value={formatMoney(order.amountSubtotal, order.currency)} />
               {order.amountDiscount > 0 && (
-                <PaymentRow label="Alennus" value={`−${formatEur(order.amountDiscount)}`} />
+                <PaymentRow label="Alennus" value={`−${formatMoney(order.amountDiscount, order.currency)}`} />
               )}
               <PaymentRow
                 label="Toimitus"
-                value={order.amountShipping === 0 ? "Ilmainen" : formatEur(order.amountShipping)}
+                value={order.amountShipping === 0 ? "Ilmainen" : formatMoney(order.amountShipping, order.currency)}
               />
-              {order.amountTax > 0 && <PaymentRow label="ALV" value={formatEur(order.amountTax)} />}
+              {order.amountTax > 0 && <PaymentRow label="ALV" value={formatMoney(order.amountTax, order.currency)} />}
               <Separator />
               <PaymentRow
                 label="Yhteensä"
-                value={formatEur(order.amountTotal)}
+                value={formatMoney(order.amountTotal, order.currency)}
                 className="font-semibold"
               />
+              {order.presentment && (
+                <PaymentRow
+                  label={`Veloitettu asiakkaalta (${order.presentment.currency.toUpperCase()})`}
+                  value={formatMoney(order.presentment.amountTotal, order.presentment.currency)}
+                  className="text-muted-foreground"
+                />
+              )}
               {order.amountRefunded > 0 && (
                 <>
                   <PaymentRow
                     label="Hyvitetty"
-                    value={`−${formatEur(order.amountRefunded)}`}
+                    value={`−${formatMoney(order.amountRefunded, order.currency)}`}
                     className="text-rose-700"
                   />
                   <PaymentRow
                     label="Asiakas maksoi"
-                    value={formatEur(netPaid)}
+                    value={formatMoney(netPaid, order.currency)}
                     className="font-semibold"
                   />
                 </>
@@ -247,7 +254,7 @@ export default async function OrderDetailPage({
             {order.customerEmail && (
               <CardFooter className="border-t">
                 <Link
-                  href={`/admin/tilaukset?jakso=90&q=${encodeURIComponent(order.customerEmail)}`}
+                  href={`/adminlog/tilaukset?jakso=90&q=${encodeURIComponent(order.customerEmail)}`}
                   className="text-primary text-sm font-medium hover:underline"
                 >
                   Näytä asiakkaan tilaukset

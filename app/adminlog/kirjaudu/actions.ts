@@ -15,12 +15,12 @@ export type LoginState = { error: string | null }
 
 /** Only allow redirects back into the admin — never to arbitrary URLs. */
 function safeNextPath(raw: string): string {
-  return raw.startsWith("/admin") && !raw.startsWith("//") ? raw : "/admin"
+  return raw.startsWith("/adminlog") && !raw.startsWith("//") ? raw : "/adminlog"
 }
 
 export async function login(_prev: LoginState, formData: FormData): Promise<LoginState> {
   const password = String(formData.get("salasana") ?? "")
-  const nextPath = safeNextPath(String(formData.get("seuraava") ?? "/admin"))
+  const nextPath = safeNextPath(String(formData.get("seuraava") ?? "/adminlog"))
 
   if (!isAdminConfigured()) {
     return { error: "Ylläpitäjän salasanaa (ADMIN_PASSWORD) ei ole määritetty palvelimella." }
@@ -51,5 +51,5 @@ export async function login(_prev: LoginState, formData: FormData): Promise<Logi
 export async function logout(): Promise<void> {
   const cookieStore = await cookies()
   cookieStore.delete(ADMIN_COOKIE)
-  redirect("/admin/kirjaudu?ulos=1")
+  redirect("/adminlog/kirjaudu?ulos=1")
 }

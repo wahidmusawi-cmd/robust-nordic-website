@@ -22,15 +22,15 @@ export type NavItem = {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { href: "/admin", label: "Koti", icon: Home, exact: true },
-  { href: "/admin/tilaukset", label: "Tilaukset", icon: ShoppingBag },
-  { href: "/admin/tuotteet", label: "Tuotteet", icon: Package },
-  { href: "/admin/asiakkaat", label: "Asiakkaat", icon: Users },
-  { href: "/admin/analytiikka", label: "Analytiikka", icon: BarChart3 },
+  { href: "/adminlog", label: "Koti", icon: Home, exact: true },
+  { href: "/adminlog/tilaukset", label: "Tilaukset", icon: ShoppingBag },
+  { href: "/adminlog/tuotteet", label: "Tuotteet", icon: Package },
+  { href: "/adminlog/asiakkaat", label: "Asiakkaat", icon: Users },
+  { href: "/adminlog/analytiikka", label: "Analytiikka", icon: BarChart3 },
 ]
 
 export const SECONDARY_NAV_ITEMS: NavItem[] = [
-  { href: "/admin/asetukset", label: "Asetukset", icon: Settings },
+  { href: "/adminlog/asetukset", label: "Asetukset", icon: Settings },
 ]
 
 function isActive(pathname: string, item: NavItem): boolean {
@@ -82,7 +82,7 @@ export function AdminNav({ onNavigate }: { onNavigate?: () => void }) {
 
 export function AdminBrand() {
   return (
-    <Link href="/admin" className="flex items-center gap-2 px-5 py-4">
+    <Link href="/adminlog" className="flex items-center gap-2 px-5 py-4">
       <span className="text-sm font-bold tracking-[0.14em] uppercase">Robust Nordic</span>
       <span className="bg-secondary text-secondary-foreground rounded px-1.5 py-0.5 text-[10px] font-semibold tracking-wide uppercase">
         Admin

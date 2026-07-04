@@ -76,7 +76,7 @@ export function AdminTopbar({
             <DropdownMenuLabel>Robust Nordic</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
-              <Link href="/admin/asetukset">
+              <Link href="/adminlog/asetukset">
                 <Settings className="size-4" aria-hidden />
                 Asetukset
               </Link>

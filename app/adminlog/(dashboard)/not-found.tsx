@@ -13,7 +13,7 @@ export default function AdminNotFound() {
         description="Etsimääsi sivua tai kohdetta ei ole olemassa. Se on voitu poistaa tai osoite on virheellinen."
         action={
           <Button variant="outline" asChild>
-            <Link href="/admin">Takaisin yleiskatsaukseen</Link>
+            <Link href="/adminlog">Takaisin yleiskatsaukseen</Link>
           </Button>
         }
       />

@@ -18,7 +18,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { formatEur, formatNumber, formatPercent } from "@/lib/admin/format"
+import { formatEur, formatMoney, formatNumber, formatPercent } from "@/lib/admin/format"
 import { computeOverview } from "@/lib/admin/metrics"
 import { getOrders } from "@/lib/admin/orders"
 import { parseRange, RANGE_LABELS } from "@/lib/admin/types"
@@ -121,7 +121,7 @@ export default async function OverviewPage({
           <CardHeader>
             <CardTitle className="text-base font-semibold">Suosituimmat tuotteet</CardTitle>
             <CardAction>
-              <Link href="/admin/tuotteet" className="text-primary text-sm hover:underline">
+              <Link href="/adminlog/tuotteet" className="text-primary text-sm hover:underline">
                 Näytä kaikki
               </Link>
             </CardAction>
@@ -138,7 +138,7 @@ export default async function OverviewPage({
                   display: formatEur(p.sales),
                   hint: `${formatNumber(p.units)} kpl`,
                   image: p.image,
-                  href: p.slug ? `/admin/tuotteet/${p.slug}` : undefined,
+                  href: p.slug ? `/adminlog/tuotteet/${p.slug}` : undefined,
                 }))}
               />
             )}
@@ -149,7 +149,7 @@ export default async function OverviewPage({
           <CardHeader>
             <CardTitle className="text-base font-semibold">Viimeisimmät tilaukset</CardTitle>
             <CardAction>
-              <Link href="/admin/tilaukset" className="text-primary text-sm hover:underline">
+              <Link href="/adminlog/tilaukset" className="text-primary text-sm hover:underline">
                 Näytä kaikki
               </Link>
             </CardAction>
@@ -172,7 +172,7 @@ export default async function OverviewPage({
                     <TableRow key={order.id} className="relative">
                       <TableCell>
                         <Link
-                          href={`/admin/tilaukset/${order.id}`}
+                          href={`/adminlog/tilaukset/${order.id}`}
                           className="font-medium hover:underline after:absolute after:inset-0 after:content-['']"
                         >
                           {order.number}
@@ -185,7 +185,7 @@ export default async function OverviewPage({
                         <StatusBadge status={order.status} />
                       </TableCell>
                       <TableCell className="text-right tabular-nums">
-                        {formatEur(order.amountTotal)}
+                        {formatMoney(order.amountTotal, order.currency)}
                       </TableCell>
                     </TableRow>
                   ))}

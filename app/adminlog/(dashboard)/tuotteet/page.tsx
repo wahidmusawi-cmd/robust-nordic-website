@@ -92,7 +92,7 @@ export default async function TuotteetPage({
                       />
                       <div className="min-w-0">
                         <Link
-                          href={`/admin/tuotteet/${product.slug}`}
+                          href={`/adminlog/tuotteet/${product.slug}`}
                           className="font-medium hover:underline after:absolute after:inset-0 after:content-['']"
                         >
                           {product.shortName}
