@@ -125,3 +125,26 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Scroll-reveal (components/scroll-effects.tsx). Hidden state only applies
+   when JS is present (html.js set by an inline script in the layout), so the
+   site works without JavaScript. */
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+html.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

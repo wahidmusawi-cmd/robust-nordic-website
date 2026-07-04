@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ArticleCard } from "@/components/article-card"
+import { Reveal } from "@/components/scroll-effects"
 import { getBlogArticles } from "@/lib/blog"
 import type { Locale } from "@/i18n/routing"
 
@@ -15,7 +16,7 @@ export async function TeamSection() {
     <section id="artikkelit" className="py-24 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+        <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div className="max-w-2xl">
             <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("eyebrow")}</p>
             <h2 className="font-serif text-4xl sm:text-5xl text-foreground leading-tight text-balance">
@@ -33,12 +34,14 @@ export async function TeamSection() {
               <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </Button>
-        </div>
+        </Reveal>
 
         {/* Blog posts grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featured.map((article) => (
-            <ArticleCard key={article.slug} article={article} basePath="/blogi" />
+          {featured.map((article, index) => (
+            <Reveal key={article.slug} delay={index * 100}>
+              <ArticleCard article={article} basePath="/blogi" />
+            </Reveal>
           ))}
         </div>
       </div>

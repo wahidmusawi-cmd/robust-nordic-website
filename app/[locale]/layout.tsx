@@ -52,6 +52,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${activeFonts.serif.variable} ${activeFonts.sans.variable} bg-background`}>
       <body className="font-sans antialiased">
+        {/* Marks JS as available before first paint — scroll-reveal styles
+            (globals.css) only hide content under html.js. */}
+        <script dangerouslySetInnerHTML={{ __html: `document.documentElement.classList.add("js")` }} />
         <IntlProvider messages={messages} locale={locale}>
           <SiteHeader />
           {children}

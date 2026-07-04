@@ -1,12 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { cn } from "@/lib/utils"
 
 type NavItem = {
   key: string
@@ -41,9 +42,26 @@ export function SiteHeader() {
   const t = useTranslations("nav")
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [scrolled, setScrolled] = useState(false)
+
+  // Glassmorphism on scroll: transparent at the top, frosted glass once the
+  // page moves under the header.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    onScroll()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
-    <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+    <header
+      className={cn(
+        "sticky top-0 z-50 border-b transition-[background-color,border-color,box-shadow] duration-300",
+        scrolled || mobileOpen
+          ? "bg-background/70 backdrop-blur-xl border-border shadow-sm supports-[not(backdrop-filter:blur(0))]:bg-background/95"
+          : "bg-transparent border-transparent",
+      )}
+    >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
         <Logo priority className="shrink-0" />
 

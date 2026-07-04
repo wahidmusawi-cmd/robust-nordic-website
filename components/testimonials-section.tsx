@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl"
 import { Star } from "lucide-react"
+import { CountUp, Reveal } from "@/components/scroll-effects"
 
 export function TestimonialsSection() {
   const t = useTranslations("home.testimonials")
@@ -11,20 +12,25 @@ export function TestimonialsSection() {
     { name: t("t2Name"), rating: 5, text: t("t2Text") },
   ]
 
+  // e.g. "50 000" → 50000, animated back to the localized grouping on scroll
+  const trustRaw = t("trustCount")
+  const trustValue = Number.parseInt(trustRaw.replace(/\D/g, ""), 10)
+
   return (
     <section className="py-24 lg:py-32 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <Reveal className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("eyebrow")}</p>
           <h2 className="font-serif text-4xl sm:text-5xl text-foreground text-balance">{t("title")}</h2>
-        </div>
+        </Reveal>
 
         {/* Testimonials grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div
+            <Reveal
               key={index}
+              delay={index * 120}
               className="bg-card rounded-2xl p-8 lg:p-10 shadow-sm hover:shadow-lg transition-shadow"
             >
               {/* Rating */}
@@ -43,12 +49,12 @@ export function TestimonialsSection() {
               <div className="mt-6 pt-6 border-t border-border">
                 <p className="font-medium text-foreground">{testimonial.name}</p>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-16 text-center">
+        <Reveal delay={150} className="mt-16 text-center">
           <div className="inline-flex items-center gap-2 text-muted-foreground">
             <div className="flex -space-x-2">
               {[...Array(5)].map((_, i) => (
@@ -61,10 +67,18 @@ export function TestimonialsSection() {
               ))}
             </div>
             <span className="ml-4">
-              {t("trustPre")} <strong className="text-foreground">{t("trustCount")}</strong> {t("trustPost")}
+              {t("trustPre")}{" "}
+              <strong className="text-foreground">
+                {Number.isFinite(trustValue) && trustValue > 0 ? (
+                  <CountUp value={trustValue} />
+                ) : (
+                  trustRaw
+                )}
+              </strong>{" "}
+              {t("trustPost")}
             </span>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { ProductCard } from "@/components/product-card"
+import { Reveal } from "@/components/scroll-effects"
 import { getAllProducts } from "@/lib/products"
 import type { Locale } from "@/i18n/routing"
 
@@ -45,8 +46,10 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
             </span>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
-            {ravintolisat.map((product) => (
-              <ProductCard key={product.slug} product={product} />
+            {ravintolisat.map((product, index) => (
+              <Reveal key={product.slug} delay={(index % 4) * 80} className="flex flex-col [&>a]:flex-1">
+                <ProductCard product={product} />
+              </Reveal>
             ))}
           </div>
         </div>
@@ -62,8 +65,10 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
             </span>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
-            {hyvinvointi.map((product) => (
-              <ProductCard key={product.slug} product={product} />
+            {hyvinvointi.map((product, index) => (
+              <Reveal key={product.slug} delay={(index % 4) * 80} className="flex flex-col [&>a]:flex-1">
+                <ProductCard product={product} />
+              </Reveal>
             ))}
           </div>
         </div>

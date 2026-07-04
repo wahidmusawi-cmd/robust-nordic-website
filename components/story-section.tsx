@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { Reveal } from "@/components/scroll-effects"
 
 export function StorySection() {
   const t = useTranslations("home.story")
@@ -10,7 +11,7 @@ export function StorySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left - Content */}
-          <div>
+          <Reveal>
             <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("eyebrow")}</p>
             <h2 className="font-serif text-4xl sm:text-5xl text-foreground leading-tight text-balance">
               {t("title")}
@@ -27,10 +28,10 @@ export function StorySection() {
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
-          </div>
+          </Reveal>
 
           {/* Right - Visual */}
-          <div className="relative">
+          <Reveal delay={150} className="relative">
             <div className="relative aspect-square max-w-lg mx-auto">
               <img
                 src="/brand/berries.jpg"
@@ -41,7 +42,7 @@ export function StorySection() {
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent/20 rounded-full blur-xl" />
               <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary rounded-full -z-10" />
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

@@ -4,12 +4,13 @@ import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRight } from "lucide-react"
+import { Reveal } from "@/components/scroll-effects"
 
 export function NewsletterSection() {
   const t = useTranslations("home.newsletter")
   return (
     <section className="py-24 lg:py-32 bg-card text-foreground">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <Reveal className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("eyebrow")}</p>
         <h2 className="font-serif text-4xl sm:text-5xl leading-tight text-balance">{t("title")}</h2>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">{t("subtitle")}</p>
@@ -28,7 +29,7 @@ export function NewsletterSection() {
         </form>
 
         <p className="mt-4 text-sm text-muted-foreground">{t("disclaimer")}</p>
-      </div>
+      </Reveal>
     </section>
   )
 }

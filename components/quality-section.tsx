@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { Leaf, WheatOff, Droplets, Ban, MapPin, Atom } from "lucide-react"
+import { CountUp, Reveal } from "@/components/scroll-effects"
 
 type Quality = {
   icon: typeof Leaf
@@ -39,25 +40,27 @@ export function QualitySection() {
     <section id="laatu" className="py-24 lg:py-32 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-14 lg:mb-20">
+        <Reveal className="max-w-3xl mx-auto text-center mb-14 lg:mb-20">
           <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("eyebrow")}</p>
           <h2 className="font-serif text-4xl sm:text-5xl text-foreground leading-tight text-balance">
             {t("title")}
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed text-pretty">{t("intro")}</p>
-        </div>
+        </Reveal>
 
         {/* Capsule layout: features left + capsule center + features right */}
         <div className="grid lg:grid-cols-[1fr_auto_1fr] gap-12 lg:gap-8 items-center">
           {/* Left features */}
           <div className="flex flex-col gap-12 lg:gap-16 order-2 lg:order-1">
-            {leftQualities.map((quality) => (
-              <QualityItem key={quality.title} quality={quality} />
+            {leftQualities.map((quality, index) => (
+              <Reveal key={quality.title} delay={index * 120}>
+                <QualityItem quality={quality} />
+              </Reveal>
             ))}
           </div>
 
           {/* Center capsule */}
-          <div className="flex justify-center order-1 lg:order-2">
+          <Reveal delay={100} className="flex justify-center order-1 lg:order-2">
             <Image
               src="/brand/capsule-real.webp"
               alt={t("capsuleAlt")}
@@ -65,40 +68,48 @@ export function QualitySection() {
               height={320}
               className="w-44 sm:w-56 lg:w-64 h-auto"
             />
-          </div>
+          </Reveal>
 
           {/* Right features */}
           <div className="flex flex-col gap-12 lg:gap-16 order-3">
-            {rightQualities.map((quality) => (
-              <QualityItem key={quality.title} quality={quality} />
+            {rightQualities.map((quality, index) => (
+              <Reveal key={quality.title} delay={60 + index * 120}>
+                <QualityItem quality={quality} />
+              </Reveal>
             ))}
           </div>
         </div>
 
         {/* Certification banner */}
-        <div className="mt-16 lg:mt-20 bg-primary text-primary-foreground rounded-3xl p-10 lg:p-14">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("certEyebrow")}</p>
-              <h3 className="font-serif text-3xl sm:text-4xl leading-tight text-balance">{t("certTitle")}</h3>
-              <p className="mt-5 text-primary-foreground/70 leading-relaxed text-pretty">{t("certBody")}</p>
-            </div>
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center">
-                <p className="font-serif text-4xl lg:text-5xl">AA</p>
-                <p className="text-xs text-primary-foreground/60 mt-2 tracking-wide">{t("certRatingLabel")}</p>
+        <Reveal className="mt-16 lg:mt-20">
+          <div className="bg-primary text-primary-foreground rounded-3xl p-10 lg:p-14">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <div>
+                <p className="text-sm tracking-[0.3em] text-accent mb-4">{t("certEyebrow")}</p>
+                <h3 className="font-serif text-3xl sm:text-4xl leading-tight text-balance">{t("certTitle")}</h3>
+                <p className="mt-5 text-primary-foreground/70 leading-relaxed text-pretty">{t("certBody")}</p>
               </div>
-              <div className="text-center">
-                <p className="font-serif text-4xl lg:text-5xl">50+</p>
-                <p className="text-xs text-primary-foreground/60 mt-2 tracking-wide">{t("certYearsLabel")}</p>
-              </div>
-              <div className="text-center">
-                <p className="font-serif text-4xl lg:text-5xl">{t("certMadeValue")}</p>
-                <p className="text-xs text-primary-foreground/60 mt-2 tracking-wide">{t("certMadeLabel")}</p>
+              <div className="grid grid-cols-3 gap-6">
+                <div className="text-center">
+                  <p className="font-serif text-4xl lg:text-5xl">AA</p>
+                  <p className="text-xs text-primary-foreground/60 mt-2 tracking-wide">{t("certRatingLabel")}</p>
+                </div>
+                <div className="text-center">
+                  <p className="font-serif text-4xl lg:text-5xl">
+                    <CountUp value={50} suffix="+" />
+                  </p>
+                  <p className="text-xs text-primary-foreground/60 mt-2 tracking-wide">{t("certYearsLabel")}</p>
+                </div>
+                <div className="text-center">
+                  <p className="font-serif text-4xl lg:text-5xl">
+                    <CountUp value={100} suffix="%" />
+                  </p>
+                  <p className="text-xs text-primary-foreground/60 mt-2 tracking-wide">{t("certMadeLabel")}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )
