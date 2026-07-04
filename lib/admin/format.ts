@@ -15,6 +15,26 @@ export function formatEur(cents: number): string {
   return eur.format(cents / 100)
 }
 
+// Currencies whose Stripe amounts are whole units, not hundredths.
+const ZERO_DECIMAL = new Set(["bif", "clp", "djf", "gnf", "jpy", "kmf", "krw", "mga", "pyg", "rwf", "vnd", "vuv", "xaf", "xof", "xpf"])
+const moneyFormatters = new Map<string, Intl.NumberFormat>()
+
+/** Like formatEur but honors the order's actual currency (e.g. "458,50 kr"). */
+export function formatMoney(cents: number, currency: string): string {
+  const code = currency.toLowerCase()
+  if (code === "eur") return formatEur(cents)
+  let fmt = moneyFormatters.get(code)
+  if (!fmt) {
+    try {
+      fmt = new Intl.NumberFormat("fi-FI", { style: "currency", currency: code.toUpperCase() })
+    } catch {
+      fmt = eur
+    }
+    moneyFormatters.set(code, fmt)
+  }
+  return fmt.format(ZERO_DECIMAL.has(code) ? cents : cents / 100)
+}
+
 /** Whole euros — for axis ticks and compact stats. */
 export function formatEurRounded(cents: number): string {
   return eurRounded.format(cents / 100)

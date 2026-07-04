@@ -193,6 +193,7 @@ function generate(now: number): AdminOrder[] {
         amountTax: 0,
         amountRefunded,
         currency: "eur",
+        presentment: null,
         customerName: customer.name,
         customerEmail: customer.email,
         shippingName: isPaidLike ? customer.name : null,

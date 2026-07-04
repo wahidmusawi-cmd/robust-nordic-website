@@ -46,7 +46,14 @@ export type AdminOrder = {
   amountShipping: number
   amountTax: number
   amountRefunded: number
+  /**
+   * Currency of every amount above. When Stripe converted the checkout to the
+   * customer's local currency (Adaptive Pricing), amounts are normalized back
+   * to the source currency (EUR) and the charged amount lives in `presentment`.
+   */
   currency: string
+  /** What the customer was actually charged, when it differs from `currency`. */
+  presentment: { currency: string; amountTotal: number } | null
   customerName: string | null
   customerEmail: string | null
   shippingName: string | null

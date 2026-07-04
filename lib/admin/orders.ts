@@ -82,7 +82,17 @@ function mapSession(
     typeof session.payment_intent === "string"
       ? session.payment_intent
       : session.payment_intent?.id ?? null
-  const refunds = (paymentIntentId && refundsByPaymentIntent.get(paymentIntentId)) || []
+
+  // Adaptive Pricing: the customer paid in a local currency (e.g. SEK) while
+  // the store's prices are EUR. Normalize every amount back to the source
+  // currency so metrics aggregate correctly, and keep the charged amount in
+  // `presentment` for display.
+  const conversion = session.currency_conversion
+  const fx = conversion ? Number(conversion.fx_rate) : 1
+  const toSource = (amount: number) => (conversion && fx > 0 ? Math.round(amount / fx) : amount)
+
+  const rawRefunds = (paymentIntentId && refundsByPaymentIntent.get(paymentIntentId)) || []
+  const refunds = rawRefunds.map((r) => ({ ...r, amount: toSource(r.amount) }))
   const amountRefunded = refunds.reduce((s, r) => s + r.amount, 0)
 
   const items = (session.line_items?.data ?? []).map((li) => {
@@ -91,8 +101,8 @@ function mapSession(
     return {
       description: li.description ?? product?.name ?? "Tuote",
       quantity: li.quantity ?? 1,
-      amountTotal: li.amount_total ?? 0,
-      unitAmount: li.price?.unit_amount ?? null,
+      amountTotal: toSource(li.amount_total ?? 0),
+      unitAmount: li.price?.unit_amount != null ? toSource(li.price.unit_amount) : null,
       priceId,
       slug: product?.slug ?? (session.metadata?.slug || null),
       image: product?.image ?? null,
@@ -106,13 +116,16 @@ function mapSession(
     number: orderNumber(session.id),
     created: session.created * 1000,
     status: resolveStatus(session, amountRefunded),
-    amountTotal: session.amount_total ?? 0,
-    amountSubtotal: session.amount_subtotal ?? 0,
-    amountDiscount: session.total_details?.amount_discount ?? 0,
-    amountShipping: session.total_details?.amount_shipping ?? 0,
-    amountTax: session.total_details?.amount_tax ?? 0,
+    amountTotal: toSource(session.amount_total ?? 0),
+    amountSubtotal: toSource(session.amount_subtotal ?? 0),
+    amountDiscount: toSource(session.total_details?.amount_discount ?? 0),
+    amountShipping: toSource(session.total_details?.amount_shipping ?? 0),
+    amountTax: toSource(session.total_details?.amount_tax ?? 0),
     amountRefunded,
-    currency: session.currency ?? "eur",
+    currency: conversion?.source_currency ?? session.currency ?? "eur",
+    presentment: conversion
+      ? { currency: session.currency ?? "eur", amountTotal: session.amount_total ?? 0 }
+      : null,
     customerName: session.customer_details?.name ?? null,
     customerEmail: session.customer_details?.email ?? null,
     shippingName: shipping?.name ?? null,
