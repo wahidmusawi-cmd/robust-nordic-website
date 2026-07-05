@@ -13,7 +13,10 @@ export const routing = defineRouting({
   localePrefix: "as-needed",
   domains: [
     { domain: "robustnordic.fi", defaultLocale: "fi", locales: ["fi", "sv", "en"] },
+    { domain: "www.robustnordic.fi", defaultLocale: "fi", locales: ["fi", "sv", "en"] },
     { domain: "robustnordic.se", defaultLocale: "sv", locales: ["fi", "sv", "en"] },
+    { domain: "www.robustnordic.se", defaultLocale: "sv", locales: ["fi", "sv", "en"] },
     { domain: "robustnordic.com", defaultLocale: "en", locales: ["fi", "sv", "en"] },
+    { domain: "www.robustnordic.com", defaultLocale: "en", locales: ["fi", "sv", "en"] },
   ],
 })
