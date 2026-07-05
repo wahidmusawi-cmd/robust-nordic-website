@@ -69,6 +69,18 @@ const blogMeta: Record<string, { title: string; date: string }> = {
     title: "Kesä, aurinko ja hyvinvointi – miksi vitamiineista kannattaa huolehtia myös kesällä",
     date: "2026-05-22",
   },
+  "paras-magnesium-nain-valitset-oikean-magnesiumin": {
+    title: "Paras magnesium – näin valitset oikean magnesiumin",
+    date: "2026-06-26",
+  },
+  "d-vitamiini-talvella-kuinka-paljon-tarvitset": {
+    title: "D-vitamiini talvella – kuinka paljon sinun kannattaa ottaa?",
+    date: "2026-06-20",
+  },
+  "kollageeni-iholle-mita-hyotya-kollageenista-on": {
+    title: "Kollageeni iholle – mitä hyötyä kollageenista todella on?",
+    date: "2026-06-14",
+  },
 }
 
 const sponsorMeta: Record<string, { title: string; date: string }> = {

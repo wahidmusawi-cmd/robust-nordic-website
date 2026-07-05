@@ -126,6 +126,36 @@ export const blogMetaI18n: Record<string, LocalizedMeta> = {
       desc: "Summer means sun and time off, but it's still worth looking after your vitamins. Here's how to keep your body balanced during the bright season.",
     },
   },
+  "paras-magnesium-nain-valitset-oikean-magnesiumin": {
+    sv: {
+      title: "Bästa magnesium – så väljer du rätt magnesium",
+      desc: "Vilket är det bästa magnesiumet och vilken form ska du välja? Läs en tydlig guide om magnesiums fördelar, rätt dosering och varför den upptagbara formen är avgörande.",
+    },
+    en: {
+      title: "Best magnesium – how to choose the right one",
+      desc: "Which magnesium is best and what form should you pick? A clear guide to the benefits of magnesium, the right dosage and why the absorbable form is what really matters.",
+    },
+  },
+  "d-vitamiini-talvella-kuinka-paljon-tarvitset": {
+    sv: {
+      title: "D-vitamin på vintern – hur mycket bör du ta?",
+      desc: "Behöver man ta D-vitamin på vintern och hur mycket? En guide till D-vitamindosering, bristsymptom och hur du väljer rätt D-vitamin under de mörka månaderna.",
+    },
+    en: {
+      title: "Vitamin D in winter – how much should you take?",
+      desc: "Do you need vitamin D in winter and how much? A guide to vitamin D dosage, deficiency symptoms and choosing the right vitamin D during the dark Nordic months.",
+    },
+  },
+  "kollageeni-iholle-mita-hyotya-kollageenista-on": {
+    sv: {
+      title: "Kollagen för huden – vilken nytta gör kollagen egentligen?",
+      desc: "Hjälper kollagen huden, lederna och håret? Läs vad kollagen är, när du bör börja ta det och hur du väljer ett kollagentillskott som tas upp väl.",
+    },
+    en: {
+      title: "Collagen for skin – what are the real benefits?",
+      desc: "Does collagen help your skin, joints and hair? Learn what collagen is, when to start taking it and how to choose a well-absorbed collagen supplement.",
+    },
+  },
 }
 
 export const sponsorMetaI18n: Record<string, LocalizedMeta> = {
