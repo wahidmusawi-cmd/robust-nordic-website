@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
 import { CartProvider } from "@/lib/cart"
 import { CartDrawer } from "@/components/cart-drawer"
+import { CookieBanner } from "@/components/cookie-banner"
 import { routing } from "@/i18n/routing"
 import { activeFonts } from "@/lib/fonts"
 import "../globals.css"
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
             {children}
             <Footer />
             <CartDrawer />
+            <CookieBanner />
           </CartProvider>
         </IntlProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}

@@ -55,6 +55,33 @@ export default async function ProductPage({
 
   return (
     <main className="min-h-screen bg-background">
+      {/* JSON-LD Product schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: product.name,
+            description: product.description,
+            image: product.image,
+            brand: { "@type": "Brand", name: "Robust Nordic" },
+            offers: {
+              "@type": "Offer",
+              // Prices are EUR on every domain; Stripe converts at checkout.
+              priceCurrency: "EUR",
+              price: product.price.replace(",", "."),
+              availability: soldOut
+                ? "https://schema.org/OutOfStock"
+                : "https://schema.org/InStock",
+              url: `https://${
+                locale === "sv" ? "robustnordic.se" : locale === "en" ? "robustnordic.com" : "robustnordic.fi"
+              }/${productSegment}/${product.slug}`,
+            },
+          }),
+        }}
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         {/* Breadcrumb */}
         <Link

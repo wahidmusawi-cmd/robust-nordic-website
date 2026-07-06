@@ -478,5 +478,12 @@
     "remove": "Poista tuote",
     "subscriptionUnavailable": "Kestotilaus ei ole vielä saatavilla kaikille valituille tuotteille",
     "productSoldOut": "Jokin korin tuotteista on loppuunmyyty"
+  },
+  "cookies": {
+    "title": "Evästeet",
+    "close": "Sulje",
+    "body": "Käytämme evästeitä sivuston toiminnan ja käyttökokemuksen parantamiseen. Voit hyväksyä kaikki evästeet tai jatkaa vain välttämättömillä.",
+    "acceptAll": "Hyväksy kaikki",
+    "necessaryOnly": "Vain välttämättömät"
   }
 }

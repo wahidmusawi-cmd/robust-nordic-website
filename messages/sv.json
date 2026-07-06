@@ -478,5 +478,12 @@
     "remove": "Ta bort produkten",
     "subscriptionUnavailable": "Prenumeration är inte tillgänglig för alla valda produkter ännu",
     "productSoldOut": "En produkt i varukorgen är slutsåld"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "close": "Stäng",
+    "body": "Vi använder cookies för att förbättra webbplatsens funktion och användarupplevelse. Du kan acceptera alla cookies eller fortsätta med endast nödvändiga.",
+    "acceptAll": "Acceptera alla",
+    "necessaryOnly": "Endast nödvändiga"
   }
 }

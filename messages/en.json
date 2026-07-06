@@ -478,5 +478,12 @@
     "remove": "Remove item",
     "subscriptionUnavailable": "Subscription is not yet available for all selected products",
     "productSoldOut": "An item in your cart is sold out"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "close": "Close",
+    "body": "We use cookies to improve how the site works and your experience. You can accept all cookies or continue with only the necessary ones.",
+    "acceptAll": "Accept all",
+    "necessaryOnly": "Necessary only"
   }
 }
