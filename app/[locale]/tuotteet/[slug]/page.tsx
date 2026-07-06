@@ -5,6 +5,7 @@ import { Check, ArrowLeft, Leaf, ShieldCheck, MapPin, Truck } from "lucide-react
 import { Link } from "@/i18n/navigation"
 import { ProductCard } from "@/components/product-card"
 import { AddToCartSection } from "@/components/add-to-cart-section"
+import { IngredientsTable } from "@/components/ingredients-table"
 import { products, getProduct, getRelatedProducts } from "@/lib/products"
 import type { Locale } from "@/i18n/routing"
 
@@ -125,14 +126,7 @@ export default async function ProductPage({
 
             {/* Ingredients */}
             {product.ingredients && (
-              <div className="mt-8 p-5 rounded-2xl bg-secondary">
-                <h2 className="font-semibold text-foreground mb-2 text-sm tracking-wide uppercase">
-                  {t("ingredientsTitle")}
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-                  {product.ingredients}
-                </p>
-              </div>
+              <IngredientsTable ingredients={product.ingredients} title={t("ingredientsTitle")} />
             )}
 
             {/* Trust badges */}
