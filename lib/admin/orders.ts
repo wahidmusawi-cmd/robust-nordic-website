@@ -95,16 +95,21 @@ function mapSession(
   const refunds = rawRefunds.map((r) => ({ ...r, amount: toSource(r.amount) }))
   const amountRefunded = refunds.reduce((s, r) => s + r.amount, 0)
 
+  const sessionSlug = session.metadata?.slug || null
+  const productBySlug = sessionSlug ? products.find((p) => p.slug === sessionSlug) : undefined
+
   const items = (session.line_items?.data ?? []).map((li) => {
     const priceId = li.price?.id ?? null
-    const product = priceId ? productByPriceId.get(priceId) : undefined
+    const productByPrice = priceId ? productByPriceId.get(priceId) : undefined
+    // Fall back to slug-based lookup so image/name work even if price IDs changed
+    const product = productByPrice ?? productBySlug
     return {
       description: li.description ?? product?.name ?? "Tuote",
       quantity: li.quantity ?? 1,
       amountTotal: toSource(li.amount_total ?? 0),
       unitAmount: li.price?.unit_amount != null ? toSource(li.price.unit_amount) : null,
       priceId,
-      slug: product?.slug ?? (session.metadata?.slug || null),
+      slug: product?.slug ?? sessionSlug,
       image: product?.image ?? null,
     }
   })
