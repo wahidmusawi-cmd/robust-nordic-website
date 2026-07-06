@@ -36,7 +36,7 @@ type StatusFilter = {
   statuses: OrderStatus[] | null
 }
 
-const ALL_FILTER: StatusFilter = { value: null, label: "Kaikki", statuses: null }
+const ALL_FILTER: StatusFilter = { value: "kaikki", label: "Kaikki", statuses: null }
 
 const STATUS_FILTERS: StatusFilter[] = [
   ALL_FILTER,
@@ -53,7 +53,7 @@ function first(value: string | string[] | undefined): string | undefined {
 function listHref(query: { jakso?: string; tila?: string; q?: string; sivu?: string }): string {
   const sp = new URLSearchParams()
   if (query.jakso) sp.set("jakso", query.jakso)
-  if (query.tila) sp.set("tila", query.tila)
+  if (query.tila && query.tila !== "maksettu") sp.set("tila", query.tila)
   if (query.q) sp.set("q", query.q)
   if (query.sivu) sp.set("sivu", query.sivu)
   const s = sp.toString()
@@ -73,7 +73,7 @@ export default async function TilauksetPage({
   const params = await searchParams
   const days = parseRange(params.jakso)
   const q = first(params.q)?.trim() ?? ""
-  const tila = first(params.tila) ?? null
+  const tila = first(params.tila) ?? "maksettu"  // default: show only paid orders
   // Canonical ?jakso= value to carry through links (30 is the default → omitted).
   const jakso = days === 30 ? undefined : String(days)
 
@@ -92,7 +92,7 @@ export default async function TilauksetPage({
       )
     : windowOrders
 
-  const activeFilter = STATUS_FILTERS.find((f) => f.value === tila) ?? ALL_FILTER
+  const activeFilter = (tila === "kaikki" ? ALL_FILTER : STATUS_FILTERS.find((f) => f.value === tila)) ?? ALL_FILTER
   const activeStatuses = activeFilter.statuses
   const filtered = activeStatuses
     ? searched.filter((o) => activeStatuses.includes(o.status))
