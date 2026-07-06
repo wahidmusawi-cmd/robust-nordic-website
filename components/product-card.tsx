@@ -7,9 +7,10 @@ export function ProductCard({ product }: { product: Product }) {
   const t = useTranslations("card")
   const locale = useLocale()
   const currency = locale === "sv" ? "kr" : "€"
+  const productSegment = locale === "en" ? "products" : locale === "sv" ? "produkter" : "tuotteet"
   return (
     <Link
-      href={`/tuotteet/${product.slug}`}
+      href={`/${productSegment}/${product.slug}`}
       className="group relative bg-card rounded-2xl overflow-hidden border border-border/60 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
     >
       <div className="relative aspect-square bg-secondary/40 flex items-center justify-center p-6">
