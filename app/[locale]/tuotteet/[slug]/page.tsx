@@ -40,6 +40,7 @@ export default async function ProductPage({
   if (!product) notFound()
 
   const currency = locale === "sv" ? "kr" : "€"
+  const productSegment = locale === "en" ? "products" : locale === "sv" ? "produkter" : "tuotteet"
   const related = getRelatedProducts(slug, 4, locale)
 
   const trustBadges = [
@@ -54,7 +55,7 @@ export default async function ProductPage({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         {/* Breadcrumb */}
         <Link
-          href="/tuotteet"
+          href={`/${productSegment}`}
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
