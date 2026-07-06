@@ -123,6 +123,18 @@ export default async function ProductPage({
               </div>
             )}
 
+            {/* Ingredients */}
+            {product.ingredients && (
+              <div className="mt-8 p-5 rounded-2xl bg-secondary">
+                <h2 className="font-semibold text-foreground mb-2 text-sm tracking-wide uppercase">
+                  {t("ingredientsTitle")}
+                </h2>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                  {product.ingredients}
+                </p>
+              </div>
+            )}
+
             {/* Trust badges */}
             <div className="mt-8 grid grid-cols-2 gap-4 pt-8 border-t border-border">
               {trustBadges.map((badge) => (
