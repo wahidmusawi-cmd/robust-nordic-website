@@ -161,7 +161,7 @@
   },
   "blogPage": {
     "metaTitle": "Blogi | Robust Nordic",
-     "metaDescription": "Hyvinvointivinkkejä, tietoa ravintolisistä ja pohjoismaisesta elämäntavasta. Lue uusimmat artikkelimme.",
+    "metaDescription": "Hyvinvointivinkkejä, tietoa ravintolisistä ja pohjoismaisesta elämäntavasta. Lue uusimmat artikkelimme.",
     "eyebrow": "BLOGI",
     "title": "Uusimmat artikkelimme",
     "subtitle": "Tietoa, vinkkejä ja inspiraatiota hyvinvointiin – ravintolisistä ja pohjoismaisesta elämäntavasta asiantuntijoidemme kirjoittamana.",
@@ -301,49 +301,115 @@
         "question": "Mihin haluaisit eniten tukea juuri nyt?",
         "helper": "Valitse itsellesi tärkein hyvinvoinnin kulmakivi.",
         "options": {
-          "energy": { "label": "Energiaan ja jaksamiseen", "description": "Väsymys ja vireystila" },
-          "immunity": { "label": "Vastustuskykyyn", "description": "Immuunijärjestelmän tuki" },
-          "sleep": { "label": "Uneen ja palautumiseen", "description": "Levollisempi yö" },
-          "skin": { "label": "Ihoon, hiuksiin ja niveliin", "description": "Kauneus ja liikkuvuus" },
-          "gut": { "label": "Vatsaan ja suolistoon", "description": "Ruoansulatuksen tasapaino" },
-          "focus": { "label": "Mieleen ja keskittymiseen", "description": "Muisti ja tarkkaavaisuus" }
+          "energy": {
+            "label": "Energiaan ja jaksamiseen",
+            "description": "Väsymys ja vireystila"
+          },
+          "immunity": {
+            "label": "Vastustuskykyyn",
+            "description": "Immuunijärjestelmän tuki"
+          },
+          "sleep": {
+            "label": "Uneen ja palautumiseen",
+            "description": "Levollisempi yö"
+          },
+          "skin": {
+            "label": "Ihoon, hiuksiin ja niveliin",
+            "description": "Kauneus ja liikkuvuus"
+          },
+          "gut": {
+            "label": "Vatsaan ja suolistoon",
+            "description": "Ruoansulatuksen tasapaino"
+          },
+          "focus": {
+            "label": "Mieleen ja keskittymiseen",
+            "description": "Muisti ja tarkkaavaisuus"
+          }
         }
       },
       "lifestyle": {
         "question": "Miten kuvailisit arkeasi ja liikuntaa?",
         "options": {
-          "athlete": { "label": "Treenaan tavoitteellisesti", "description": "Useita treeneiä viikossa" },
-          "active": { "label": "Liikun säännöllisesti", "description": "Aktiivinen arki" },
-          "busy": { "label": "Kiireinen arki, vähän aikaa", "description": "Työ ja perhe vievät energian" },
-          "calm": { "label": "Rauhallinen, palauttava arki", "description": "Lepoa ja hyvinvointia" }
+          "athlete": {
+            "label": "Treenaan tavoitteellisesti",
+            "description": "Useita treeneiä viikossa"
+          },
+          "active": {
+            "label": "Liikun säännöllisesti",
+            "description": "Aktiivinen arki"
+          },
+          "busy": {
+            "label": "Kiireinen arki, vähän aikaa",
+            "description": "Työ ja perhe vievät energian"
+          },
+          "calm": {
+            "label": "Rauhallinen, palauttava arki",
+            "description": "Lepoa ja hyvinvointia"
+          }
         }
       },
       "sleep_quality": {
         "question": "Millainen unesi ja palautumisesi on?",
         "options": {
-          "poor": { "label": "Nukahtaminen on vaikeaa", "description": "" },
-          "restless": { "label": "Heräilen tai kuorsaan", "description": "" },
-          "stressed": { "label": "Stressi pitää virkeänä", "description": "" },
-          "good": { "label": "Nukun pääosin hyvin", "description": "" }
+          "poor": {
+            "label": "Nukahtaminen on vaikeaa",
+            "description": ""
+          },
+          "restless": {
+            "label": "Heräilen tai kuorsaan",
+            "description": ""
+          },
+          "stressed": {
+            "label": "Stressi pitää virkeänä",
+            "description": ""
+          },
+          "good": {
+            "label": "Nukun pääosin hyvin",
+            "description": ""
+          }
         }
       },
       "diet": {
         "question": "Onko ruokavaliossasi jotain huomioitavaa?",
         "helper": "Tämä auttaa tarkentamaan suositusta.",
         "options": {
-          "plant": { "label": "Kasvis- tai vegaaniruokavalio", "description": "B12 ja rauta tärkeitä" },
-          "lowfish": { "label": "Syön vähän kalaa", "description": "Omega-3 voi jäädä vähäiseksi" },
-          "bones": { "label": "Haluan tukea luustoa", "description": "Kalsium ja D-vitamiini" },
-          "balanced": { "label": "Monipuolinen, ei rajoitteita", "description": "" }
+          "plant": {
+            "label": "Kasvis- tai vegaaniruokavalio",
+            "description": "B12 ja rauta tärkeitä"
+          },
+          "lowfish": {
+            "label": "Syön vähän kalaa",
+            "description": "Omega-3 voi jäädä vähäiseksi"
+          },
+          "bones": {
+            "label": "Haluan tukea luustoa",
+            "description": "Kalsium ja D-vitamiini"
+          },
+          "balanced": {
+            "label": "Monipuolinen, ei rajoitteita",
+            "description": ""
+          }
         }
       },
       "lifestage": {
         "question": "Mikä kuvaa elämäntilannettasi parhaiten?",
         "options": {
-          "performance": { "label": "Tähtään parempaan suorituskykyyn", "description": "" },
-          "beauty": { "label": "Panostan ihoon ja ulkonäköön", "description": "" },
-          "menopause": { "label": "Vaihdevuodet tai hormonimuutokset", "description": "" },
-          "general": { "label": "Yleinen hyvinvointi ja ennaltaehkäisy", "description": "" }
+          "performance": {
+            "label": "Tähtään parempaan suorituskykyyn",
+            "description": ""
+          },
+          "beauty": {
+            "label": "Panostan ihoon ja ulkonäköön",
+            "description": ""
+          },
+          "menopause": {
+            "label": "Vaihdevuodet tai hormonimuutokset",
+            "description": ""
+          },
+          "general": {
+            "label": "Yleinen hyvinvointi ja ennaltaehkäisy",
+            "description": ""
+          }
         }
       }
     }
@@ -383,5 +449,29 @@
       "securityText": "Kaikki maksutapahtumat on suojattu SSL-salauksella. Maksunvälityksen hoitaa luotettava maksunvälittäjä, ja arkaluontoiset tiedot kulkevat aina salattua yhteyttä pitkin.",
       "contactText": "Mikäli sinulla on kysyttävää maksamisesta, ota yhteyttä asiakaspalveluumme osoitteeseen asiakaspalvelu@robustnordic.fi tai numeroon 050 372 0007."
     }
+  },
+  "cart": {
+    "title": "Ostoskori",
+    "empty": "Ostoskori on tyhjä",
+    "oneTime": "Kertaosto",
+    "subscription": "Kestotilaus",
+    "everyNDays": "{days} pv välein",
+    "interval": "Toimitusväli",
+    "intervalDays": "{days} pv",
+    "intervalNote": "Voit perua tai muuttaa tilauksen milloin tahansa.",
+    "addToCart": "Lisää koriin",
+    "added": "Lisätty koriin!",
+    "total": "Yhteensä",
+    "vatNote": "sis. ALV · toimituskulut lasketaan kassalla",
+    "checkout": "Siirry kassalle",
+    "checkingOut": "Siirrytään kassalle…",
+    "clear": "Tyhjennä ostoskori",
+    "checkoutFailed": "Kassalle siirtyminen epäonnistui",
+    "networkError": "Verkkovirhe – yritä uudelleen",
+    "mixedIntervals": "Valitse kestotilauksille sama toimitusväli",
+    "openCart": "Avaa ostoskori",
+    "close": "Sulje",
+    "remove": "Poista tuote",
+    "subscriptionUnavailable": "Kestotilaus ei ole vielä saatavilla kaikille valituille tuotteille"
   }
 }

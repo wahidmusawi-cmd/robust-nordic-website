@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Check, ArrowLeft, Leaf, ShieldCheck, MapPin, Truck } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { ProductCard } from "@/components/product-card"
-import { BuyButton } from "@/components/buy-button"
+import { AddToCartSection } from "@/components/add-to-cart-section"
 import { products, getProduct, getRelatedProducts } from "@/lib/products"
 import type { Locale } from "@/i18n/routing"
 
@@ -97,14 +97,8 @@ export default async function ProductPage({
               <span className="text-sm text-muted-foreground">{t("vat")}</span>
             </div>
 
-            <div className="mt-6 flex flex-col sm:flex-row gap-4">
-              <BuyButton
-                slug={slug}
-                locale={locale}
-                label={t("buy")}
-                size="lg"
-                className="flex-1 bg-primary text-primary-foreground hover:bg-accent px-8 py-6 text-base tracking-wide"
-              />
+            <div className="mt-6">
+              <AddToCartSection product={product} />
             </div>
 
             {/* Benefits */}

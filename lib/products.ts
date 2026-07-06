@@ -1,5 +1,22 @@
 import { productTranslations } from "@/lib/product-translations"
 
+/**
+ * Recurring shipping prices per delivery interval ("30"/"60"/"90"), used when
+ * a subscription period total is under the free-shipping threshold. Written
+ * by stripe-live-migrate.mjs --subscriptions.
+ */
+export const SUBSCRIPTION_DISCOUNT = 0.15
+
+/** Price string "36,90" → discounted subscription unit in cents (3137). */
+export function subUnitCents(price: string): number {
+  const cents = Math.round(parseFloat(price.replace(",", ".")) * 100)
+  return Math.round(cents * (1 - SUBSCRIPTION_DISCOUNT))
+}
+
+export const shippingRecurringPriceIds: Record<string, string> = { "30": "price_1TqH6gHoGJuna68gCCXtKbUH", "60": "price_1TqH6hHoGJuna68gRl3jx3PX", "90": "price_1TqH6hHoGJuna68g0hLSgNUU" }
+export const FREE_SHIPPING_THRESHOLD_CENTS = 4900
+export const SHIPPING_COST_CENTS = 490
+
 export type Product = {
   slug: string
   name: string
@@ -7,6 +24,9 @@ export type Product = {
   size?: string
   price: string
   stripePriceId?: string
+  /** Recurring price per delivery interval ("30" | "60" | "90" days), created
+   *  by stripe-live-migrate.mjs --subscriptions. */
+  stripeSubscriptionPriceIds?: Record<string, string>
   image: string
   category: "ravintolisat" | "hyvinvointi"
   tagline: string
@@ -27,6 +47,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "36,90",
     stripePriceId: "price_1Tpmj3HoGJuna68gqX6s0qHZ",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6IHoGJuna68g74no4j9r", "60": "price_1TqH6JHoGJuna68gaPjNUVOh", "90": "price_1TqH6JHoGJuna68gOY1HAA9W" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/kollageeni.png?v=1767721990",
     category: "ravintolisat",
     tagline: "Iholle & nivelille",
@@ -49,6 +70,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "36,90",
     stripePriceId: "price_1Tpmj4HoGJuna68g69lVTnKP",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6KHoGJuna68gy76v8YUg", "60": "price_1TqH6KHoGJuna68gEw9adCq1", "90": "price_1TqH6KHoGJuna68geCODZvx9" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/quattro-magnesium.png?v=1767722068",
     category: "ravintolisat",
     tagline: "Lihaksille, luustolle & hermostolle",
@@ -71,6 +93,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "39,90",
     stripePriceId: "price_1Tpmj6HoGJuna68gPfQWkysj",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6LHoGJuna68gZbcrjN9j", "60": "price_1TqH6MHoGJuna68gwpyia6Db", "90": "price_1TqH6MHoGJuna68gc47UfPdf" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/krillioljy-omega.png?v=1767722033",
     category: "ravintolisat",
     tagline: "Aivoille, sydämelle & maksalle",
@@ -92,6 +115,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "36,90",
     stripePriceId: "price_1Tpmj7HoGJuna68g8fXWTZAY",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6NHoGJuna68gQcvU8gz5", "60": "price_1TqH6NHoGJuna68guHxznZE0", "90": "price_1TqH6NHoGJuna68gOUsfbeJy" },
     image:
       "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Sienettuotekuva_79da6894-d8c9-402f-8599-a60e35aa2c21.png?v=1764063319",
     category: "ravintolisat",
@@ -114,6 +138,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "41,90",
     stripePriceId: "price_1Tpmj8HoGJuna68g43oX1dKH",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6OHoGJuna68gwJeM0fHv", "60": "price_1TqH6OHoGJuna68g9OuFlxya", "90": "price_1TqH6PHoGJuna68geYuhVvF5" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/BioticBoostproductpic.png?v=1765455204",
     category: "ravintolisat",
     tagline: "Suolistolle & immuniteetille",
@@ -135,6 +160,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "36,90",
     stripePriceId: "price_1Tpmj9HoGJuna68g6phrl5QR",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6PHoGJuna68gxEYHmNh1", "60": "price_1TqH6QHoGJuna68gd6FfJmZr", "90": "price_1TqH6QHoGJuna68gVRkK6h9U" },
     image:
       "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Cvitamiinituotekuva_75a69245-3ed2-4e52-9567-475730b2ed04.png?v=1764062650",
     category: "ravintolisat",
@@ -157,6 +183,7 @@ export const products: Product[] = [
     size: "120 kaps.",
     price: "35,90",
     stripePriceId: "price_1TpmjAHoGJuna68guY5FEYCx",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6RHoGJuna68gaGgYMdMh", "60": "price_1TqH6RHoGJuna68gUiZ2mJKI", "90": "price_1TqH6RHoGJuna68gWHUx5XVK" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/ZMAproductpic.png?v=1765373403",
     category: "ravintolisat",
     tagline: "Palautumiseen & hormonitasapainoon",
@@ -178,6 +205,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "39,90",
     stripePriceId: "price_1TpmjCHoGJuna68gXIm3FOYY",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6SHoGJuna68go5ohvoM2", "60": "price_1TqH6SHoGJuna68ghUeKIPsi", "90": "price_1TqH6THoGJuna68g8BbMtIug" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Moringaproductpic.png?v=1765456961",
     category: "ravintolisat",
     tagline: "Energiaa & vastustuskykyä",
@@ -199,6 +227,7 @@ export const products: Product[] = [
     size: "120 tbl.",
     price: "39,90",
     stripePriceId: "price_1TpmjDHoGJuna68gArLsI5KM",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6UHoGJuna68gBgzhSdp6", "60": "price_1TqH6UHoGJuna68gm3P12V4A", "90": "price_1TqH6UHoGJuna68gZHgVIot5" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/b12.png?v=1767721905",
     category: "ravintolisat",
     tagline: "Hermostolle & muistille",
@@ -220,6 +249,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "26,90",
     stripePriceId: "price_1TpmjEHoGJuna68g51hQZoO9",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6VHoGJuna68gmSWnkQ2w", "60": "price_1TqH6VHoGJuna68gW9Lyvk82", "90": "price_1TqH6WHoGJuna68gU0msSX4x" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/BoneBoostproductpic.png?v=1765373691",
     category: "ravintolisat",
     tagline: "Luustolle & hampaille",
@@ -241,6 +271,7 @@ export const products: Product[] = [
     size: "90 kaps.",
     price: "29,90",
     stripePriceId: "price_1TpmjFHoGJuna68gHzCKISkz",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6WHoGJuna68gXkLTXtc2", "60": "price_1TqH6XHoGJuna68gQcIimu2O", "90": "price_1TqH6XHoGJuna68gu1q4p2x6" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Kelpproductpic.png?v=1765456057",
     category: "ravintolisat",
     tagline: "Kilpirauhaselle & aineenvaihdunnalle",
@@ -262,6 +293,7 @@ export const products: Product[] = [
     size: "60 kaps.",
     price: "35,90",
     stripePriceId: "price_1TpmjHHoGJuna68gckUXPqsi",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6YHoGJuna68g2PzCXoVs", "60": "price_1TqH6YHoGJuna68g6UDxR17B", "90": "price_1TqH6YHoGJuna68gFH4qSR2a" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Menoboostproductpic_1.png?v=1765372383",
     category: "ravintolisat",
     tagline: "Tasapainoa vaihdevuosiin",
@@ -282,6 +314,7 @@ export const products: Product[] = [
     shortName: "Amin X EAA",
     price: "34,90",
     stripePriceId: "price_1TpmjIHoGJuna68gxzkt2B8q",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6ZHoGJuna68gDstiTsHR", "60": "price_1TqH6ZHoGJuna68gzTznzmlF", "90": "price_1TqH6aHoGJuna68gJoJFDIUA" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Mockup-1_1.png?v=1766217693",
     category: "ravintolisat",
     tagline: "Lihasten palautumiseen",
@@ -302,6 +335,7 @@ export const products: Product[] = [
     shortName: "Grape Punch",
     price: "39,90",
     stripePriceId: "price_1TpmjJHoGJuna68gQO31obiV",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6aHoGJuna68gVrsrfjs8", "60": "price_1TqH6bHoGJuna68gXjiJq1hJ", "90": "price_1TqH6bHoGJuna68gRJ4ubaFC" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Grapepunchproductpicture_1.png?v=1765977042",
     category: "ravintolisat",
     tagline: "Nesteytykseen & energiaan",
@@ -323,6 +357,7 @@ export const products: Product[] = [
     shortName: "AirFlow Nenäteippi",
     price: "29,90",
     stripePriceId: "price_1TpmjLHoGJuna68gFbcherH1",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6cHoGJuna68gmacbRt20", "60": "price_1TqH6cHoGJuna68gNQ2b8bKv", "90": "price_1TqH6dHoGJuna68g9uInHzbK" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Nenateippikuva.png?v=1766066300",
     category: "hyvinvointi",
     tagline: "Parempaan hengitykseen & uneen",
@@ -343,6 +378,7 @@ export const products: Product[] = [
     shortName: "Migreenimyssy",
     price: "39,90",
     stripePriceId: "price_1TpmjMHoGJuna68gJy3X74ua",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6dHoGJuna68gpuUJiDFd", "60": "price_1TqH6eHoGJuna68giWkNU40b", "90": "price_1TqH6eHoGJuna68gNvSZdjbd" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Migreenimyssykuva.png?v=1766066159",
     category: "hyvinvointi",
     tagline: "Helpotusta migreeniin & stressiin",
@@ -363,6 +399,7 @@ export const products: Product[] = [
     shortName: "Pilleriannostelija",
     price: "14,90",
     stripePriceId: "price_1TpmjNHoGJuna68gm1KdfT9N",
+    stripeSubscriptionPriceIds: { "30": "price_1TqH6fHoGJuna68g8jHSIxh2", "60": "price_1TqH6fHoGJuna68giQb9GTSe", "90": "price_1TqH6fHoGJuna68g8M9fnz4q" },
     image: "https://cdn.shopify.com/s/files/1/0852/3631/8539/files/Robustpilleriannostelija.png?v=1766219097",
     category: "hyvinvointi",
     tagline: "Päivittäisten lisien annosteluun",

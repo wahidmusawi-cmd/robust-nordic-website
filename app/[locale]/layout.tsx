@@ -5,6 +5,8 @@ import { IntlProvider } from "@/components/intl-provider"
 import { getTranslations, getMessages, setRequestLocale } from "next-intl/server"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
+import { CartProvider } from "@/lib/cart"
+import { CartDrawer } from "@/components/cart-drawer"
 import { routing } from "@/i18n/routing"
 import { activeFonts } from "@/lib/fonts"
 import "../globals.css"
@@ -56,9 +58,12 @@ export default async function LocaleLayout({
             (globals.css) only hide content under html.js. */}
         <script dangerouslySetInnerHTML={{ __html: `document.documentElement.classList.add("js")` }} />
         <IntlProvider messages={messages} locale={locale}>
-          <SiteHeader />
-          {children}
-          <Footer />
+          <CartProvider>
+            <SiteHeader />
+            {children}
+            <Footer />
+            <CartDrawer />
+          </CartProvider>
         </IntlProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>

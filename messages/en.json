@@ -301,49 +301,115 @@
         "question": "What would you most like support with right now?",
         "helper": "Choose the most important cornerstone of your wellbeing.",
         "options": {
-          "energy": { "label": "Energy and stamina", "description": "Fatigue and alertness" },
-          "immunity": { "label": "Immunity", "description": "Immune system support" },
-          "sleep": { "label": "Sleep and recovery", "description": "A more restful night" },
-          "skin": { "label": "Skin, hair and joints", "description": "Beauty and mobility" },
-          "gut": { "label": "Stomach and gut", "description": "Digestive balance" },
-          "focus": { "label": "Mind and focus", "description": "Memory and attention" }
+          "energy": {
+            "label": "Energy and stamina",
+            "description": "Fatigue and alertness"
+          },
+          "immunity": {
+            "label": "Immunity",
+            "description": "Immune system support"
+          },
+          "sleep": {
+            "label": "Sleep and recovery",
+            "description": "A more restful night"
+          },
+          "skin": {
+            "label": "Skin, hair and joints",
+            "description": "Beauty and mobility"
+          },
+          "gut": {
+            "label": "Stomach and gut",
+            "description": "Digestive balance"
+          },
+          "focus": {
+            "label": "Mind and focus",
+            "description": "Memory and attention"
+          }
         }
       },
       "lifestyle": {
         "question": "How would you describe your daily life and exercise?",
         "options": {
-          "athlete": { "label": "I train with goals", "description": "Several workouts a week" },
-          "active": { "label": "I exercise regularly", "description": "An active everyday life" },
-          "busy": { "label": "Busy life, little time", "description": "Work and family take the energy" },
-          "calm": { "label": "Calm, restorative everyday life", "description": "Rest and wellbeing" }
+          "athlete": {
+            "label": "I train with goals",
+            "description": "Several workouts a week"
+          },
+          "active": {
+            "label": "I exercise regularly",
+            "description": "An active everyday life"
+          },
+          "busy": {
+            "label": "Busy life, little time",
+            "description": "Work and family take the energy"
+          },
+          "calm": {
+            "label": "Calm, restorative everyday life",
+            "description": "Rest and wellbeing"
+          }
         }
       },
       "sleep_quality": {
         "question": "What is your sleep and recovery like?",
         "options": {
-          "poor": { "label": "Falling asleep is difficult", "description": "" },
-          "restless": { "label": "I wake up or snore", "description": "" },
-          "stressed": { "label": "Stress keeps me alert", "description": "" },
-          "good": { "label": "I mostly sleep well", "description": "" }
+          "poor": {
+            "label": "Falling asleep is difficult",
+            "description": ""
+          },
+          "restless": {
+            "label": "I wake up or snore",
+            "description": ""
+          },
+          "stressed": {
+            "label": "Stress keeps me alert",
+            "description": ""
+          },
+          "good": {
+            "label": "I mostly sleep well",
+            "description": ""
+          }
         }
       },
       "diet": {
         "question": "Is there anything to consider in your diet?",
         "helper": "This helps us refine the recommendation.",
         "options": {
-          "plant": { "label": "Vegetarian or vegan diet", "description": "B12 and iron important" },
-          "lowfish": { "label": "I eat little fish", "description": "Omega-3 may be low" },
-          "bones": { "label": "I want to support my bones", "description": "Calcium and vitamin D" },
-          "balanced": { "label": "Varied, no restrictions", "description": "" }
+          "plant": {
+            "label": "Vegetarian or vegan diet",
+            "description": "B12 and iron important"
+          },
+          "lowfish": {
+            "label": "I eat little fish",
+            "description": "Omega-3 may be low"
+          },
+          "bones": {
+            "label": "I want to support my bones",
+            "description": "Calcium and vitamin D"
+          },
+          "balanced": {
+            "label": "Varied, no restrictions",
+            "description": ""
+          }
         }
       },
       "lifestage": {
         "question": "What best describes your life situation?",
         "options": {
-          "performance": { "label": "I aim for better performance", "description": "" },
-          "beauty": { "label": "I focus on skin and appearance", "description": "" },
-          "menopause": { "label": "Menopause or hormonal changes", "description": "" },
-          "general": { "label": "General wellbeing and prevention", "description": "" }
+          "performance": {
+            "label": "I aim for better performance",
+            "description": ""
+          },
+          "beauty": {
+            "label": "I focus on skin and appearance",
+            "description": ""
+          },
+          "menopause": {
+            "label": "Menopause or hormonal changes",
+            "description": ""
+          },
+          "general": {
+            "label": "General wellbeing and prevention",
+            "description": ""
+          }
         }
       }
     }
@@ -383,5 +449,29 @@
       "securityText": "All payment transactions are protected with SSL encryption. Payment processing is handled by a trusted payment provider, and sensitive data always travels via an encrypted connection.",
       "contactText": "If you have questions about payment, please contact our customer service at asiakaspalvelu@robustnordic.fi or on 050 372 0007."
     }
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "oneTime": "One-time purchase",
+    "subscription": "Subscribe",
+    "everyNDays": "every {days} days",
+    "interval": "Delivery interval",
+    "intervalDays": "{days} days",
+    "intervalNote": "Cancel or change your subscription at any time.",
+    "addToCart": "Add to cart",
+    "added": "Added to cart!",
+    "total": "Total",
+    "vatNote": "VAT included · shipping calculated at checkout",
+    "checkout": "Checkout",
+    "checkingOut": "Heading to checkout…",
+    "clear": "Clear cart",
+    "checkoutFailed": "Could not start checkout",
+    "networkError": "Network error – please try again",
+    "mixedIntervals": "Choose the same delivery interval for all subscriptions",
+    "openCart": "Open cart",
+    "close": "Close",
+    "remove": "Remove item",
+    "subscriptionUnavailable": "Subscription is not yet available for all selected products"
   }
 }

@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Link } from "@/i18n/navigation"
 import { Button } from "@/components/ui/button"
 import { CheckCircle } from "lucide-react"
+import { ClearCartOnSuccess } from "@/components/clear-cart-on-success"
 import type { Locale } from "@/i18n/routing"
 
 export default async function ThanksPage({
@@ -34,6 +35,7 @@ export default async function ThanksPage({
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-background px-4">
+      <ClearCartOnSuccess />
       <div className="max-w-md text-center space-y-6">
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto" />
         <h1 className="text-3xl font-bold tracking-tight">{t.title}</h1>

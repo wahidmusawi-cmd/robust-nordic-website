@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
   BarChart3,
+  Repeat,
   ExternalLink,
   Home,
   Package,
@@ -24,6 +25,7 @@ export type NavItem = {
 export const NAV_ITEMS: NavItem[] = [
   { href: "/adminlog", label: "Koti", icon: Home, exact: true },
   { href: "/adminlog/tilaukset", label: "Tilaukset", icon: ShoppingBag },
+  { href: "/adminlog/kestotilaukset", label: "Kestotilaukset", icon: Repeat },
   { href: "/adminlog/tuotteet", label: "Tuotteet", icon: Package },
   { href: "/adminlog/asiakkaat", label: "Asiakkaat", icon: Users },
   { href: "/adminlog/analytiikka", label: "Analytiikka", icon: BarChart3 },

@@ -2,12 +2,32 @@
 
 import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, ShoppingBag } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { useCart } from "@/lib/cart"
 import { cn } from "@/lib/utils"
+
+function CartButton() {
+  const t = useTranslations("cart")
+  const { itemCount, setIsOpen } = useCart()
+  return (
+    <button
+      onClick={() => setIsOpen(true)}
+      aria-label={t("openCart")}
+      className="relative p-2 text-foreground/80 hover:text-foreground transition-colors"
+    >
+      <ShoppingBag className="w-5 h-5" />
+      {itemCount > 0 && (
+        <span className="absolute -top-0.5 -right-0.5 bg-accent text-accent-foreground text-[10px] font-semibold min-w-4 h-4 px-1 rounded-full flex items-center justify-center">
+          {itemCount}
+        </span>
+      )}
+    </button>
+  )
+}
 
 type NavItem = {
   key: string
@@ -103,6 +123,7 @@ export function SiteHeader() {
 
         <div className="hidden lg:flex items-center gap-5">
           <LanguageSwitcher />
+          <CartButton />
           <Button asChild className="bg-primary text-primary-foreground hover:bg-accent tracking-wide">
             <Link href="/tuotteet">{t("buyNow")}</Link>
           </Button>
@@ -111,6 +132,7 @@ export function SiteHeader() {
         {/* Mobile controls */}
         <div className="flex items-center gap-3 lg:hidden">
           <LanguageSwitcher />
+          <CartButton />
           <button
             className="p-2 text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}

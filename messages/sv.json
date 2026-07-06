@@ -301,49 +301,115 @@
         "question": "Vad skulle du mest vilja ha stöd för just nu?",
         "helper": "Välj den viktigaste hörnstenen för ditt välmående.",
         "options": {
-          "energy": { "label": "Energi och ork", "description": "Trötthet och vakenhet" },
-          "immunity": { "label": "Motståndskraft", "description": "Stöd för immunförsvaret" },
-          "sleep": { "label": "Sömn och återhämtning", "description": "En lugnare natt" },
-          "skin": { "label": "Hud, hår och leder", "description": "Skönhet och rörlighet" },
-          "gut": { "label": "Mage och tarm", "description": "Matsmältningens balans" },
-          "focus": { "label": "Sinne och koncentration", "description": "Minne och uppmärksamhet" }
+          "energy": {
+            "label": "Energi och ork",
+            "description": "Trötthet och vakenhet"
+          },
+          "immunity": {
+            "label": "Motståndskraft",
+            "description": "Stöd för immunförsvaret"
+          },
+          "sleep": {
+            "label": "Sömn och återhämtning",
+            "description": "En lugnare natt"
+          },
+          "skin": {
+            "label": "Hud, hår och leder",
+            "description": "Skönhet och rörlighet"
+          },
+          "gut": {
+            "label": "Mage och tarm",
+            "description": "Matsmältningens balans"
+          },
+          "focus": {
+            "label": "Sinne och koncentration",
+            "description": "Minne och uppmärksamhet"
+          }
         }
       },
       "lifestyle": {
         "question": "Hur skulle du beskriva din vardag och motion?",
         "options": {
-          "athlete": { "label": "Jag tränar målmedvetet", "description": "Flera pass i veckan" },
-          "active": { "label": "Jag motionerar regelbundet", "description": "En aktiv vardag" },
-          "busy": { "label": "Hektisk vardag, lite tid", "description": "Jobb och familj tar energin" },
-          "calm": { "label": "Lugn, återhämtande vardag", "description": "Vila och välmående" }
+          "athlete": {
+            "label": "Jag tränar målmedvetet",
+            "description": "Flera pass i veckan"
+          },
+          "active": {
+            "label": "Jag motionerar regelbundet",
+            "description": "En aktiv vardag"
+          },
+          "busy": {
+            "label": "Hektisk vardag, lite tid",
+            "description": "Jobb och familj tar energin"
+          },
+          "calm": {
+            "label": "Lugn, återhämtande vardag",
+            "description": "Vila och välmående"
+          }
         }
       },
       "sleep_quality": {
         "question": "Hur är din sömn och återhämtning?",
         "options": {
-          "poor": { "label": "Svårt att somna", "description": "" },
-          "restless": { "label": "Jag vaknar eller snarkar", "description": "" },
-          "stressed": { "label": "Stress håller mig vaken", "description": "" },
-          "good": { "label": "Jag sover mestadels bra", "description": "" }
+          "poor": {
+            "label": "Svårt att somna",
+            "description": ""
+          },
+          "restless": {
+            "label": "Jag vaknar eller snarkar",
+            "description": ""
+          },
+          "stressed": {
+            "label": "Stress håller mig vaken",
+            "description": ""
+          },
+          "good": {
+            "label": "Jag sover mestadels bra",
+            "description": ""
+          }
         }
       },
       "diet": {
         "question": "Finns det något att beakta i din kost?",
         "helper": "Detta hjälper oss att precisera rekommendationen.",
         "options": {
-          "plant": { "label": "Vegetarisk eller vegansk kost", "description": "B12 och järn viktiga" },
-          "lowfish": { "label": "Jag äter lite fisk", "description": "Omega-3 kan bli lågt" },
-          "bones": { "label": "Jag vill stödja skelettet", "description": "Kalcium och D-vitamin" },
-          "balanced": { "label": "Varierad, inga begränsningar", "description": "" }
+          "plant": {
+            "label": "Vegetarisk eller vegansk kost",
+            "description": "B12 och järn viktiga"
+          },
+          "lowfish": {
+            "label": "Jag äter lite fisk",
+            "description": "Omega-3 kan bli lågt"
+          },
+          "bones": {
+            "label": "Jag vill stödja skelettet",
+            "description": "Kalcium och D-vitamin"
+          },
+          "balanced": {
+            "label": "Varierad, inga begränsningar",
+            "description": ""
+          }
         }
       },
       "lifestage": {
         "question": "Vad beskriver din livssituation bäst?",
         "options": {
-          "performance": { "label": "Jag siktar på bättre prestation", "description": "" },
-          "beauty": { "label": "Jag satsar på hud och utseende", "description": "" },
-          "menopause": { "label": "Klimakteriet eller hormonförändringar", "description": "" },
-          "general": { "label": "Allmänt välmående och förebyggande", "description": "" }
+          "performance": {
+            "label": "Jag siktar på bättre prestation",
+            "description": ""
+          },
+          "beauty": {
+            "label": "Jag satsar på hud och utseende",
+            "description": ""
+          },
+          "menopause": {
+            "label": "Klimakteriet eller hormonförändringar",
+            "description": ""
+          },
+          "general": {
+            "label": "Allmänt välmående och förebyggande",
+            "description": ""
+          }
         }
       }
     }
@@ -383,5 +449,29 @@
       "securityText": "Alla betalningstransaktioner är skyddade med SSL-kryptering. Betalningsförmedlingen sköts av en pålitlig betalningsförmedlare, och känsliga uppgifter färdas alltid via en krypterad anslutning.",
       "contactText": "Om du har frågor om betalning, kontakta vår kundtjänst på asiakaspalvelu@robustnordic.fi eller på numret 050 372 0007."
     }
+  },
+  "cart": {
+    "title": "Varukorg",
+    "empty": "Varukorgen är tom",
+    "oneTime": "Engångsköp",
+    "subscription": "Prenumeration",
+    "everyNDays": "var {days}:e dag",
+    "interval": "Leveransintervall",
+    "intervalDays": "{days} dgr",
+    "intervalNote": "Du kan avsluta eller ändra prenumerationen när som helst.",
+    "addToCart": "Lägg i varukorgen",
+    "added": "Tillagd i varukorgen!",
+    "total": "Totalt",
+    "vatNote": "inkl. moms · fraktkostnad beräknas i kassan",
+    "checkout": "Till kassan",
+    "checkingOut": "Går till kassan…",
+    "clear": "Töm varukorgen",
+    "checkoutFailed": "Det gick inte att gå till kassan",
+    "networkError": "Nätverksfel – försök igen",
+    "mixedIntervals": "Välj samma leveransintervall för prenumerationerna",
+    "openCart": "Öppna varukorgen",
+    "close": "Stäng",
+    "remove": "Ta bort produkten",
+    "subscriptionUnavailable": "Prenumeration är inte tillgänglig för alla valda produkter ännu"
   }
 }
