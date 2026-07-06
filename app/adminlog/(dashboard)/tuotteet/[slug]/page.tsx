@@ -19,6 +19,8 @@ import {
 import { formatEur, formatNumber } from "@/lib/admin/format"
 import { CATEGORY_LABELS, computeProductSeries } from "@/lib/admin/metrics"
 import { getOrders } from "@/lib/admin/orders"
+import { getSoldOutSlugs } from "@/lib/catalog-status"
+import { SoldOutToggle } from "@/components/admin/sold-out-toggle"
 import { parseRange, RANGE_LABELS } from "@/lib/admin/types"
 import { products } from "@/lib/products"
 
@@ -43,6 +45,7 @@ export default async function TuotePage({
   const days = parseRange(sp.jakso)
   const result = await getOrders(days)
   const { series, units, sales, orders } = computeProductSeries(result, slug, days)
+  const soldOut = (await getSoldOutSlugs()).includes(slug)
 
   return (
     <>
@@ -55,10 +58,14 @@ export default async function TuotePage({
           <>
             <Badge variant="secondary">{CATEGORY_LABELS[product.category]}</Badge>
             {product.badge && <Badge variant="outline">{product.badge}</Badge>}
+            {soldOut && (
+              <Badge className="border-transparent bg-rose-100 text-rose-800">Loppuunmyyty</Badge>
+            )}
           </>
         }
         actions={
           <>
+            <SoldOutToggle slug={slug} soldOut={soldOut} />
             <DateRangeTabs />
             <Button variant="outline" asChild>
               <a href={`/fi/tuotteet/${slug}`} target="_blank" rel="noreferrer">

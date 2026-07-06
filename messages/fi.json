@@ -57,7 +57,8 @@
   "card": {
     "view": "Katso",
     "readMore": "Lue lisää",
-    "minRead": "min lukuaika"
+    "minRead": "min lukuaika",
+    "soldOut": "Loppuunmyyty"
   },
   "home": {
     "products": {
@@ -158,7 +159,9 @@
     "badgeMadeIn": "Valmistettu Suomessa",
     "badgeVeganGluten": "Vegaaninen & gluteeniton",
     "badgeCertified": "BRCGS AA-sertifioitu",
-    "badgeShipping": "Ilmainen toimitus yli 50€"
+    "badgeShipping": "Ilmainen toimitus yli 50€",
+    "soldOut": "Loppuunmyyty",
+    "soldOutBody": "Tuote on tilapäisesti loppu. Palaamme pian — tarkista saatavuus myöhemmin uudelleen."
   },
   "blogPage": {
     "metaTitle": "Blogi | Robust Nordic",
@@ -473,6 +476,7 @@
     "openCart": "Avaa ostoskori",
     "close": "Sulje",
     "remove": "Poista tuote",
-    "subscriptionUnavailable": "Kestotilaus ei ole vielä saatavilla kaikille valituille tuotteille"
+    "subscriptionUnavailable": "Kestotilaus ei ole vielä saatavilla kaikille valituille tuotteille",
+    "productSoldOut": "Jokin korin tuotteista on loppuunmyyty"
   }
 }

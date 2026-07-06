@@ -17,6 +17,7 @@ import {
 import { formatEur, formatNumber } from "@/lib/admin/format"
 import { CATEGORY_LABELS, computeOverview, type ProductPerf } from "@/lib/admin/metrics"
 import { getOrders } from "@/lib/admin/orders"
+import { getSoldOutSlugs } from "@/lib/catalog-status"
 import { parseRange } from "@/lib/admin/types"
 import { products } from "@/lib/products"
 
@@ -31,6 +32,7 @@ export default async function TuotteetPage({
   const days = parseRange(params.jakso)
   const result = await getOrders(days)
   const overview = computeOverview(result, days)
+  const soldOutSlugs = new Set(await getSoldOutSlugs())
 
   // Period performance keyed by catalog slug (topProducts may include unmapped lines).
   const perfBySlug = new Map<string, ProductPerf>()
@@ -97,6 +99,11 @@ export default async function TuotteetPage({
                         >
                           {product.shortName}
                         </Link>
+                        {soldOutSlugs.has(product.slug) && (
+                          <Badge className="ml-2 border-transparent bg-rose-100 text-rose-800">
+                            Loppuunmyyty
+                          </Badge>
+                        )}
                         {product.size && (
                           <p className="text-muted-foreground text-xs">{product.size}</p>
                         )}

@@ -5,6 +5,8 @@ import { Check, ArrowLeft, Leaf, ShieldCheck, MapPin, Truck } from "lucide-react
 import { Link } from "@/i18n/navigation"
 import { ProductCard } from "@/components/product-card"
 import { AddToCartSection } from "@/components/add-to-cart-section"
+import { getSoldOutSlugs } from "@/lib/catalog-status"
+import { PackageX } from "lucide-react"
 import { IngredientsTable } from "@/components/ingredients-table"
 import { products, getProduct, getRelatedProducts } from "@/lib/products"
 import type { Locale } from "@/i18n/routing"
@@ -40,6 +42,7 @@ export default async function ProductPage({
   const product = getProduct(slug, locale)
   if (!product) notFound()
 
+  const soldOut = (await getSoldOutSlugs()).includes(slug)
   const productSegment = locale === "en" ? "products" : locale === "sv" ? "produkter" : "tuotteet"
   const related = getRelatedProducts(slug, 4, locale)
 
@@ -98,7 +101,17 @@ export default async function ProductPage({
             </div>
 
             <div className="mt-6">
-              <AddToCartSection product={product} />
+              {soldOut ? (
+                <div className="rounded-xl border border-border bg-secondary p-5">
+                  <p className="flex items-center gap-2 font-semibold text-foreground">
+                    <PackageX className="w-4 h-4 text-muted-foreground" aria-hidden />
+                    {t("soldOut")}
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">{t("soldOutBody")}</p>
+                </div>
+              ) : (
+                <AddToCartSection product={product} />
+              )}
             </div>
 
             {/* Benefits */}

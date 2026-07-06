@@ -57,7 +57,8 @@
   "card": {
     "view": "View",
     "readMore": "Read more",
-    "minRead": "min read"
+    "minRead": "min read",
+    "soldOut": "Sold out"
   },
   "home": {
     "products": {
@@ -158,7 +159,9 @@
     "badgeMadeIn": "Made in the Nordics",
     "badgeVeganGluten": "Vegan & gluten-free",
     "badgeCertified": "BRCGS AA-certified",
-    "badgeShipping": "Free shipping over €50"
+    "badgeShipping": "Free shipping over €50",
+    "soldOut": "Sold out",
+    "soldOutBody": "This product is temporarily out of stock. Check back soon for availability."
   },
   "blogPage": {
     "metaTitle": "Blog | Robust Nordic",
@@ -473,6 +476,7 @@
     "openCart": "Open cart",
     "close": "Close",
     "remove": "Remove item",
-    "subscriptionUnavailable": "Subscription is not yet available for all selected products"
+    "subscriptionUnavailable": "Subscription is not yet available for all selected products",
+    "productSoldOut": "An item in your cart is sold out"
   }
 }

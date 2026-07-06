@@ -6,6 +6,7 @@ import {
   subUnitCents,
 } from "@/lib/products"
 import { getStripe } from "@/lib/admin/stripe"
+import { getSoldOutSlugs } from "@/lib/catalog-status"
 
 interface CheckoutItem {
   slug: string
@@ -49,6 +50,11 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: "PRODUCT_NOT_FOUND" }, { status: 400 })
       }
       resolvedItems.push({ item, product })
+    }
+
+    const soldOutSlugs = new Set(await getSoldOutSlugs())
+    if (resolvedItems.some(({ product }) => soldOutSlugs.has(product.slug))) {
+      return NextResponse.json({ error: "PRODUCT_SOLD_OUT" }, { status: 400 })
     }
 
     const origin =

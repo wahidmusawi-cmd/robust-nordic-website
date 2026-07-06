@@ -10,6 +10,7 @@ import { getProduct } from "@/lib/products"
 const ERROR_KEYS: Record<string, string> = {
   MIXED_INTERVALS: "mixedIntervals",
   SUBSCRIPTION_UNAVAILABLE: "subscriptionUnavailable",
+  PRODUCT_SOLD_OUT: "productSoldOut",
 }
 
 export function CartDrawer() {

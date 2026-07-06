@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation"
 import { ArrowRight } from "lucide-react"
 import type { Product } from "@/lib/products"
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({ product, soldOut = false }: { product: Product; soldOut?: boolean }) {
   const t = useTranslations("card")
   const locale = useLocale()
   const productSegment = locale === "en" ? "products" : locale === "sv" ? "produkter" : "tuotteet"
@@ -13,16 +13,22 @@ export function ProductCard({ product }: { product: Product }) {
       className="group relative bg-card rounded-2xl overflow-hidden border border-border/60 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
     >
       <div className="relative aspect-square bg-secondary/40 flex items-center justify-center p-6">
-        {product.badge && (
-          <span className="absolute top-3 left-3 z-10 text-[10px] tracking-wider uppercase bg-primary text-primary-foreground px-2.5 py-1 rounded-full">
-            {product.badge}
+        {soldOut ? (
+          <span className="absolute top-3 left-3 z-10 text-[10px] tracking-wider uppercase bg-foreground/80 text-background px-2.5 py-1 rounded-full">
+            {t("soldOut")}
           </span>
+        ) : (
+          product.badge && (
+            <span className="absolute top-3 left-3 z-10 text-[10px] tracking-wider uppercase bg-primary text-primary-foreground px-2.5 py-1 rounded-full">
+              {product.badge}
+            </span>
+          )
         )}
         <img
           src={product.image || "/placeholder.svg"}
           alt={product.name}
           loading="lazy"
-          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+          className={`w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 ${soldOut ? "opacity-50 grayscale" : ""}`}
         />
       </div>
 

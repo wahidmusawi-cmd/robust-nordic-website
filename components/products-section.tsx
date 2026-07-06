@@ -5,12 +5,14 @@ import { ArrowRight } from "lucide-react"
 import { ProductCard } from "@/components/product-card"
 import { Reveal } from "@/components/scroll-effects"
 import { getFeaturedProducts } from "@/lib/products"
+import { getSoldOutSlugs } from "@/lib/catalog-status"
 import type { Locale } from "@/i18n/routing"
 
 export async function ProductsSection() {
   const t = await getTranslations("home.products")
   const locale = (await getLocale()) as Locale
   const featured = getFeaturedProducts(locale)
+  const soldOutSlugs = new Set(await getSoldOutSlugs())
 
   return (
     <section id="tuotteet" className="py-24 lg:py-32 bg-background">
@@ -27,7 +29,7 @@ export async function ProductsSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
           {featured.map((product, index) => (
             <Reveal key={product.slug} delay={index * 90} className="flex flex-col [&>a]:flex-1">
-              <ProductCard product={product} />
+              <ProductCard product={product} soldOut={soldOutSlugs.has(product.slug)} />
             </Reveal>
           ))}
         </div>

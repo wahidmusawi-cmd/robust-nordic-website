@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import { ProductCard } from "@/components/product-card"
 import { Reveal } from "@/components/scroll-effects"
 import { getAllProducts } from "@/lib/products"
+import { getSoldOutSlugs } from "@/lib/catalog-status"
 import type { Locale } from "@/i18n/routing"
 
 export async function generateMetadata({
@@ -20,6 +21,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
   setRequestLocale(locale)
   const t = await getTranslations("productsPage")
   const all = getAllProducts(locale)
+  const soldOutSlugs = new Set(await getSoldOutSlugs())
   const ravintolisat = all.filter((p) => p.category === "ravintolisat")
   const hyvinvointi = all.filter((p) => p.category === "hyvinvointi")
 
@@ -48,7 +50,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
             {ravintolisat.map((product, index) => (
               <Reveal key={product.slug} delay={(index % 4) * 80} className="flex flex-col [&>a]:flex-1">
-                <ProductCard product={product} />
+                <ProductCard product={product} soldOut={soldOutSlugs.has(product.slug)} />
               </Reveal>
             ))}
           </div>
@@ -67,7 +69,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
             {hyvinvointi.map((product, index) => (
               <Reveal key={product.slug} delay={(index % 4) * 80} className="flex flex-col [&>a]:flex-1">
-                <ProductCard product={product} />
+                <ProductCard product={product} soldOut={soldOutSlugs.has(product.slug)} />
               </Reveal>
             ))}
           </div>
