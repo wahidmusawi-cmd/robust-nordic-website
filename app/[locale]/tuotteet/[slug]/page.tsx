@@ -39,7 +39,6 @@ export default async function ProductPage({
   const product = getProduct(slug, locale)
   if (!product) notFound()
 
-  const currency = locale === "sv" ? "kr" : "€"
   const productSegment = locale === "en" ? "products" : locale === "sv" ? "produkter" : "tuotteet"
   const related = getRelatedProducts(slug, 4, locale)
 
@@ -93,7 +92,7 @@ export default async function ProductPage({
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">{product.description}</p>
 
             <div className="mt-8 flex items-baseline gap-3">
-              <span className="text-3xl font-semibold text-foreground">{product.price} {currency}</span>
+              <span className="text-3xl font-semibold text-foreground">{product.price} €</span>
               <span className="text-sm text-muted-foreground">{t("vat")}</span>
             </div>
 

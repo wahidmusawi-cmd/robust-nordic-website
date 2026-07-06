@@ -6,7 +6,6 @@ import type { Product } from "@/lib/products"
 export function ProductCard({ product }: { product: Product }) {
   const t = useTranslations("card")
   const locale = useLocale()
-  const currency = locale === "sv" ? "kr" : "€"
   const productSegment = locale === "en" ? "products" : locale === "sv" ? "produkter" : "tuotteet"
   return (
     <Link
@@ -38,7 +37,7 @@ export function ProductCard({ product }: { product: Product }) {
           <p className="text-sm text-muted-foreground mt-2 leading-relaxed line-clamp-2">{product.tagline}</p>
         </div>
         <div className="flex items-center justify-between mt-4 pt-4 border-t border-border">
-          <span className="text-lg font-semibold text-foreground">{product.price} {currency}</span>
+          <span className="text-lg font-semibold text-foreground">{product.price} €</span>
           <span className="inline-flex items-center text-sm font-medium text-accent group-hover:gap-2 gap-1 transition-all">
             {t("view")}
             <ArrowRight className="w-3.5 h-3.5" />

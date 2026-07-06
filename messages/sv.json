@@ -30,7 +30,7 @@
     "subtitle": "Premium kosttillskott av de renaste nordiska råvarorna. Vetenskapligt beprövade, veganska och utan onödiga tillsatser.",
     "browse": "BLÄDDRA BLAND PRODUKTER",
     "takeTest": "GÖR TESTET",
-    "freeShipping": "Fri frakt på beställningar över 50 kr",
+    "freeShipping": "Fri frakt på beställningar över 50 €",
     "imageAlt": "Ett stilla nordiskt sjölandskap med en skogsö"
   },
   "footer": {
@@ -80,7 +80,7 @@
       "safeTitle": "Ett tryggt val",
       "safeDesc": "Noggrant testade råvaror. Certifierad produktion och full spårbarhet.",
       "easyTitle": "Enkel att handla",
-      "easyDesc": "Snabb beställning och smidig leverans. Fri frakt på beställningar över 50 kr.",
+      "easyDesc": "Snabb beställning och smidig leverans. Fri frakt på beställningar över 50 €.",
       "goodTitle": "På det godas sida",
       "goodDesc": "En del av vinsten går till goda ändamål. Vi stöder nordiskt naturskydd."
     },
@@ -157,7 +157,7 @@
     "badgeMadeIn": "Tillverkat i Norden",
     "badgeVeganGluten": "Veganskt & glutenfritt",
     "badgeCertified": "BRCGS AA-certifierad",
-    "badgeShipping": "Fri frakt över 50 kr"
+    "badgeShipping": "Fri frakt över 50 €"
   },
   "blogPage": {
     "metaTitle": "Blogg | Robust Nordic",
