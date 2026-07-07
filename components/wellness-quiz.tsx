@@ -185,7 +185,7 @@ export function WellnessQuiz() {
   }
 
   // ---------- QUESTIONS ----------
-  const hasHelper = current.id === "goal"
+  const helperKey = current.helperKey
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -209,14 +209,14 @@ export function WellnessQuiz() {
       <h2 className="font-serif text-3xl sm:text-4xl text-foreground leading-tight text-balance">
         {t(current.questionKey)}
       </h2>
-      {hasHelper && <p className="mt-3 text-muted-foreground leading-relaxed">{t("goalHelper")}</p>}
+      {helperKey && <p className="mt-3 text-muted-foreground leading-relaxed">{t(helperKey)}</p>}
 
       {/* Options */}
       <div className="mt-8 grid gap-3">
         {current.options.map((option) => {
           const selected = (answers[current.id] || []).includes(option.id)
           const label = t(option.labelKey)
-          const description = ""
+          const description = t(option.descriptionKey)
           return (
             <button
               key={option.id}
