@@ -132,6 +132,9 @@ export async function POST(req: NextRequest) {
     }
 
     // One-time payment
+    // payment_method_types is intentionally omitted — Stripe automatically
+    // shows all methods enabled in the dashboard (card, MobilePay, Klarna,
+    // Finnish bank transfers, Apple Pay, Google Pay, etc.).
     const firstSlug = resolvedItems[0]?.product.slug ?? ""
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -142,7 +145,6 @@ export async function POST(req: NextRequest) {
       success_url: successUrl,
       cancel_url: `${origin}/${locale}/tuotteet/${firstSlug}`,
       locale: localeParam,
-      payment_method_types: ["card"],
       allow_promotion_codes: true,
       shipping_address_collection: { allowed_countries: ALLOWED_COUNTRIES },
       metadata: { locale, slug: firstSlug, type: "one_time" },
