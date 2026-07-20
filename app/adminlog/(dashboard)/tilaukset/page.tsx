@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import Link from "next/link"
 import { Download, Search, ShoppingBag } from "lucide-react"
 import { DateRangeTabs } from "@/components/admin/date-range-tabs"

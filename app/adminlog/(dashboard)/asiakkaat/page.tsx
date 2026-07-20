@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import Link from "next/link"
 import { Search, Users } from "lucide-react"
 import { EmptyState } from "@/components/admin/empty-state"

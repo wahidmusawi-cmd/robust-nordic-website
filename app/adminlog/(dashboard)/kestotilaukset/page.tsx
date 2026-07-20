@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { CheckCircle2, Clock, KeyRound, PauseCircle, RefreshCw, XCircle, type LucideIcon } from "lucide-react"
 import { EmptyState } from "@/components/admin/empty-state"
 import { PageHeader } from "@/components/admin/page-header"

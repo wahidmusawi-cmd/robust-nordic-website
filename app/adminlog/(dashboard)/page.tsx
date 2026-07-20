@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import Link from "next/link"
 import { Layers, Package, ReceiptText, TrendingUp, Users } from "lucide-react"
 import { BarList } from "@/components/admin/bar-list"

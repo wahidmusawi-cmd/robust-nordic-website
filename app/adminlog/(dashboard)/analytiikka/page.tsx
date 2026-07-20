@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { BarChart3 } from "lucide-react"
 import { BarList } from "@/components/admin/bar-list"
 import { ChartTable } from "@/components/admin/chart-table"
