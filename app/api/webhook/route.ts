@@ -101,24 +101,37 @@ export async function POST(req: NextRequest) {
       console.log("Payment completed:", session.id, session.metadata)
 
       const email = session.customer_details?.email
+      // Webhook payloads don't include line items — fetch them.
+      const full = await stripe.checkout.sessions.retrieve(session.id, {
+        expand: ["line_items"],
+      })
+      const lineItems = (full.line_items?.data ?? []).map((li) => ({
+        description: li.description,
+        amount_total: li.amount_total ?? 0,
+        currency: li.currency,
+      }))
+
+      // Send confirmation to customer
       if (email) {
-        // Webhook payloads don't include line items — fetch them.
-        const full = await stripe.checkout.sessions.retrieve(session.id, {
-          expand: ["line_items"],
-        })
         await sendOrderConfirmation({
           to: email,
           customerName: session.customer_details?.name ?? null,
-          lineItems: (full.line_items?.data ?? []).map((li) => ({
-            description: li.description,
-            amount_total: li.amount_total ?? 0,
-            currency: li.currency,
-          })),
+          lineItems,
           total: session.amount_total ?? 0,
           currency: session.currency ?? "eur",
           locale: session.metadata?.locale ?? "fi",
         })
       }
+
+      // Send admin notification
+      await sendOrderConfirmation({
+        to: "asiakaspalvelu@robustnordic.fi",
+        customerName: session.customer_details?.name ?? null,
+        lineItems,
+        total: session.amount_total ?? 0,
+        currency: session.currency ?? "eur",
+        locale: "fi",
+      })
       break
     }
     case "payment_intent.payment_failed": {
