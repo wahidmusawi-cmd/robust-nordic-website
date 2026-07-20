@@ -132,6 +132,11 @@
       "subtitle": "Du får samtidigt först veta om nya produkter, välmåendetips och exklusiva erbjudanden.",
       "placeholder": "Din e-postadress",
       "submit": "PRENUMERERA",
+      "submitting": "Prenumererar...",
+      "success": "Tack! Kolla din e-post.",
+      "alreadySubscribed": "Du är redan på listan.",
+      "errorInvalid": "Kontrollera e-postadressen.",
+      "errorGeneric": "Något gick fel. Försök igen.",
       "disclaimer": "Ingen spam – bara värdefullt innehåll. Du kan avsluta när som helst."
     }
   },

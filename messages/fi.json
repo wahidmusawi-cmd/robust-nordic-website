@@ -132,6 +132,11 @@
       "subtitle": "Saat samalla ensimmäisenä tiedon uusista tuotteista, hyvinvointivinkeistä ja eksklusiivisista tarjouksista.",
       "placeholder": "Sähköpostiosoitteesi",
       "submit": "TILAA",
+      "submitting": "Tilataan...",
+      "success": "Hienoa! Tarkista sähköpostisi.",
+      "alreadySubscribed": "Olet jo tilaajalistalla.",
+      "errorInvalid": "Tarkista sähköpostiosoite.",
+      "errorGeneric": "Jokin meni pieleen. Yritä uudelleen.",
       "disclaimer": "Ei spämmiä – vain arvokasta sisältöä. Voit peruuttaa koska tahansa."
     }
   },

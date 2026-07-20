@@ -132,6 +132,11 @@
       "subtitle": "You'll also be the first to hear about new products, wellbeing tips and exclusive offers.",
       "placeholder": "Your email address",
       "submit": "SUBSCRIBE",
+      "submitting": "Subscribing...",
+      "success": "You're in! Check your email.",
+      "alreadySubscribed": "You're already on the list.",
+      "errorInvalid": "Please enter a valid email.",
+      "errorGeneric": "Something went wrong. Try again.",
       "disclaimer": "No spam – only valuable content. You can unsubscribe at any time."
     }
   },
